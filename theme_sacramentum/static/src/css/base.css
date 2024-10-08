@@ -1,0 +1,59 @@
+.ul_toggle_leftmenu{
+  padding-left: 0px;
+  list-style: outside none none;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: outside;
+  margin-bottom: 0px !important;
+  max-width: 50px;
+}
+
+.toggle_leftmenu{
+  color: #FFF !important;
+  padding: 5px 8px;
+}
+
+.toggle_leftmenu:hover{
+  color: #9D9D9D !important;
+  cursor: pointer;
+}
+
+.navbar-inverse {
+  background-color: #EFAD4E;
+  border-color: #6C6C6C;
+}
+
+a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #efad4e;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #070704;
+}
+a {
+    color: #337ab7;
+}
+
+a {
+    color: #845C24;
+}
+
+.btn-primary {
+    color: #080808 ;
+    background-color: #efad4e ;
+    border-color: #7A6444;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: #ffffff;
+    background-color: #080808 !important;
+    border-color: #efad4e !important;
+}
+
+.openerp .oe_loading {
+    background: #7a603a;
+    border: 1px solid #100e0f;
+}
+
+.openerp .oe_secondary_menu_section > .oe_menu_leaf {
+    color: #736551;
+}

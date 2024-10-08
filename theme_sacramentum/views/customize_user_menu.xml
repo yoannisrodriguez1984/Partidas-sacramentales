@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-extend="UserMenu">
+		<t t-jquery=".dropdown" t-operation="replace">
+           <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img class="oe_topbar_avatar" t-att-data-default-src="_s + '/web/static/src/img/user_menu_avatar.png'"/>
+                <span class="oe_topbar_name"/> <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#" data-menu="about">About</a></li>
+                <li class="divider"/>
+                <li><a href="#" data-menu="settings">Preferences</a></li>
+                <li><a href="#" data-menu="logout">Log out</a></li>
+            </ul>
+        </li>
+        </t>        
+    </t>
+	
+	<div t-extend="UserMenu.about">
+	<div t-jquery=".container-fluid" t-operation="replace">
+        <div class="row">
+            <a class="oe_activate_debug_mode oe_right label label-primary" href="?debug" >Activate the developer mode</a>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8 user-details">
+                <div class="user-image">
+                    <img src="/theme_sacramentum/static/src/img/logo.png" alt="Odoo (Formerly OpenERP)" title="Odoo (Formerly OpenERP)" />
+                </div>
+                <div class="user-info-block">
+                    <div class="user-heading">
+                        <h3>
+                            Sistema desarrollado con Odoo v9.0 y Gestor de bases de datos Postgres SQL. 
+                        </h3>
+                    </div>
+                    <div class="user-body">
+                        <div class="tab-content">
+                            <div id="settings" class="tab-pane active text-left">                            
+                                <p>
+								<h3>Contáctenos:</h3> 
+									<li><p>Ing. Yoannis Rodriguez Enamorado</p>
+										<p>Correo electrónico: yoannis.enamorado@nauta.cu</p>
+										<p>Correo electrónico alternativo: yoannis.enamorado@gmail.com</p>
+										<p>Teléfono:+53 58815508</p>
+									</li>
+									<li><p>Ing. Julio Cesar Herrera Soria:</p>
+										<p>Correo electrónico: julio.herrera@nauta.cu</p>
+										<p>Teléfono: -</p>
+									</li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+    </div>
+</templates>

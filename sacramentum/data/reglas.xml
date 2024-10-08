@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+        <record model="ir.rule" id="regla1">
+            <field name="name">Regla Configuracion</field>
+            <field name="model_id" search="[('model','=','sacra_datos_parroquia')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('id','=',user.config_id.id)]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla2">
+            <field name="name">Regla sacra_parrocos</field>
+            <field name="model_id" search="[('model','=','sacra_parrocos')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+
+        
+        <record model="ir.rule" id="regla6">
+            <field name="name">Regla sacra_parroquia</field>
+            <field name="model_id" search="[('model','=','sacra_parroquia')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla7">
+            <field name="name">Regla sacra_iglesia</field>
+            <field name="model_id" search="[('model','=','sacra_iglesia')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla8">
+            <field name="name">Regla sacra_solicit_bautismo</field>
+            <field name="model_id" search="[('model','=','sacra_solicit_bautismo')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla9">
+            <field name="name">Regla sacra_bautismo</field>
+            <field name="model_id" search="[('model','=','sacra_bautismo')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla10">
+            <field name="name">Regla sacra_confirmacion</field>
+            <field name="model_id" search="[('model','=','sacra_confirmacion')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla11">
+            <field name="name">Regla sacra_defuncion</field>
+            <field name="model_id" search="[('model','=','sacra_defuncion')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla12">
+            <field name="name">Regla sacra_enmienda</field>
+            <field name="model_id" search="[('model','=','sacra_enmienda')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla13">
+            <field name="name">Regla sacra_entable</field>
+            <field name="model_id" search="[('model','=','sacra_entable')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla14">
+            <field name="name">Regla sacra_indice</field>
+            <field name="model_id" search="[('model','=','sacra_indice')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla15">
+            <field name="name">Regla sacra_matrimonio</field>
+            <field name="model_id" search="[('model','=','sacra_matrimonio')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla16">
+            <field name="name">Regla sacra_persona</field>
+            <field name="model_id" search="[('model','=','sacra_persona')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+        
+        <record model="ir.rule" id="regla17">
+            <field name="name">Regla res.users</field>
+            <field name="model_id" search="[('model','=','res.users')]" model="ir.model"/>
+            <field name="global" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="domain_force">[('config_id','child_of',[user.config_id.id])]</field>
+        </record>
+    </data>
+</openerp>

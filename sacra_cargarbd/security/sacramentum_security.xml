@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+    <record id="group_carga_admin" model="res.groups">
+        <field name="name">Realizar carga inicial</field>
+        <field name="category_id" ref="sacramentum.sacramentum_grupos"/>
+        <field name="comment">Este usuario podrá la migración de datos al nuevo sistema</field>
+    </record>
+
+
+</data>
+</openerp>

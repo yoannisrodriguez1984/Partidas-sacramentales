@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_imagen_form">
+            <field name="name">sacra_imagen_form</field>
+            <field name="model">sacra_imagen</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Imagen">
+                    <field name="imagen" nolabel= "1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+	<openerp>
+		<data>
+			<record id="view_form_config_bd" model="ir.ui.view">
+				<field name="name">config_bd_form</field>
+				<field name="model">config_bd</field>
+				<field name="arch" type="xml">
+					<form string="">
+						<header>
+						</header>
+                        <sheet>
+							<group>
+								<field name="servidor"/>
+								<field name="puerto"/>
+								<field name="bdatos"/>
+								<field name="usuario"/>
+								<field name="password"/>
+							</group>
+
+					    </sheet>
+						<footer>
+						</footer>
+					</form>
+				</field>
+			</record>
+
+            <record id="view_tree_config_bd" model="ir.ui.view">
+				<field name="name">config_bd_tree</field>
+				<field name="model">config_bd</field>
+				<field name="arch" type="xml">
+					<tree string="">
+						<field name="servidor"/>
+						<field name="puerto"/>
+						<field name="bdatos"/>
+					</tree>
+				</field>
+			</record>
+			<!-- Action to open To-do Task list -->
+			<act_window id="config_bd_view" name="Configurar base de datos" res_model="config_bd" view_mode="tree,form" />
+
+			
+			
+		</data>
+	</openerp>

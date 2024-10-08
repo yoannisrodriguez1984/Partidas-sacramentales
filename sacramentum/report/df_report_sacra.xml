@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<report auto="False" id="report_partida_bautismo" model="sacra_bautismo" name="partida_bautismo" file="sacramentum/report/report_partida_bautismo.rml"
+			menu="True" string="Certificación no literal de bautismo" rml="sacramentum/report/report_partida_bautismo.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+
+		<report auto="False" id="report_solicitud_bautismo" model="sacra_solicit_bautismo" name="solicitud_bautismo" file="sacramentum/report/report_solicitud_bautismo.rml"
+			menu="True" string="Solicitud de bautismo" rml="sacramentum/report/report_solicitud_bautismo.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+		
+		<report auto="False" id="report_anulacion_matrimonio" model="sacra_matrimonio" name="anulacion_matrimonio" file="sacramentum/report/report_anulacion_matrimonio.rml"
+			menu="True" string="Notificación anulación de matrimonio" rml="sacramentum/report/report_anulacion_matrimonio.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum" />
+			
+		<report auto="False" id="report_notificacion_matrimonio" model="sacra_matrimonio" name="notificacion_matrimonio" file="sacramentum/report/report_notificacion_matrimonio.rml"
+			menu="True" string="Notificación de matrimonio" rml="sacramentum/report/report_notificacion_matrimonio.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum" />
+			
+		<report auto="False" id="report_certificado_matrimonio" model="sacra_matrimonio" name="certificado_matrimonio" file="sacramentum/report/report_certificado_matrimonio.rml"
+			menu="True" string="Certificación no literal de matrimonio" rml="sacramentum/report/report_certificado_matrimonio.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_certificacion_literal_matri" model="sacra_matrimonio" name="certificacion_literal_matri" file="sacramentum/report/certificacion_literal_matrimonio.rml"
+			menu="True" string="Certificación literal de matrimonio" rml="sacramentum/report/certificacion_literal_matrimonio.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+    
+		<report auto="False" id="report_certificado_defuncion" model="sacra_defuncion" name="certificado_defuncion" file="sacramentum/report/report_certificado_defuncion.rml"
+			menu="True" string="Certificación no literal de defunción" rml="sacramentum/report/report_certificado_defuncion.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_solicitud_entable" model="sacra_entable" name="solicitud_entable" file="sacramentum/report/report_solicitud_entable.rml"
+			menu="True" string="Solicitud de entable" rml="sacramentum/report/report_solicitud_entable.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_declar_solicitante" model="sacra_entable" name="declar_solicitante" file="sacramentum/report/report_declar_solicitante.rml"
+			menu="True" string="Declaración jurada del solicitante" rml="sacramentum/report/report_declar_solicitante.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_declar_testigos" model="sacra_entable" name="declar_testigos" file="sacramentum/report/report_declar_testigos.rml"
+			string="Declaración jurada de los testigos" rml="sacramentum/report/report_declar_testigos.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_aprobacion_ent" model="sacra_entable" name="aprobacion_ent" file="sacramentum/report/report_aprobacion_ent.rml"
+			menu="True" string="Aprobación de entable" rml="sacramentum/report/report_aprobacion_ent.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_mandamiento_ent" model="sacra_entable" name="mandamiento_ent" file="sacramentum/report/report_mandamiento_ent.rml"
+			string="Mandamiento de entable" rml="sacramentum/report/report_mandamiento_ent.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_solicitud_enmienda" model="sacra_enmienda" name="solicitud_enmienda" file="sacramentum/report/report_solicitud_enmienda.rml"
+			menu="True" string="Solicitud de enmienda" rml="sacramentum/report/report_solicitud_enmienda.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_declar_solicit_enm" model="sacra_enmienda" name="declar_solicit_enm" string="Declaración jurada del solicitante" file="sacramentum/report/report_declar_solicit_enm.rml" rml="sacramentum/report/report_declar_solicit_enm.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+		
+		<report auto="False" id="report_constancia_enmienda" model="sacra_enmienda" name="constancia_enmienda" string="Constancia de enmienda" file="sacramentum/report/report_constancia_enmienda.rml" rml="sacramentum/report/report_constancia_enmienda.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+		
+		<report auto="False" id="report_decreto_enmienda" model="sacra_enmienda" name="decreto_enmienda" string="Decreto de enmienda" rml="sacramentum/report/report_decreto_enmienda.rml" file="sacramentum/report/report_decreto_enmienda.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+			
+		<report auto="False" id="report_certificacion_literal" model="sacra_bautismo" name="certificacion_literal" file="sacramentum/report/certificacion_literal.rml"
+			string="Certificación literal de bautismo" rml="sacramentum/report/certificacion_literal.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+		
+		<report auto="False" id="report_certificacion_literal_defun" model="sacra_defuncion" name="certificacion_literal_defun" file="sacramentum/report/certificacion_literal_defuncion.rml"
+			string="Certificación literal de defunción" rml="sacramentum/report/certificacion_literal_defuncion.rml" groups="sacramentum.group_sacramentum1,sacramentum.group_sacramentum"/>
+		
+		<report auto="False" id="report_legalizacion" model="sacra_legalizacion" name="legalizacion" file="sacramentum/report/report_legalizacion.rml"
+			string="Legalizacion" rml="sacramentum/report/report_legalizacion.rml" groups="sacramentum.group_sacramentum2,sacramentum.group_sacramentum"/>
+	
+	
+	
+		<!--act_window id="action_sel_vic_actv_p" key2="client_print_multi" name="Aprobación de entable" res_model="sel_vic_actv" src_model="sacra_entable" view_mode="form" target="new" view_type="form" /-->
+	</data>
+</openerp>

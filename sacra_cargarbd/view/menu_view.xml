@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>	
+		<menuitem id="menu_import_data" name="Importar" sequence="8" groups="group_carga_admin"/>
+		<menuitem name="Configurar BD" action="config_bd_view" id="config_bd_menu" parent="menu_import_data" sequence="1" />
+		<menuitem id="menu_mult_wizard" name="Cargar datos" action="action_wizard_import_data" parent="menu_import_data" />
+
+	</data>
+</openerp>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="resp_bautismo_search">
+            <field name="name">resp_bautismo_search</field>
+            <field name="model">resp_bautismo</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Solicitud de búsqueda">
+					<field name="tomo"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+					<newline/>
+					<field name="state"/>
+					<field name="fecha_recib"/>
+					<field name="fecha_baut"/>
+					<newline/>
+                    <group expand="0" string="Agrupar por" >
+                    <filter name="est2" string="Estado" icon="" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="resp_bautismo_tree">
+            <field name="name">resp_bautismo_tree</field>
+            <field name="model">resp_bautismo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Solicitud de búsqueda recibida" >
+					<field name="fecha_recib"/>					
+                    <field name="tomo"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+                    <field name="fecha_baut"/>
+                    <field name="nombre"/>
+					<field name="apellido1"/>
+                    <field name="apellido2"/>
+                </tree>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="resp_bautismo_form">
+            <field name="name">resp_bautismo_form</field>
+            <field name="model">resp_bautismo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Solicitud de búsqueda recibida">
+				<group colspan="4" >
+                    <field name="fecha_recib" colspan="4" />
+                    <field name="correo_config_id" colspan="4" />
+                    <field name="tomo" colspan="4" />
+                    <field name="folio" colspan="4" />
+                    <field name="numero" colspan="4" />
+                    <field name="nombre" colspan="4" />
+                    <field name="apellido1" colspan="4" />
+                    <field name="apellido2" colspan="4" />
+                    <field name="fecha_nac" colspan="4" />
+                    <field name="lugar_nac" colspan="4" />
+                    <field name="fecha_baut" colspan="4" />
+					<newline/>
+					<group colspan="4" string="Registro de bautismo encontrados">
+						<field name="reg_resp_busq1_ids" colspan="4" nolabel="1" />
+					</group>
+                    <newline/>
+					<field name="state" colspan="4" widget="statusbar" statusbar_colors='{"Recibida":"yellow","Respondida":"green"}'/>
+					<separator string="Acciones" colspan="4"/>
+					<group colspan="4" col="3">
+						<button name="responder_solicitud" icon="gtk-yes" string="Responder solicitud" states="Recibida,Respondida" colspan="1" type="object"/>
+						<button name="buscar_registros" icon="gtk-yes" string="Realizar búsqueda" states="Recibida,Respondida" colspan="1" type="object"/>
+					</group>
+                </group>
+            </form>
+            </field>
+        </record>		
+	   
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="resp_bautismo_action">
+            <field name="name">Solicitud de búsqueda recibida</field>
+            <field name="res_model">resp_bautismo</field>
+            <field name="limit">20</field>
+        </record> 	
+		
+	
+	<!--*****************************************************************-->
+        <!--record model="ir.ui.view" id="reg_resp_busq1_search">
+            <field name="name">reg_resp_busq1_search</field>
+            <field name="model">reg_resp_busq1</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Registros de bautismo">
+						<field name="partida_literal"/>
+                        <field name="tomo"/>
+                        <field name="folio"/>
+                        <field name="numero"/>						
+						<field name="fecha_baut"/>
+						<newline/>
+					<group expand="0" string="Rango por fecha de bautismo" >
+						<field name="fecha_ini"/>
+                        <field name="fecha_fin"/>
+                    </group>
+					<newline/>
+                </search>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="reg_resp_busq1_tree">
+            <field name="name">reg_resp_busq1_tree</field>
+            <field name="model">reg_resp_busq1</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Registro de bautismo" >
+						<field name="partida_literal"/>
+                        <field name="tomo"/>
+                        <field name="folio"/>
+                        <field name="numero"/>
+                        <field name="fecha_baut" />
+                        <field name="nombre"/>
+						<field name="apellido1" />
+                        <field name="apellido2" />
+                </tree>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="reg_resp_busq1_form">
+            <field name="name">reg_resp_busq1_form</field>
+            <field name="model">reg_resp_busq1</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Registro de Bautismo">
+			<field name="partida_literal"/>
+             <notebook colspan="4" >
+               <page string="Datos del registro de bautismo">
+                <group col="4" colspan="4" > 
+                    <group colspan="4" col='8' string="Datos de la persona a bautizar" > 
+                        <group colspan="4" >
+                        <field name="nombre" colspan="4" />
+                        <field name="apellido1" colspan="4" />
+                        <field name="apellido2" colspan="4" />
+						<field name="sexo" colspan="4" />
+                        </group>
+                        <group colspan="4" attrs="{'invisible': [('partida_literal','==', True)]}">
+                        <field name="fecha_nac" colspan="4" />
+                        <field name="lugar_nac" colspan="4" />
+                        <field name="mestizo" colspan="4" /> 
+                        </group>
+                        <field name="nota" colspan="4" /> 
+                        <label string="" colspan="2"/>
+                    </group>    
+                    <newline/><label string="" />
+                    
+                    <group colspan="4" col="8" > 
+                        <group colspan="4" string="Datos del padre">    
+                        <field name="p_nombre" colspan="4" />
+                        <field name="p_apellido1" colspan="4" />
+                        <field name="p_apellido2" colspan="4" />
+                        <field name="p_lugar_nac" colspan="4" />
+                        <label string="" colspan="3"/>                    
+                        </group>
+                        <group colspan="4" string="Datos de la madre">  
+                        <field name="m_nombre" colspan="4" />
+                        <field name="m_apellido1" colspan="4" />
+                        <field name="m_apellido2" colspan="4" />
+                        <field name="m_lugar_nac" colspan="4" />
+                        <label string="" colspan="3"/>
+                        </group>
+                    </group>
+                    <newline/><label string="" />
+                    
+                    <group colspan="4" col="8" attrs="{'invisible': [('partida_literal','==', True)]}"> 
+                        <group colspan="4" string="Datos de los abuelos paternos">  
+                        <field name="p_p_nombre" colspan="3" />
+                        <field name="m_p_nombre" colspan="3" />                 
+                        </group>
+                        <group colspan="4" string="Datos de los abuelos maternos">  
+                        <field name="p_m_nombre" colspan="3" />
+                        <field name="m_m_nombre" colspan="3" />
+                        </group>
+                    </group>
+                    <newline/><label string="" />
+                    <group colspan="4" col="8" string="Otros datos">
+                        <field name="padrino" colspan="3" />
+                        <field name="madrina" colspan="3" /> 
+						<field name="ministro" colspan="8" options='{"rosend":"1"}'/>
+                        <field name="ministro_suple" colspan="8" attrs="{'invisible': [('ministro','=', '')]}" options='{"rosend":"1"}'/>
+                        <field name="tomo" colspan="2"/> <label string="" colspan="1"/>
+                        <field name="folio" colspan="2"/> <label string=""  colspan="1"/>
+                        <field name="numero" colspan="2"/> 
+						<field name="fecha_baut" colspan="3"/> 
+                        <field name="parroquia_id" colspan="3"/>
+                        <field name="iglesia_id" colspan="3"/>
+						<field name="reg_entable" colspan="2"/>	
+                    </group>                    
+                </group>                    
+                </page>
+				<page string="Literal" attrs="{'invisible': [('partida_literal','==', False)]}">
+					<field name="literal_text" nolabel= "1" colspan="4"></field>
+				</page>
+                <page string="Notas marginales" >
+                    <field name="notas_marginales_ids" colspan="4" nolabel="1"/>               
+                </page>
+               </notebook> 
+                </form>
+            </field>
+        </record-->		
+	   
+
+        <!--Actions-->
+        <!--record model="ir.actions.act_window" id="reg_resp_busq1_action">
+            <field name="name">Registro de bautismo</field>
+            <field name="res_model">reg_resp_busq1</field>
+            <field name="limit">20</field>
+        </record--> 
+    </data>
+</openerp>
+

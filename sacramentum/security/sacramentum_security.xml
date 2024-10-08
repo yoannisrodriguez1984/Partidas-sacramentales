@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+    <record id="sacramentum_grupos" model="ir.module.category">
+        <field name="name">Sacramentum</field>
+        <field name="sequence">5</field>
+        <field name="description">Categoría para los permisos de sacramentos</field>
+    </record>
+
+    <record model="res.groups" id="group_sacramentum">
+        <field name="name">Sacramentum/Administrador</field>
+        <field name="category_id" ref="sacramentum_grupos"/>
+    </record>
+    <!--record model="ir.ui.menu" id="sacramentum.bautismos_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.confirmaciones_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.matrimonios_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.defunciones_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum'))]"/>
+    </record>    
+    <record model="ir.ui.menu" id="sacramentum.admin_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum'))]"/>
+    </record-->
+    
+    
+    <record model="res.groups" id="group_sacramentum1">
+        <field name="name">Sacramentum/Usuario</field>
+        <field name="category_id" ref="sacramentum_grupos"/>
+    </record>
+    <!--record model="ir.ui.menu" id="sacramentum.bautismos_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum1'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.confirmaciones_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum1'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.matrimonios_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum1'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.defunciones_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum1'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.admin_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum1'))]"/>
+    </record-->
+    
+    <record model="res.groups" id="group_sacramentum2">
+        <field name="name">Sacramentum/Canciller</field>
+        <field name="category_id" ref="sacramentum_grupos"/>
+    </record>    
+    <!--record model="ir.ui.menu" id="sacramentum.entables_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum2'))]"/>
+    </record>
+    <record model="ir.ui.menu" id="sacramentum.enmiendas_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum2'))]"/>
+    </record-->
+    <!--record model="ir.ui.menu" id="sacramentum.admin_item_menu">
+        <field name="groups_id" eval="[(4, ref('group_sacramentum2'))]"/>
+    </record-->
+    <record model="res.groups" id="group_sacramentum3">
+        <field name="name">Sacramentum/RepararRegistros</field>
+        <field name="category_id" ref="sacramentum_grupos"/>
+    </record>
+</data>
+</openerp>

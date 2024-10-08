@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="sacra_custom_view" name="sacra_custom_view" inherit_id="web.assets_backend">
+			<xpath expr="." position="inside">
+				<link rel="stylesheet" href="/theme_sacramentum/static/src/css/base.css"/>
+                <script type="text/javascript" src="/theme_sacramentum/static/js/menu.js"></script>
+			</xpath>
+		</template>
+		
+		<template id="custom_menu_secondary" name="custom_menu_secondary" inherit_id="web.menu_secondary">
+			<xpath expr="//a[@class='oe_logo']" position="replace">
+			<!--span ><label class="control-label"></label></span-->
+			<img src="/theme_sacramentum/static/src/img/logo.png" alt="LOGO" class="img-thumbnail"/>
+			</xpath>
+			<xpath expr="//div[@class='oe_footer']" position="replace">
+				<!--h6>26 DE ENERO DE 2018 (2404)</h6-->
+			</xpath>
+		</template>
+		
+		<template id="custom_menu_login" name="custom_menu_login" inherit_id="web.login_layout">
+			<xpath expr="//img" position="replace">
+				<img src="/theme_sacramentum/static/src/img/logo.png"/>
+			</xpath>
+			<xpath expr="//a[@href='https://www.odoo.com']" position="replace">
+				<a href="https://www.odoo.com" target="_blank">Hecho con <span>Odoo</span></a>
+			</xpath>
+			<xpath expr="//div[@class='text-center'][2]" position="replace">
+			</xpath>
+		</template>
+		
+		<template id="custom_menu_login1" name="custom_menu_login1" inherit_id="web.login">
+			<xpath expr="//a" position="replace">
+				<a href="/web/database/selector" class="btn btn-default">Seleccionar <i class="fa fa-database"></i></a>
+			</xpath>
+			<xpath expr="//div[@class='form-group field-login']" position="replace">
+				<div class="form-group field-login">
+                    <label for="login" class="control-label">Usuario</label>
+                    <input type="text" name="login" t-att-value="login" id="login" class="form-control" required="required" autofocus="autofocus" autocapitalize="off"/>
+                </div>
+			</xpath>
+		</template>
+		
+		<template id="custom_layout" name="custom_layout" inherit_id="web.layout">
+			<xpath expr="//title" position="replace">
+			<title>SACRAMENTUM</title>
+			</xpath>
+			<xpath expr="//link[1]" position="replace">
+				<link rel="shortcut icon" href="/theme_sacramentum/static/src/img/favicon.png"/>
+			</xpath>
+		</template>
+		
+        <!--template id="menu_webclient_bootstrap_web_menu_hide" inherit_id="web.webclient_bootstrap">
+            <xpath expr="//div[@class='navbar-header']" position="inside">
+                <ul class="ul_toggle_leftmenu">
+                    <li class="btn-link toggle_leftmenu">
+                        <span class="fa fa-exchange fa-2"></span>
+                    </li>
+                </ul>
+            </xpath>
+        </template-->
+		
+	</data>
+</openerp>

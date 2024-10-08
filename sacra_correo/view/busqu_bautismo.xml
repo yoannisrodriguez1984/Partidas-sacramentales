@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="busqu_bautismo_search">
+            <field name="name">busqu_bautismo_search</field>
+            <field name="model">busqu_bautismo</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Solicitud de búsqueda">
+                    <field name="tomo"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+                    <newline/>
+                    <field name="state"/>
+                    <field name="fecha_pet"/>
+                    <field name="fecha_baut"/>
+                    <newline/>
+                    <group expand="0" string="Agrupar por" >
+                    <filter name="est2" string="Estado" icon="" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="busqu_bautismo_tree">
+            <field name="name">busqu_bautismo_tree</field>
+            <field name="model">busqu_bautismo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Solicitud de búsqueda" >
+                    <field name="fecha_pet"/>
+                    <field name="tomo"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+                    <field name="fecha_baut"/>
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                    <field name="state"/>
+                    <button name="enviar_solicitud" icon="gtk-yes" string="Enviar solicitud" states="Creado" colspan="1" type="object"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="busqu_bautismo_form">
+            <field name="name">busqu_bautismo_form</field>
+            <field name="model">busqu_bautismo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Solicitud de búsqueda">
+                <group colspan="4" >
+                    <field name="fecha_pet" colspan="4" />
+                    <field name="tomo" colspan="4" />
+                    <field name="folio" colspan="4" />
+                    <field name="numero" colspan="4" />
+                    <field name="nombre" colspan="4" />
+                    <field name="apellido1" colspan="4" />
+                    <field name="apellido2" colspan="4" />
+                    <field name="fecha_nac" colspan="4" />
+                    <field name="lugar_nac" colspan="4" />
+                    <field name="fecha_baut" colspan="4" />
+                    <newline/>
+                    <group colspan="4" string="Registro encontrados por correo de búsqueda">
+                        <field name="res_busqu_baut_ids" colspan="4" nolabel="1" />
+                    </group>
+                    
+                    <newline/>
+                    <field name="state" colspan="4" widget="statusbar" statusbar_colors='{"Creado":"yellow","Enviado":"green"}'/>
+                    <separator string="Acciones" colspan="4"/>
+                    <group colspan="4" col="3">
+                        <button name="enviar_solicitud" icon="gtk-yes" string="Enviar solicitud" states="Creado" colspan="1" type="object"/>
+                    </group>
+                </group>
+            </form>
+            </field>
+        </record>        
+
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="busqu_bautismo_action">
+            <field name="name">Solicitud de búsqueda</field>
+            <field name="res_model">busqu_bautismo</field>
+            <field name="limit">20</field>
+        </record>
+
+    <!--*****************************************************************-->    
+
+        <record model="ir.ui.view" id="res_busqu_baut_search">
+            <field name="name">res_busqu_baut_search</field>
+            <field name="model">res_busqu_baut</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Correo de búsqueda">
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_busqu_baut_tree">
+            <field name="name">res_busqu_baut_tree</field>
+            <field name="model">res_busqu_baut</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Correo de búsqueda" >
+                        <field name="correo_config_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="res_busqu_baut_form">
+            <field name="name">res_busqu_baut_form</field>
+            <field name="model">res_busqu_baut</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Correo de búsqueda">
+                <group colspan="4" >
+                    <field name="busqu_bautismo_id" colspan="4" />
+                    <field name="correo_config_id" colspan="4" />
+                </group>
+                <group colspan="4" string="Registros encontrados">
+                    <field name="reg_resp_busq_ids" colspan="4" nolabel="1" />
+                </group>
+            </form>
+            </field>
+        </record>        
+
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="res_busqu_baut_action">
+            <field name="name">Correo de búsqueda</field>
+            <field name="res_model">res_busqu_baut</field>
+            <field name="limit">20</field>
+        </record>
+
+
+    </data>
+</openerp>
+

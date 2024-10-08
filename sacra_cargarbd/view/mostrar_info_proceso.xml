@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="mostrar_info_proceso1_view" model="ir.ui.view">
+            <field name="name">mostrar_info_proceso</field>
+            <field name="model">mostrar_info_proceso</field>
+            <field name="arch" type="xml">
+                <form string="Información">
+                    <header>
+                        <div class="row">
+                            <div class="col-xs-12 pull-center text-center">
+                                <img src="/theme_multas/static/src/img/logo2.png"/>
+                            </div>
+                        </div>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="titulo"/>
+                            <field name="descripcion"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button string='Cancelar' class='btn-default' special='cancel'/>
+                    </footer>
+                </form>
+            </field>
+        </record>        
+    </data>
+</openerp>

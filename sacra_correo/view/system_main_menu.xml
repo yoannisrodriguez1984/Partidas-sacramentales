@@ -1,0 +1,71 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+    <data>
+        
+    <menuitem name='Búsqueda externa' id='bus_item_menu' sequence='15'/>
+        <menuitem name='Configuración' id='busque_conf_item_menu' parent='bus_item_menu' action='' sequence='11'/>
+			<menuitem name='Opciones generales' id='opci_gen_item_menu' parent='busque_conf_item_menu' action='opciones_conf_action' sequence='1'/>
+			<menuitem name='Correos gmail' id='conf_correo_item_menu' parent='busque_conf_item_menu' action='sacra_correo_config_action' sequence='11'/>
+			<menuitem name="Servidores de salida" id="menu_ser_corr_menu" sequence="3" parent="busque_conf_item_menu" action="base.action_ir_mail_server_list"/>
+			<menuitem name="Servidores de entrada" id="menu_ser_corr1_menu" sequence="6" parent="busque_conf_item_menu" action="fetchmail.action_email_server_tree"/>
+		
+		<menuitem name='Buzón de correo' id='bus_corre_item_menu' parent='bus_item_menu' action='mail.action_view_mail_message' sequence='2'/>
+		
+		<menuitem name='Solicitudes realizadas' id='busque_solic_item_menu' parent='bus_item_menu' action='' sequence='5'/>
+			<menuitem name='Búsqueda de bautismo' id='baut_busq_item_menu' parent='busque_solic_item_menu' sequence='11'/>
+				<menuitem name='Realizar solicitud' id='busc_solic_item_menu' parent='baut_busq_item_menu' action='busqu_bautismo_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='baut_reg_item_menu' parent='baut_busq_item_menu' action='reg_resp_busq_action' sequence='12'/>
+				
+			<menuitem name='Búsqueda de confirmación' id='conf_busq_item_menu' parent='busque_solic_item_menu' sequence='21'/>
+				<menuitem name='Realizar solicitud' id='busc_solic1_item_menu' parent='conf_busq_item_menu' action='busqu_confirmacion_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='confir_reg_item_menu' parent='conf_busq_item_menu' action='reg_resp_confir_action' sequence='12'/>
+				
+			<menuitem name='Búsqueda de defunción' id='defun_busq_item_menu' parent='busque_solic_item_menu' sequence='41'/>
+				<menuitem name='Realizar solicitud' id='busc_solic2_item_menu' parent='defun_busq_item_menu' action='busqu_defuncion_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='defunc_reg_item_menu' parent='defun_busq_item_menu' action='reg_resp_defun_action' sequence='12'/>
+				
+			<menuitem name='Búsqueda de matrimonio' id='matri_busq_item_menu' parent='busque_solic_item_menu' sequence='31'/>
+				<menuitem name='Realizar solicitud' id='busc_solic3_item_menu' parent='matri_busq_item_menu' action='busqu_matrimonio_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='matri_reg_item_menu' parent='matri_busq_item_menu' action='reg_resp_matri_action' sequence='12'/>
+				
+		<menuitem name='Solicitudes recibidas' id='solic_ami_item_menu' parent='bus_item_menu' action='' sequence='6'/>
+		
+			<menuitem name='De bautismo' id='baut_busq_ami_menu' parent='solic_ami_item_menu' sequence='11' action='resp_bautismo_action'/>
+				<!--menuitem name='Datos de solicitud' id='baut_solic_item_menu' parent='baut_busq_ami_menu' action='resp_bautismo_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='baut_reg_ami_menu' parent='baut_busq_ami_menu' action='reg_resp_busq1_action' sequence='12'/-->
+		
+			<menuitem name='De confirmación' id='confir_busq_ami_menu' parent='solic_ami_item_menu' sequence='21' action='resp_confirmacion_action'/>
+				<!--menuitem name='Datos de solicitud' id='confir_solic_item_menu' parent='confir_busq_ami_menu' action='resp_confirmacion_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='confir_reg_ami_menu' parent='confir_busq_ami_menu' action='reg_resp1_confir_action' sequence='12'/-->
+		
+			<menuitem name='De defunción' id='defun_busq_ami_menu' parent='solic_ami_item_menu' sequence='41' action='resp_defuncion_action'/>
+				<!--menuitem name='Datos de solicitud' id='defun_solic_item_menu' parent='defun_busq_ami_menu' action='resp_defuncion_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='defun_reg_ami_menu' parent='defun_busq_ami_menu' action='reg_resp1_defun_action' sequence='12'/-->
+		
+			<menuitem name='De matrimonio' id='matri_busq_ami_menu' parent='solic_ami_item_menu' sequence='31' action='resp_matrimonio_action'/>
+				<!--menuitem name='Datos de solicitud' id='matri_solic_item_menu' parent='matri_busq_ami_menu' action='resp_matrimonio_action' sequence='11'/>
+				<menuitem name='Registros encontrados' id='matri_reg_ami_menu' parent='matri_busq_ami_menu' action='reg_resp1_matri_action' sequence='12'/-->
+		
+		
+        <record model="ir.actions.act_window" id="base.action_ir_mail_server_list">
+            <field name="name">Servidores de salida</field>
+            <field name="res_model">ir.mail_server</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>	
+        <record model="ir.actions.act_window" id="fetchmail.action_email_server_tree">
+            <field name="name">Servidores de entrada</field>
+            <field name="res_model">fetchmail.server</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="mail.action_view_mail_message" model="ir.actions.act_window">
+            <field name="name">Mensajes</field>
+            <field name="res_model">mail.message</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!--field name="domain">['|',('state','in',['outgoing','exception']),('email_from', '!=', False)]</field-->
+        </record>		
+
+    </data>
+</openerp>

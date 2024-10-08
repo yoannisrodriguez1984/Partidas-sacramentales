@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_testigo_search">
+            <field name="name">sacra_testigo_search</field>
+            <field name="model">sacra_testigo</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Persona">
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_testigo_tree">
+            <field name="name">sacra_testigo_tree</field>
+            <field name="model">sacra_testigo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Testigo">
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_testigo_form">
+            <field name="name">sacra_testigo_form</field>
+            <field name="model">sacra_testigo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Testigo">
+                    <group colspan="4" >
+                        <field name="persona_id" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" />
+                        <newline/>
+                        <field name="nombre" class='oe_inline'/>
+                        <field name="apellido1" class='oe_inline'/>
+                        <field name="apellido2" class='oe_inline'/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="sacra_matrimonio_search">
+            <field name="name">sacra_matrimonio_search</field>
+            <field name="model">sacra_matrimonio</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Matrimonio">
+                    <filter string="Partidas literales" domain="[('partida_literal', '=',True)]"/>
+                    <filter string="Partidas no literales" domain="[('partida_literal', '=',False)]"/>
+                    <newline/>
+                    <filter string="Ultramarinos" domain="[('ultramarino', '=',True)]"/>
+                    <filter string="Castrenses" domain="[('castrense', '=',True)]"/>
+                    
+                    <field name="esposo" filter_domain="['|',('esposo', 'ilike', self),('esposa', 'ilike', self)]" string="Persona que se casa"/>
+                    <field name="nombre" filter_domain="['|',('nombre', 'ilike', self),('nombre_esposa', 'ilike', self)]"/>
+                    <field name="apellido1" filter_domain="['|',('apellido1', 'ilike', self),('apellido1_esposa', 'ilike', self)]"/>
+                    <field name="apellido2" filter_domain="['|',('apellido2', 'ilike', self),('apellido2_esposa', 'ilike', self)]"/>
+                    <field name="lugar_nac1" filter_domain="['|',('lugar_nac1', 'ilike', self),('lugar_nac1_esposa', 'ilike', self)]"/> 
+                    <field name="fecha_matrimonio" string="Fecha del matrimonio"/>
+                    <field name="tomo1" filter_domain="[('tomo1', 'ilike', self)]" string="Tomo"/>
+                    <field name="folio" filter_domain="[('folio', 'ilike', self)]" string="Folio"/>
+                    <field name="numero" filter_domain="[('numero', 'ilike', self)]" string="Número"/>
+                    <field name="ministro"/>
+                    <field name="parroquia_id"/>
+                    <field name="iglesia_id"/>
+                    <field name="fecha_ini"/>
+                    <field name="fecha_fin"/>
+                    
+                    <filter name="min" string="Ministro" icon="stock_person" domain="[]" context="{'group_by':'ministro'}"/>
+                    <filter name="parr" string="Parroquia" icon="stock_person" domain="[]" context="{'group_by':'parroquia_id'}"/>
+                    <filter name="igle" string="Iglesia" icon="stock_person" domain="[]" context="{'group_by':'iglesia_id'}"/>
+                    <filter name="to" string="Tomo" icon="stock_person" domain="[]" context="{'group_by':'tomo1'}"/>
+                    <filter name="reent" string="Registrado por entable" icon="gtk-connect" domain="[]" context="{'group_by':'reg_entable'}"/>
+                    <filter name="est" string="Estado" icon="terp-camera_test" domain="[]" context="{'group_by':'state'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_matrimonio_tree">
+            <field name="name">sacra_matrimonio_tree</field>
+            <field name="model">sacra_matrimonio</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Matrimonio" options='{"custom_actions": [{"model": "importar_matrimonio", "method": "mostrar_ventana", "args": [], "label": "Importar registros"}]}'>
+                    <field name="tomo1"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+                    <field name="fecha_matrimonio" />
+                    <field name="esposo" />
+                    <field name="esposa" />
+                    <field name="ministro" />
+                    <field name="partida_literal"/>
+                    <field name="ultramarino" />
+                    <field name="castrense" />
+                    <field name="literal" string="Foto1"/>
+                    <field name="literal1" string="Foto2"/>
+                    <field name="state" />
+                    <button name="action_anulado" colspan="1" states="Vigente" string="Anular" type="object" icon="terp-mail_delete" help="Anular matrimonio" confirm='Está seguro de que desea realizar esta operación?'/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_matrimonio_form">
+            <field name="name">sacra_matrimonio_form</field>
+            <field name="model">sacra_matrimonio</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Matrimonio">
+                <header>
+                    <button name="action_anulado" colspan="1" states="Vigente" string="Anular" type="object" help="Anular matrimonio" icon="terp-mail_delete" confirm='Está seguro de que desea realizar esta operación?'/>
+                    <field name="state" widget="statusbar" statusbar_visible="Vigente,Anulado" statusbar_colors='{"Vigente":"blue","Anulado":"red"}'/>
+                </header>
+                <sheet>
+                <field name="arch_centr"  invisible = '1'/> 
+                <field name="es_parroquia"  invisible = '1'/> 
+                <group colspan="4" col='6'>
+                <field name="partida_literal" class="oe_inline" colspan="2"/>
+                <field name="ultramarino" class="oe_inline" colspan="2"/>
+                <field name="castrense" class="oe_inline" colspan="2"/>
+                </group>
+                <notebook colspan="4" >
+                <page string="Datos del esposo" >
+                    <group colspan="4" col='4' string="Datos del esposo">
+                        <field colspan="4" name="esposo" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" />
+
+                        <group colspan="2">
+                            <field name="nombre" options="{'save_readonly':True}"/>
+                            <field name="apellido1" options="{'save_readonly':True}"/>
+                            <field name="apellido2" options="{'save_readonly':True}"/>
+                            <field name="profesion" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                        </group>
+                        <group colspan="2" >
+                            <field name="fecha_nac" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="lugar_nac1" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="estado_civil" />
+                            <!--field name="carnet_esposo" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}" colspan="4" /-->
+                            <field name="edad_esposo" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}"/>
+                        </group>
+                        <field name="direccion" colspan="4" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                                                
+                        <group colspan="4" col='4' string="Datos del bautismo" attrs="{'invisible': [('partida_literal','==', True)]}" >
+                            <group colspan="2" >
+                            <field name="no_b_esposo"/>
+                            <field name="tomo_b_esposo" attrs="{'required': [('no_b_esposo','=',False)],'invisible': [('no_b_esposo','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="folio_b_esposo"  attrs="{'required': [('no_b_esposo','=', False)],'invisible': [('no_b_esposo','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="numero_b_esposo"  attrs="{'required': [('no_b_esposo','=',False)],'invisible': [('no_b_esposo','==', True)]}" options="{'save_readonly':True}"/>
+                            </group>
+
+                            <group colspan="2" >
+                            <field name="fecha_b_esposo" attrs="{'invisible': [('no_b_esposo','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="parroquia_b_esposo" attrs="{'required': [('no_b_esposo','=',False)],'invisible': [('no_b_esposo','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="parroquia_esposo_id" attrs="{'invisible': [('no_b_esposo','==', True)]}" placeholder='BUSCAR PARROQUIA EXISTENTE...' options="{'save_readonly':True}"/> 
+                            </group>
+
+                        </group>
+                    </group>
+
+                    <group colspan="4" col='4' attrs="{'invisible': [('partida_literal','==', True)]}">
+                        <group colspan="2" string="Datos del padre">
+                            <field name="padre" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="p_nombre_esposo" options="{'save_readonly':True}"/>
+                            <field name="p_apellido1_esposo" options="{'save_readonly':True}"/>
+                            <field name="p_apellido2_esposo" options="{'save_readonly':True}"/>
+                            <field name="p_lugar_nac_esposo" options="{'save_readonly':True}"/>
+                        </group>
+                        <group colspan="2" string="Datos de la madre">
+                            <field name="madre" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="m_nombre_esposo" options="{'save_readonly':True}"/>
+                            <field name="m_apellido1_esposo" options="{'save_readonly':True}"/>
+                            <field name="m_apellido2_esposo" options="{'save_readonly':True}"/>
+                            <field name="m_lugar_nac_esposo" options="{'save_readonly':True}"/>
+                        </group>
+                    </group>
+                </page>
+                <page string="Datos de la esposa" >
+                    <group colspan="4" col='4' string="Datos de la esposa">
+                        <field colspan="4" name="esposa" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                        <group colspan="2" >
+                            <field name="nombre_esposa" options="{'save_readonly':True}"/>
+                            <field name="apellido1_esposa" options="{'save_readonly':True}"/>
+                            <field name="apellido2_esposa" options="{'save_readonly':True}"/>
+                            <field name="profesion_esposa" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                        </group>
+                        <group colspan="2" >
+                            <field name="fecha_nac_esposa" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="lugar_nac1_esposa" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}"/>
+                            <field name="estado_civil_esposa"/>
+                            <!--field name="carnet_esposa" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}" colspan="4" /-->
+                            <field name="edad_esposa" attrs="{'invisible': [('partida_literal','==', True)]}" options="{'save_readonly':True}"/>
+                        </group>
+                        <field name="direccion_esposa" colspan="4" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                        
+                        <group colspan="4" col="4" string="Datos del bautismo" attrs="{'invisible': [('partida_literal','==', True)]}" >
+                            <group colspan="2" >
+                            <field name="no_b_esposa" />
+                            <field name="tomo_b_esposa" attrs="{'required': [('no_b_esposa','=',False)],'invisible': [('no_b_esposa','=', True)]}" options="{'save_readonly':True}"/>
+                            <field name="folio_b_esposa" attrs="{'required': [('no_b_esposa','=',False)],'invisible': [('no_b_esposa','=', True)]}" options="{'save_readonly':True}"/>
+                            <field name="numero_b_esposa" attrs="{'required': [('no_b_esposa','=',False)],'invisible': [('no_b_esposa','=', True)]}" options="{'save_readonly':True}"/>
+                            </group>
+
+                            <group colspan="2" >
+                            <field name="fecha_b_esposa" attrs="{'invisible': [('no_b_esposa','=', True)]}" options="{'save_readonly':True}"/>
+                            <field name="parroquia_b_esposa" attrs="{'required': [('no_b_esposa','=',False)],'invisible': [('no_b_esposa','=', True)]}" options="{'save_readonly':True}"/>
+                            <field name="parroquia_esposa_id" attrs="{'invisible': [('no_b_esposa','==', True)]}" placeholder='BUSCAR PARROQUIA EXISTENTE...' options="{'save_readonly':True}"/>  
+                            </group>
+                        </group>
+                    </group>
+                        
+                    <group colspan="4" col='4' attrs="{'invisible': [('partida_literal','==', True)]}">
+                        <group colspan="2" string="Datos del padre">
+                            <field name="padre_esposa" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="p_nombre_esposa" options="{'save_readonly':True}"/>
+                            <field name="p_apellido1_esposa" options="{'save_readonly':True}"/>
+                            <field name="p_apellido2_esposa" options="{'save_readonly':True}"/>
+                            <field name="p_lugar_nac1_esposa" options="{'save_readonly':True}"/>
+                        </group>
+                        <group colspan="2" string="Datos de la madre">
+                            <field name="madre_esposa" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="m_nombre_esposa" options="{'save_readonly':True}"/>
+                            <field name="m_apellido1_esposa" options="{'save_readonly':True}"/>
+                            <field name="m_apellido2_esposa" options="{'save_readonly':True}"/>
+                            <field name="m_lugar_nac1_esposa" options="{'save_readonly':True}"/>
+                        </group>    
+                    </group>
+                </page> 
+                <page string="Otros datos">
+                    <group string="Testigos" colspan="4" col='4' attrs="{'invisible': [('partida_literal','==', True)]}">
+                        <field name="sacra_testigo_ids" nolabel="1" options="{'save_readonly':True}"/>
+                    </group>
+                    
+                    <group colspan="4" col='4' attrs="{'invisible': [('partida_literal','==', True)]}">    
+                        <group colspan="2" string="Datos del padrino">  
+                            <field name="padrino" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="nombre_padrino" options="{'save_readonly':True}"/>
+                            <field name="apellido1_padrino" options="{'save_readonly':True}"/>
+                            <field name="apellido2_padrino" options="{'save_readonly':True}"/>
+                        </group>
+                        <group colspan="2" string="Datos de la madrina"> 
+                            <field name="madrina" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="nombre_madrina" options="{'save_readonly':True}"/>
+                            <field name="apellido1_madrina" options="{'save_readonly':True}"/>
+                            <field name="apellido2_madrina" options="{'save_readonly':True}"/>   
+                        </group>    
+                    </group>
+
+
+                    <group colspan="4" col='4' string="Datos del matrimonio">
+                        <group colspan="2">
+                        <field name="tomo1"/>
+                        <field name="folio"/>
+                        <field name="numero"/>
+                        <field name="fecha_matrimonio" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                        <field name="reg_entable" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                        </group> 
+                        <group colspan="2">
+                        <field name="encarga_arch" />
+                        <field name="ministro" />
+                        <field name="ministro_suple" attrs="{'invisible': [('ministro','=', False)]}"/>
+                        <field name="parroquia_id" attrs="{'invisible': [('es_parroquia','==', False)]}"/> 
+                        <field name="iglesia_id" attrs="{'invisible': [('es_parroquia','==', False)],'readonly': [('parroquia_id','=', False)]}"/>
+                        </group>
+                        <field name="nota" colspan="4"/>
+                    </group>
+                </page>  
+                <page string="Errores a enmendar">
+                    <field name="enmienda_error_ids" nolabel ="1" colspan="4" >
+                        <tree editable="top" string="Enmienda error">                   
+                            <field name="campo_partida" domain="[('model','=','sacra_matrimonio'),('modificable','=',True)]"/>
+                            <field name="deber_decir"/>                   
+                        </tree>
+                    </field>
+                </page>
+                <page string="Literal" attrs="{'invisible': [('partida_literal','==', False)]}"> 
+                    <group colspan="4" >
+                        <field name="literal_text2" nolabel= "1" colspan="4" widget="FieldText3">    </field> 
+                    </group>
+                </page>
+                <page string="Notas marginales">
+                    <field name="notas_marginales_ids" colspan="4" nolabel="1"/>
+                </page>
+                <page string="Imagen" >
+                    <group colspan="4" >
+                        <field name="literal" nolabel= "1" colspan="4" widget="image_show"/>
+                        <field name="literal1" nolabel= "1" colspan="4" widget="image_show"/>
+                    </group>
+                </page>
+                </notebook>
+            </sheet>    
+            </form>
+            </field>
+        </record>
+
+    <record id="view_sacra_matrimonio_graph_bar" model="ir.ui.view">
+    <field name="model">sacra_matrimonio</field>
+    <field name="arch" type="xml">
+        <graph type="bar" stacked="False" >
+            <field name="parroquia_id" />
+        </graph>
+    </field>
+    </record>   
+    
+        <record id="importar_matrimonio_view" model="ir.ui.view">
+            <field name="name">Importar</field>
+            <field name="model">importar_matrimonio</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Importar">
+                    <group colspan="4" col="4">
+                        <field name="archivo" filename="archivo_fname" colspan="4"/>
+                        <field name="archivo_fname" invisible="1" />
+                    </group>
+                    <separator colspan="6"/>
+                    <group colspan="4" col="4">
+                        <button special="cancel" string="Cancel" icon="gtk-cancel" colspan="2"/>
+                        <button name="make_import_file" string="Importar" type="object" icon="gtk-print" colspan="2" attrs="{'readonly':[('archivo','=','')]}"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_matrimonio_action">
+            <field name="name">Registro de matrimonios</field>
+            <field name="res_model">sacra_matrimonio</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="limit">20</field>
+        </record>
+
+        <record id="importar_matrimonio_action" model="ir.actions.act_window">
+            <field name="name">Importar</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">importar_matrimonio</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="importar_matrimonio_view"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</openerp>
+

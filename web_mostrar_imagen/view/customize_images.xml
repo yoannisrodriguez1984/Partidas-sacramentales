@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-extend="FieldBinaryImage">
+        <t t-jquery=".fa-pencil" t-operation="after">
+           <i id="mostrar" class="fa fa-expand fa-1g pull-center col-md-offset-2 oe_form_binary_file_mostrar" title="Mostrar"/>
+        </t>
+		<t t-jquery=".fa-trash-o" t-operation="replace">
+           <i class="fa fa-trash-o fa-1g pull-right col-md-offset-2 oe_form_binary_file_clear" title="Clear"/>
+        </t>
+    </t>
+</templates>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_persona_search">
+            <field name="name">sacra_persona_search</field>
+            <field name="model">sacra_persona</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Persona">
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                    <field name="lugar_nac1"/>
+                    <newline/>
+                    <field name="sexo"/>
+                    <field name="estado_civil"/>
+                    <field name="profesion"/>
+                    <field name="bautisado"/>
+                    <field name="clerigo"/>
+                    <field name="fecha_ini"/>
+                    <field name="fecha_fin"/>
+                    <newline/>
+                    <group expand="0" string="Agrupar por" >
+                    <filter name="sex" string="Sexo" icon="stock" domain="[]" context="{'group_by':'sexo'}"/>
+                    <filter name="est" string="Estado civil" icon="terp-personal+" domain="[]" context="{'group_by':'estado_civil'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_persona_tree">
+            <field name="name">sacra_persona_tree</field>
+            <field name="model">sacra_persona</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Persona">
+                    <field name="nombre"/>
+                        <field name="apellido1"/>
+                        <field name="apellido2"/>
+                        <field name="fecha_nac"/>
+                        <field name="lugar_nac1"/>
+                        <field name="nota"/>
+                        <field name="padre"/>
+                        <field name="madre"/>
+                        <field name="sexo"/>
+                        <field name="estado_civil"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_persona_form">
+            <field name="name">sacra_persona_form</field>
+            <field name="model">sacra_persona</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Persona">
+                    <group colspan="4" string="Datos generales">
+                        <field name="nombre" />
+                        <field name="apellido1"/>
+                        <field name="apellido2"/>
+                        <field name="fecha_nac"/>
+                        <field name="lugar_nac"/>
+                        <field name="lugar_nac1"/>
+                    </group>
+                    <group colspan="4" string="Otros datos">
+                        <field name="padre"/>
+                        <field name="madre"/>
+                        <field name="nota"/>
+                        <field name="mestizo"/>
+                        <field name="carnet" />
+                        <field name="sexo"/>
+                        <field name="direccion"/>
+                        <field name="estado_civil"/>
+                        <field name="profesion"/>
+                    </group>
+                    <group colspan="4" string="Datos de los sacramentos">
+                        <field name="clerigo"/>
+                        <field name="secre_canciller"/>
+                        <!--field name="reg_bautismo" />
+                        <field name="bautisado"/>
+                        <field name="reg_matrimonio" /-->
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_persona_action">
+            <field name="name">Personas</field>
+            <field name="res_model">sacra_persona</field>
+            <field name="limit">20</field>
+        </record>
+
+    </data>
+</openerp>
+

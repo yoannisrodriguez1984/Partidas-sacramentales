@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_config_bd,access_config_bd,model_config_bd,group_carga_admin,1,1,1,1
+access_mostrar_info_proceso,access_mostrar_info_proceso,model_mostrar_info_proceso,group_carga_admin,1,1,1,1
+access_wizard_import_data,access_wizard_import_data,model_wizard_import_data,group_carga_admin,1,1,1,1

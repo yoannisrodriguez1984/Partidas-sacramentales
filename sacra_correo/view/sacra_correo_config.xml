@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_correo_config_tree">
+            <field name="name">sacra_correo_config_tree</field>
+            <field name="model">sacra_correo_config</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Configuración de correo">
+                    <field name="conf_parroquia" />
+                    <field name="conf_iglesia" />
+                    <field name="parroquia_id" />
+                    <field name="iglesia_id" />
+                    <field name="correo" />
+                    <field name="realiz_solic" />
+                    <field name="responde_solic" />
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sacra_correo_config_form">
+            <field name="name">sacra_correo_config_form</field>
+            <field name="model">sacra_correo_config</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Configuración de correo">
+				    <field name="conf_parroquia" colspan="2"/>
+                    <field name="conf_iglesia" colspan="2"/><newline/>
+                    <field name="parroquia_id" colspan="2" attrs="{'invisible': [('conf_parroquia','=', False)],'required': [('conf_parroquia','=', True)]}"/>
+                    <field name="iglesia_id" colspan="2" attrs="{'invisible': [('conf_iglesia','=', False)],'required': [('conf_iglesia','=', True)]}"/><newline/>
+                    <field name="correo" colspan="4"/>
+                    <field name="realiz_solic" colspan="2"/>
+                    <field name="responde_solic" colspan="2"/>
+                </form>
+            </field>
+        </record>		
+		
+		<record model="ir.ui.view" id="sacra_correo_config_search">
+            <field name="name">sacra_correo_config_search</field>
+            <field name="model">sacra_correo_config</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="">
+                    <field name="conf_parroquia"/>
+                    <field name="conf_iglesia"/>
+                    <field name="parroquia_id"/>
+                    <field name="iglesia_id"/>
+                    <field name="correo"/>
+                    <field name="realiz_solic"/>
+                    <field name="responde_solic"/>
+                </search>
+            </field>
+        </record>
+		
+		<record model="ir.actions.act_window" id="sacra_correo_config_action">
+            <field name="name">Correos</field>
+            <field name="res_model">sacra_correo_config</field>
+            <field name="limit">20</field>
+        </record>	
+    </data>
+</openerp>

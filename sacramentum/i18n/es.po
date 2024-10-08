@@ -1,0 +1,4460 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* sacramentum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1-1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-04 12:19+0000\n"
+"PO-Revision-Date: 2017-11-04 12:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "SOLICITUD DE BAUTISMO"
+msgstr "SOLICITUD DE BAUTISMO"
+
+#. module: sacramentum
+#: field:sacra_bautismo,p_m_persona:0
+#: field:sacra_bautismo,p_p_persona:0
+#: field:sacra_entable,p_m_persona:0
+#: field:sacra_entable,p_p_persona:0
+#: field:sacra_solicit_bautismo,p_m_persona:0
+#: field:sacra_solicit_bautismo,p_p_persona:0
+msgid "Datos del Abuelo"
+msgstr "Datos del Abuelo"
+
+#. module: sacramentum
+#: report:certificacion_literal_defun:0
+msgid "(ninguna)"
+msgstr "(ninguna)"
+
+#. module: sacramentum
+#: sql_constraint:orden_sacerdotal:0
+msgid "El nombre de la orden sacerdotal está en uso"
+msgstr "El nombre de la orden sacerdotal está en uso"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Carné de Identidad a nombre de"
+msgstr "Carné de Identidad a nombre de"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Que, habiendo solicitado al Encargado del Archivo Parroquial de:"
+msgstr "Que, habiendo solicitado al Encargado del Archivo Parroquial de:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "todos mayores de edad."
+msgstr "todos mayores de edad."
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Celebró:"
+msgstr "Celebró:"
+
+#. module: sacramentum
+#: view:sacra_notas_marginales:0
+msgid "Datos nota marginal"
+msgstr "Datos nota marginal"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "................................................................................................................"
+msgstr "................................................................................................................"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+#: report:decreto_enmienda:0
+#: report:partida_bautismo:0
+msgid "....."
+msgstr "....."
+
+#. module: sacramentum
+#: field:enmienda_error,deber_decir:0
+msgid "Debe decir"
+msgstr "Debe decir"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "DECRETO"
+msgstr "DECRETO"
+
+#. module: sacramentum
+#: field:orden_sacerdotal,nombre:0
+#: field:sacra_est_civil,nombre:0
+#: field:sacra_mestizaje,nombre:0
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+#: view:sacra_indice:0
+#: field:sacra_indice,libro:0
+msgid "Libro"
+msgstr "Libro"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "Doy fe"
+msgstr "Doy fe"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Yo, Presbístero"
+msgstr "Yo, Presbístero"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.defunciones_item_menu
+msgid "Defunciones"
+msgstr "Defunciones"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+#: view:sacra_entable:0
+msgid "Datos del solicitante"
+msgstr "Datos del solicitante"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "Archidiócesis de"
+msgstr "Archidiócesis de"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "con C. identidad no."
+msgstr "con C. identidad no."
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "Por mandato de S. S. Ilma."
+msgstr "Por mandato de S. S. Ilma."
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Datos del esposa"
+msgstr "Datos del esposa"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,entablar_reg_act:0
+msgid "Especifica si los entables que se aprueben se registran en este archivo."
+msgstr "Especifica si los entables que se aprueben se registran en este archivo."
+
+#. module: sacramentum
+#: field:sacra_enmienda,nombre_completo:0
+msgid "Nombre persona"
+msgstr "Nombre persona"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "RESULTANDO:"
+msgstr "RESULTANDO:"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "El Ilmo. Sr. Provisor del Arzobispado con fecha"
+msgstr "El Ilmo. Sr. Provisor del Arzobispado con fecha"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid ", Arzobispo de"
+msgstr ", Arzobispo de"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,municipio:0
+msgid "Municipio"
+msgstr "Municipio"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Datos del esposo"
+msgstr "Datos del esposo"
+
+#. module: sacramentum
+#: field:sacra_bautismo,m_m_persona:0
+#: field:sacra_bautismo,m_p_persona:0
+#: field:sacra_entable,m_m_persona:0
+#: field:sacra_entable,m_p_persona:0
+#: field:sacra_solicit_bautismo,m_m_persona:0
+#: field:sacra_solicit_bautismo,m_p_persona:0
+msgid "Datos de la Abuela"
+msgstr "Datos de la Abuela"
+
+#. module: sacramentum
+#: view:sel_vic_actv:0
+msgid "Imprimir"
+msgstr "Imprimir"
+
+#. module: sacramentum
+#: field:sacra_defuncion,persona_id:0
+msgid "Persona fallecida"
+msgstr "Persona fallecida"
+
+#. module: sacramentum
+#: field:sacra_bautismo,madrina_persona:0
+#: field:sacra_entable,madrina_persona:0
+#: view:sacra_matrimonio:0
+#: field:sacra_solicit_bautismo,madrina_persona:0
+msgid "Datos de la madrina"
+msgstr "Datos de la madrina"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_solicit_enm:0
+#: field:sacra_bautismo,tomo:0
+#: field:sacra_defuncion,tomo:0
+#: field:sacra_enmienda,pd_tomo:0
+#: field:sacra_enmienda,tomo:0
+#: field:sacra_entable,tomo:0
+#: field:sacra_indice,tomo:0
+#: field:sacra_matrimonio,tomo:0
+#: field:sacra_matrimonio,tomo_b_esposa:0
+#: field:sacra_matrimonio,tomo_b_esposo:0
+#: report:solicitud_enmienda:0
+msgid "Tomo"
+msgstr "Tomo"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Anular"
+msgstr "Anular"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: field:sacra_entable,bautismo_id:0
+#: field:sacra_indice,bautismo_id:0
+#: selection:sacra_indice,sacra_reg:0
+#: selection:sacra_indice,sacramento:0
+#: field:sacra_notas_marginales,bautismo_id:0
+msgid "Bautismo"
+msgstr "Bautismo"
+
+#. module: sacramentum
+#: field:sacra_entable,p_m_nombre_completo:0
+#: field:sacra_entable,p_p_nombre_completo:0
+msgid "Nombre del abuelo"
+msgstr "Nombre del abuelo"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Está seguro de que desea realizar esta operación?"
+msgstr "Está seguro de que desea realizar esta operación?"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+msgid "En la ciudad de"
+msgstr "En la ciudad de"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "No."
+msgstr "No."
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Solicito, ya que la persona titular del certificado"
+msgstr "Solicito, ya que la persona titular del certificado"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,imagen:0
+#: field:sacra_encabezado,imagen:0
+msgid "Imagen del logo"
+msgstr "Imagen del logo"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "supradicha partida de"
+msgstr "supradicha partida de"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,auto_defun_note:0
+msgid "Notas de defunción automática"
+msgstr "Notas de defunción automática"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Y para entregar a la parte interesada, \"a los efectos canónicos y sin perjuicio de terceros\", expido la presente en:"
+msgstr "Y para entregar a la parte interesada, \"a los efectos canónicos y sin perjuicio de terceros\", expido la presente en:"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "CERTIFICADO DE PARTIDA DE BAUTISMO"
+msgstr "CERTIFICADO DE PARTIDA DE BAUTISMO"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_mestizaje
+#: field:sacra_bautismo,mestizo:0
+#: view:sacra_mestizaje:0
+msgid "Mestizaje"
+msgstr "Mestizaje"
+
+#. module: sacramentum
+#: help:sacra_bautismo,buscar_exter:0
+msgid "Realizar búsqueda externa si no encuentra ningún registro"
+msgstr "Realizar búsqueda externa si no encuentra ningún registro"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "SE DECLARA CON LUGAR"
+msgstr "SE DECLARA CON LUGAR"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "............"
+msgstr "............"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Bajo juramento o promesa de decir la verdad, que prestó ante mí, declara:"
+msgstr "Bajo juramento o promesa de decir la verdad, que prestó ante mí, declara:"
+
+#. module: sacramentum
+#: field:sacra_encabezado,largo:0
+#: field:sacra_iglesia,largo:0
+msgid "Largo de la imagen(pixeles)"
+msgstr "Largo de la imagen(pixeles)"
+
+#. module: sacramentum
+#: field:sacra_encabezado,img:0
+msgid "Encabezado imagen"
+msgstr "Encabezado imagen"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "y dirección en"
+msgstr "y dirección en"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_notificacion_matrimonio
+msgid "Notificación de matrimonio"
+msgstr "Notificación de matrimonio"
+
+#. module: sacramentum
+#: field:sacra_enmienda,baut_id:0
+msgid "Partida de bautismo"
+msgstr "Partida de bautismo"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Ref. Exp."
+msgstr "Ref. Exp."
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_testigos:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "el"
+msgstr "el"
+
+#. module: sacramentum
+#: field:sacra_entable,nombre_completo_testigo2:0
+msgid "Nombre del testigo2"
+msgstr "Nombre del testigo2"
+
+#. module: sacramentum
+#: field:sacra_entable,nombre_completo_testigo1:0
+msgid "Nombre del testigo1"
+msgstr "Nombre del testigo1"
+
+#. module: sacramentum
+#: field:sacra_enmienda,num_rego:0
+#: field:sacra_entable,num_rego:0
+#: report:solicitud_entable:0
+msgid "Reg. Ofc. No."
+msgstr "Reg. Ofc. No."
+
+#. module: sacramentum
+#: help:sacra_entable,parroquia:0
+msgid "Parroquia donde se efectuó el sacramento"
+msgstr "Parroquia donde se efectuó el sacramento"
+
+#. module: sacramentum
+#: report:notificacion_matrimonio:0
+msgid "en esa parroquia en fecha:"
+msgstr "en esa parroquia en fecha:"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: model:ir.model,name:sacramentum.model_sacra_notas_marginales
+#: view:sacra_bautismo:0
+#: field:sacra_bautismo,notas_marginales_ids:0
+#: field:sacra_enmienda,notas_marginales:0
+#: view:sacra_matrimonio:0
+#: field:sacra_matrimonio,notas_marginales_ids:0
+#: report:solicitud_enmienda:0
+msgid "Notas marginales"
+msgstr "Notas marginales"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,secretaria:0
+msgid "Secretaria de la cancillería"
+msgstr "Secretaria de la cancillería"
+
+#. module: sacramentum
+#: field:sacra_entable,p_nombre_completo:0
+msgid "Nombre del padre bautizado"
+msgstr "Nombre del padre bautizado"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "Fueron sus padrinos:"
+msgstr "Fueron sus padrinos:"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "de esta Parroquia por"
+msgstr "de esta Parroquia por"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:decreto_enmienda:0
+#: report:mandamiento_ent:0
+msgid "..................."
+msgstr "..................."
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "vengo"
+msgstr "vengo"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Con:"
+msgstr "Con:"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,llenar_testigos:0
+msgid "Para permitir tener mas de dos testigo?"
+msgstr "Para permitir tener mas de dos testigo?"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "CERTIFICADO DE DEFUNCIÓN"
+msgstr "CERTIFICADO DE DEFUNCIÓN"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Testigo compareciente:"
+msgstr "Testigo compareciente:"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.matrimonios_item_menu
+msgid "Matrimonios"
+msgstr "Matrimonios"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Notas:"
+msgstr "Notas:"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "Canciller Notario Eclesiástico"
+msgstr "Canciller Notario Eclesiástico"
+
+#. module: sacramentum
+#: field:sacra_entable,padrino_nombre_completo:0
+msgid "Nombre del padrino"
+msgstr "Nombre del padrino"
+
+#. module: sacramentum
+#: field:sacra_parroquia,municipio:0
+msgid "Municipio o cuidad"
+msgstr "Municipio o cuidad"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "a dictado con fecha"
+msgstr "a dictado con fecha"
+
+#. module: sacramentum
+#: field:sacra_defuncion,padre:0
+#: field:sacra_matrimonio,padre_esposa:0
+#: field:sacra_matrimonio,padre_esposo:0
+#: field:sacra_persona,padre:0
+msgid "Padre"
+msgstr "Padre"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Padrino:"
+msgstr "Padrino:"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "NOMBRES Y APELLIDOS DE:"
+msgstr "NOMBRES Y APELLIDOS DE:"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_solicitud_enmienda
+#: model:ir.model,name:sacramentum.model_sacra_enmienda
+msgid "Solicitud de enmienda"
+msgstr "Solicitud de enmienda"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Datos del bautismo"
+msgstr "Datos del bautismo"
+
+#. module: sacramentum
+#: view:ir.model.fields:0
+msgid "Properties"
+msgstr "Propiedades"
+
+#. module: sacramentum
+#: field:sacra_bautismo,m_nombre:0
+#: field:sacra_bautismo,nombre:0
+#: field:sacra_bautismo,p_nombre:0
+#: field:sacra_confirmacion,nombre:0
+#: field:sacra_defuncion,m_nombre:0
+#: field:sacra_defuncion,nombre:0
+#: field:sacra_defuncion,p_nombre:0
+#: field:sacra_enmienda,nombre:0
+#: field:sacra_entable,m_nombre:0
+#: field:sacra_entable,nombre:0
+#: field:sacra_entable,nombre_testigo1:0
+#: field:sacra_entable,nombre_testigo2:0
+#: field:sacra_entable,p_nombre:0
+#: field:sacra_indice,nombre:0
+#: field:sacra_matrimonio,m_nombre_esposa:0
+#: field:sacra_matrimonio,m_nombre_esposo:0
+#: field:sacra_matrimonio,nombre_esposa:0
+#: field:sacra_matrimonio,nombre_esposo:0
+#: field:sacra_matrimonio,nombre_madrina:0
+#: field:sacra_matrimonio,nombre_padrino:0
+#: field:sacra_matrimonio,nombre_testigo1:0
+#: field:sacra_matrimonio,nombre_testigo2:0
+#: field:sacra_matrimonio,p_nombre_esposa:0
+#: field:sacra_matrimonio,p_nombre_esposo:0
+#: field:sacra_parrocos,nombre:0
+#: field:sacra_persona,nombre:0
+#: field:sacra_solicit_bautismo,m_nombre:0
+#: field:sacra_solicit_bautismo,nombre:0
+#: field:sacra_solicit_bautismo,p_nombre:0
+msgid "Nombre(s)"
+msgstr "Nombre(s)"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid ", fue bautizad"
+msgstr ", fue bautizad"
+
+#. module: sacramentum
+#: field:sacra_bautismo,literal:0
+#: field:sacra_bautismo,sacra_imagen_id:0
+#: field:sacra_confirmacion,literal:0
+#: field:sacra_confirmacion,literal1:0
+#: field:sacra_confirmacion,sacra_imagen_id:0
+#: field:sacra_confirmacion,sacra_imagen_id1:0
+#: field:sacra_defuncion,literal:0
+#: field:sacra_defuncion,literal1:0
+#: field:sacra_defuncion,sacra_imagen_id:0
+#: field:sacra_defuncion,sacra_imagen_id1:0
+#: field:sacra_matrimonio,literal:0
+#: field:sacra_matrimonio,literal1:0
+#: field:sacra_matrimonio,sacra_imagen_id:0
+#: field:sacra_matrimonio,sacra_imagen_id1:0
+msgid "Imagen del registro"
+msgstr "Imagen del registro"
+
+#. module: sacramentum
+#: field:sacra_entable,m_nombre_completo:0
+msgid "Nombre de la madre bautizado"
+msgstr "Nombre de la madre bautizado"
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+msgid "Datos del fallecido"
+msgstr "Datos del fallecido"
+
+#. module: sacramentum
+#: view:sacra_notas_marginales:0
+#: field:sacra_notas_marginales,nota:0
+msgid "Nota marginal"
+msgstr "Nota marginal"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,marca_agua:0
+msgid "Mostrar marca de agua en los reportes"
+msgstr "Mostrar marca de agua en los reportes"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+msgid ", Cuba; a los"
+msgstr ", Cuba; a los"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "SOLICITUD DE ENMIENDA EN PARTIDAS SACRAMENTALES"
+msgstr "SOLICITUD DE ENMIENDA EN PARTIDAS SACRAMENTALES"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Bautizado: Si"
+msgstr "Bautizado: Si"
+
+#. module: sacramentum
+#: field:sacra_bautismo,apellido1:0
+#: field:sacra_bautismo,m_apellido1:0
+#: field:sacra_bautismo,p_apellido1:0
+#: field:sacra_confirmacion,apellido1:0
+#: field:sacra_defuncion,apellido1:0
+#: field:sacra_defuncion,m_apellido1:0
+#: field:sacra_defuncion,p_apellido1:0
+#: field:sacra_enmienda,apellido1:0
+#: field:sacra_entable,apellido1:0
+#: field:sacra_entable,apellido1_testigo1:0
+#: field:sacra_entable,apellido1_testigo2:0
+#: field:sacra_entable,m_apellido1:0
+#: field:sacra_entable,p_apellido1:0
+#: field:sacra_indice,apellido1:0
+#: field:sacra_matrimonio,apellido1_esposa:0
+#: field:sacra_matrimonio,apellido1_esposo:0
+#: field:sacra_matrimonio,apellido1_madrina:0
+#: field:sacra_matrimonio,apellido1_padrino:0
+#: field:sacra_matrimonio,apellido1_testigo1:0
+#: field:sacra_matrimonio,apellido1_testigo2:0
+#: field:sacra_matrimonio,m_apellido1_esposa:0
+#: field:sacra_matrimonio,m_apellido1_esposo:0
+#: field:sacra_matrimonio,p_apellido1_esposa:0
+#: field:sacra_matrimonio,p_apellido1_esposo:0
+#: field:sacra_parrocos,apellido1:0
+#: field:sacra_persona,apellido1:0
+#: field:sacra_solicit_bautismo,apellido1:0
+#: field:sacra_solicit_bautismo,m_apellido1:0
+#: field:sacra_solicit_bautismo,p_apellido1:0
+msgid "1er apellido"
+msgstr "1er apellido"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "y por la materna"
+msgstr "y por la materna"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,logo:0
+msgid "Introducir logotipo"
+msgstr "Introducir logotipo"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid ", y facilito todas las pruebas necesarias para el trámite. Así mismo se que todo lo pedido es"
+msgstr ", y facilito todas las pruebas necesarias para el trámite. Así mismo se que todo lo pedido es"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "abuelos por"
+msgstr "abuelos por"
+
+#. module: sacramentum
+#: field:sacra_defuncion,edad:0
+msgid "Edad a la que fallece"
+msgstr "Edad a la que fallece"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "haga constar"
+msgstr "haga constar"
+
+#. module: sacramentum
+#: field:sacra_bautismo,ministro_suple:0
+#: field:sacra_confirmacion,ministro_suple:0
+#: field:sacra_defuncion,ministro_suple:0
+#: field:sacra_entable,ministro_suple:0
+#: field:sacra_matrimonio,ministro_suple:0
+msgid "Ministro suplente"
+msgstr "Ministro suplente"
+
+#. module: sacramentum
+#: field:sacra_defuncion,causa_muerte:0
+msgid "Causa de muerte"
+msgstr "Causa de muerte"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "interesad"
+msgstr "interesad"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,edad_esposo:0
+msgid "Edad del esposo"
+msgstr "Edad del esposo"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+msgid "a solicitar la Enmienda del Certificado de"
+msgstr "a solicitar la Enmienda del Certificado de"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Solicitado el"
+msgstr "Solicitado el"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+msgid "Rango por fecha de bautismo"
+msgstr "Rango por fecha de bautismo"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Padrinos:"
+msgstr "Padrinos:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "vecina de"
+msgstr "vecina de"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid ", de la ciudad"
+msgstr ", de la ciudad"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_decreto_enmienda
+msgid "Decreto de enmienda"
+msgstr "Decreto de enmienda"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Canciller Notario:"
+msgstr "Canciller Notario:"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:certificado_defuncion:0
+#: report:notificacion_matrimonio:0
+#: report:partida_bautismo:0
+msgid "de:"
+msgstr "de:"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+msgid "Datos iniciales"
+msgstr "Datos iniciales"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+#: field:sacra_matrimonio,sacra_testigo_ids:0
+#: field:sacra_matrimonio,str_testigos:0
+msgid "Testigos"
+msgstr "Testigos"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Declaración de testigos"
+msgstr "Declaración de testigos"
+
+#. module: sacramentum
+#: view:sacra_persona:0
+msgid "Datos generales"
+msgstr "Datos generales"
+
+#. module: sacramentum
+#: field:sacra_encabezado,datos_parroquia_id:0
+msgid "Configuración a la que pertenece"
+msgstr "Configuración a la que pertenece"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_importar_defuncion
+msgid "Importar defunciones"
+msgstr "Importar defunciones"
+
+#. module: sacramentum
+#: field:sacra_bautismo,m_lugar_nac:0
+#: field:sacra_bautismo,p_lugar_nac:0
+#: field:sacra_enmienda,cuidad:0
+#: field:sacra_entable,m_lugar_nac:0
+#: field:sacra_entable,p_lugar_nac:0
+#: field:sacra_matrimonio,m_lugar_nac_esposa:0
+#: field:sacra_matrimonio,m_lugar_nac_esposo:0
+#: field:sacra_matrimonio,p_lugar_nac_esposa:0
+#: field:sacra_matrimonio,p_lugar_nac_esposo:0
+#: field:sacra_solicit_bautismo,m_lugar_nac:0
+#: field:sacra_solicit_bautismo,p_lugar_nac:0
+msgid "Natural de"
+msgstr "Natural de"
+
+#. module: sacramentum
+#: field:sacra_enmienda,fecha_aprobacion:0
+#: field:sacra_entable,fecha_aprobacion:0
+msgid "Fecha de aprobación"
+msgstr "Fecha de aprobación"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.menu_df_users_list2
+msgid "Usuarios"
+msgstr "Usuarios"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid ", Vicario del Excmo."
+msgstr ", Vicario del Excmo."
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+#: field:sacra_datos_parroquia,sacra_encabezado_ids:0
+msgid "Encabezados"
+msgstr "Encabezados"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "AL EXCMO. Y RVDMO. SR. ARZOBISPO DE"
+msgstr "AL EXCMO. Y RVDMO. SR. ARZOBISPO DE"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Madre:"
+msgstr "Madre:"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "F"
+msgstr "F"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Sr"
+msgstr "Sr"
+
+#. module: sacramentum
+#: selection:sacra_entable,state:0
+msgid "Solicitado"
+msgstr "Solicitado"
+
+#. module: sacramentum
+#: sql_constraint:sacra_parrocos:0
+msgid "Los párrocos no se pueden repetir"
+msgstr "Los párrocos no se pueden repetir"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,auto_enmendar:0
+msgid "Enmendar automáticamente"
+msgstr "Enmendar automáticamente"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,text_pliter:0
+msgid "Espacio del texto en la partida literal"
+msgstr "Espacio del texto en la partida literal"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "NOMBRES Y APELLIDOS DE LOS PADRINOS:"
+msgstr "NOMBRES Y APELLIDOS DE LOS PADRINOS:"
+
+#. module: sacramentum
+#: help:sacra_confirmacion,partida_literal:0
+msgid "Registrar confirmación a partir de la descripción literal."
+msgstr "Registrar confirmación a partir de la descripción literal."
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Certificación"
+msgstr "Certificación"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_importar_bautismo
+msgid "Importar bautismos"
+msgstr "Importar bautismos"
+
+#. module: sacramentum
+#: sql_constraint:sacra_testigo:0
+msgid "Este testigo ya está asociado a este matrimonio"
+msgstr "Este testigo ya está asociado a este matrimonio"
+
+#. module: sacramentum
+#: field:sacra_confirmacion,testigo:0
+msgid "Nombre del testigo"
+msgstr "Nombre del testigo"
+
+#. module: sacramentum
+#: field:sacra_iglesia,nombre:0
+msgid "Nombre de la iglesia"
+msgstr "Nombre de la iglesia"
+
+#. module: sacramentum
+#: field:sacra_entable,testigo1:0
+#: field:sacra_matrimonio,testigo1:0
+msgid "Testigo1"
+msgstr "Testigo1"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_importar_matrimonio
+msgid "Importar matrimonios"
+msgstr "Importar matrimonios"
+
+#. module: sacramentum
+#: field:sacra_entable,testigo2:0
+#: field:sacra_matrimonio,testigo2:0
+msgid "Testigo2"
+msgstr "Testigo2"
+
+#. module: sacramentum
+#: field:sacra_bautismo,arch_centr:0
+#: field:sacra_confirmacion,arch_centr:0
+#: field:sacra_defuncion,arch_centr:0
+#: field:sacra_matrimonio,arch_centr:0
+msgid "Archivo central"
+msgstr "Archivo central"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Rgtro. Of. Libro No."
+msgstr "Rgtro. Of. Libro No."
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Datos del segundo testigo"
+msgstr "Datos del segundo testigo"
+
+#. module: sacramentum
+#: field:sacra_indice,matrimonio_id:0
+#: selection:sacra_indice,sacra_reg:0
+#: selection:sacra_indice,sacramento:0
+#: view:sacra_matrimonio:0
+#: field:sacra_notas_marginales,matrimonio_id:0
+#: field:sacra_testigo,matrimonio_id:0
+msgid "Matrimonio"
+msgstr "Matrimonio"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "del"
+msgstr "del"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid ", para que en virtud de este mandato y con la cláusula"
+msgstr ", para que en virtud de este mandato y con la cláusula"
+
+#. module: sacramentum
+#: selection:sacra_enmienda,state:0
+msgid "Cancelada"
+msgstr "Cancelada"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "Pbro."
+msgstr "Pbro."
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "correspondiente a"
+msgstr "correspondiente a"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid ", obrante al"
+msgstr ", obrante al"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "se advierten los errores siguientes:"
+msgstr "se advierten los errores siguientes:"
+
+#. module: sacramentum
+#: field:sacra_bautismo,fecha_baut:0
+#: field:sacra_solicit_bautismo,fecha_baut:0
+msgid "Fecha del bautismo"
+msgstr "Fecha del bautismo"
+
+#. module: sacramentum
+#: field:sacra_encabezado,alineacion:0
+msgid "Alineación"
+msgstr "Alineación"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+#: report:solicitud_bautismo:0
+msgid "Natural de:"
+msgstr "Natural de:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "CERTIFICADO MATRIMONIAL"
+msgstr "CERTIFICADO MATRIMONIAL"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "AUTO del Rvdmo."
+msgstr "AUTO del Rvdmo."
+
+#. module: sacramentum
+#: selection:sacra_enmienda,state:0
+#: selection:sacra_solicit_bautismo,state:0
+msgid "Solicitada"
+msgstr "Solicitada"
+
+#. module: sacramentum
+#: help:sacra_enmienda,parroquia:0
+msgid "Parroquia donde está el registro"
+msgstr "Parroquia donde está el registro"
+
+#. module: sacramentum
+#: field:sacra_enmienda,certificacion:0
+msgid "Certificación de"
+msgstr "Certificación de"
+
+#. module: sacramentum
+#: field:sacra_enmienda,carnet_pd:0
+msgid "Carné de identidad a nombre de"
+msgstr "Carné de identidad a nombre de"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: field:sacra_enmienda,ha_fallecido:0
+#: field:sacra_entable,ha_fallecido:0
+msgid "Ha fallecido"
+msgstr "Ha fallecido"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid ", y Rvdmo. Monseñor"
+msgstr ", y Rvdmo. Monseñor"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,parroquia_b_esposa:0
+#: field:sacra_matrimonio,parroquia_b_esposo:0
+msgid "Parroquia del bautismo"
+msgstr "Parroquia del bautismo"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "CERTIFICACIÓN LITERAL DE PARTIDA"
+msgstr "CERTIFICACIÓN LITERAL DE PARTIDA"
+
+#. module: sacramentum
+#: field:sacra_confirmacion,partida_literal:0
+msgid "Confirmación literal?"
+msgstr "Confirmación literal?"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Dirección:"
+msgstr "Dirección:"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Datos de la esposa"
+msgstr "Datos de la esposa"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", por el ministro"
+msgstr ", por el ministro"
+
+#. module: sacramentum
+#: sql_constraint:sacra_indice:0
+msgid "Ya existe este registro"
+msgstr "Ya existe este registro"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Causa de la muerte:"
+msgstr "Causa de la muerte:"
+
+#. module: sacramentum
+#: view:sacra_confirmacion:0
+msgid "Datos de la confirmación"
+msgstr "Datos de la confirmación"
+
+#. module: sacramentum
+#: field:enmienda_error,bautismo_id:0
+#: model:ir.model,name:sacramentum.model_sacra_bautismo
+#: field:sacra_persona,reg_bautismo:0
+msgid "Registro de bautismo"
+msgstr "Registro de bautismo"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,archivo_central:0
+msgid "Archivo histórico?"
+msgstr "Archivo histórico?"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: field:sacra_bautismo,numero:0
+#: field:sacra_defuncion,numero:0
+#: field:sacra_enmienda,carnet_num:0
+#: field:sacra_enmienda,numero:0
+#: field:sacra_enmienda,pasaporte_num:0
+#: field:sacra_enmienda,pd_numero:0
+#: field:sacra_entable,numero:0
+#: view:sacra_indice:0
+#: field:sacra_indice,numero:0
+#: field:sacra_matrimonio,numero:0
+#: field:sacra_matrimonio,numero_b_esposa:0
+#: field:sacra_matrimonio,numero_b_esposo:0
+#: report:solicitud_enmienda:0
+msgid "Número"
+msgstr "Número"
+
+#. module: sacramentum
+#: sql_constraint:sacra_persona:0
+msgid "Persona repetida!"
+msgstr "Persona repetida!"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_certificado_matrimonio
+msgid "Certificación no literal de matrimonio"
+msgstr "Certificación no literal de matrimonio"
+
+#. module: sacramentum
+#: sql_constraint:sacra_matrimonio:0
+msgid "El registro del matrimonio es único"
+msgstr "El registro del matrimonio es único"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Registro afectado"
+msgstr "Registro afectado"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_testigos:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "a"
+msgstr "a"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: field:sacra_bautismo,m_persona:0
+#: view:sacra_defuncion:0
+#: view:sacra_entable:0
+#: field:sacra_entable,m_persona:0
+#: view:sacra_matrimonio:0
+#: view:sacra_solicit_bautismo:0
+#: field:sacra_solicit_bautismo,m_persona:0
+msgid "Datos de la madre"
+msgstr "Datos de la madre"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "bautizad"
+msgstr "bautizad"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_indice_action
+msgid "Índice de Registros"
+msgstr "Índice de Registros"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,ubicacion:0
+msgid "Ubicación"
+msgstr "Ubicación"
+
+#. module: sacramentum
+#: field:sacra_enmienda,incapacitado:0
+#: field:sacra_entable,incapacitado:0
+msgid "Está incapacitado(a)"
+msgstr "Está incapacitado(a)"
+
+#. module: sacramentum
+#: field:ir.model.fields,modificable:0
+msgid "Es modificable"
+msgstr "Es modificable"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,contacto:0
+msgid "Datos de contacto"
+msgstr "Datos de contacto"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "Hará constar que procede en virtud de este Decreto, dado en conformidad con el expediente formado al efecto."
+msgstr "Hará constar que procede en virtud de este Decreto, dado en conformidad con el expediente formado al efecto."
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "de la parroquia"
+msgstr "de la parroquia"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "en esta parroquia, por el sacerdote"
+msgstr "en esta parroquia, por el sacerdote"
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+msgid "Opciones de los reporte"
+msgstr "Opciones de los reporte"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.confirmaciones_item_menu
+msgid "Confirmaciones"
+msgstr "Confirmaciones"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:certificado_matrimonio:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "naturales de"
+msgstr "naturales de"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Provincia:"
+msgstr "Provincia:"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "Certifico"
+msgstr "Certifico"
+
+#. module: sacramentum
+#: selection:sacra_matrimonio,state:0
+msgid "Vigente"
+msgstr "Vigente"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Madrina:"
+msgstr "Madrina:"
+
+#. module: sacramentum
+#: help:sacra_solicit_bautismo,persona_baut:0
+msgid "Buscar persona que ya existe en el archivo, en caso contrario i"
+msgstr "Buscar persona que ya existe en el archivo, en caso contrario i"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "bien acusar recibo, firmando y devolviendo esta notificación."
+msgstr "bien acusar recibo, firmando y devolviendo esta notificación."
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid ", el AUTO, cuya parte dispositiva"
+msgstr ", el AUTO, cuya parte dispositiva"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_imagen
+msgid "Imágenes de los registro"
+msgstr "Imágenes de los registro"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "se le hace saber que el Rvdmo."
+msgstr "se le hace saber que el Rvdmo."
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "haga constar:"
+msgstr "haga constar:"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "nació en"
+msgstr "nació en"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: field:sacra_bautismo,reg_entable:0
+#: view:sacra_matrimonio:0
+#: field:sacra_matrimonio,reg_entable:0
+msgid "Registrado por entable"
+msgstr "Registrado por entable"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:certificado_matrimonio:0
+#: report:constancia_enmienda:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid ","
+msgstr ","
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+msgid "Datos de la defunción"
+msgstr "Datos de la defunción"
+
+#. module: sacramentum
+#: field:sacra_defuncion,fecha_fallecimiento:0
+msgid "Fecha de fallecimiento"
+msgstr "Fecha de fallecimiento"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "NOMBRES Y APELLIDOS DE ABUELOS MATERNOS:"
+msgstr "NOMBRES Y APELLIDOS DE ABUELOS MATERNOS:"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:certificado_defuncion:0
+#: report:notificacion_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Hij"
+msgstr "Hij"
+
+#. module: sacramentum
+#: field:enmienda_error,defuncion_id:0
+msgid "Registro de defuncion"
+msgstr "Registro de defuncion"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+msgid "Acciones"
+msgstr "Acciones"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:partida_bautismo:0
+msgid "y de:"
+msgstr "y de:"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "transcribo como sigue:"
+msgstr "transcribo como sigue:"
+
+#. module: sacramentum
+#: field:sacra_iglesia,sacra_parroquia_id:0
+msgid "Parroquia a la que pertenece"
+msgstr "Parroquia a la que pertenece"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_constancia_enmienda
+msgid "Constancia de enmienda"
+msgstr "Constancia de enmienda"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Abuelos paternos:"
+msgstr "Abuelos paternos:"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+#: report:solicitud_enmienda:0
+msgid "natural de"
+msgstr "natural de"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+msgid "Datos del registro de bautismo"
+msgstr "Datos del registro de bautismo"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Le instruí debidamente del delito de perjurio y sus sanciones e interrogado en forma de derecho sobre los hechos y circunstancias de la solicitud presentada por:"
+msgstr "Le instruí debidamente del delito de perjurio y sus sanciones e interrogado en forma de derecho sobre los hechos y circunstancias de la solicitud presentada por:"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Datos de los padrinos"
+msgstr "Datos de los padrinos"
+
+#. module: sacramentum
+#: field:sacra_encabezado,texto_encab:0
+msgid "Texto del encabezado"
+msgstr "Texto del encabezado"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Aprobar entable"
+msgstr "Aprobar entable"
+
+#. module: sacramentum
+#: view:res.users:0
+msgid "Access Rights"
+msgstr "Permisos de acceso"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,nombre:0
+#: field:sacra_parroquia,nombre:0
+msgid "Nombre de la parroquia"
+msgstr "Nombre de la parroquia"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Leída esta acta, la encuentra conforme, ratificada en su contenido y firma por ante mí, de que doy fe,"
+msgstr "Leída esta acta, la encuentra conforme, ratificada en su contenido y firma por ante mí, de que doy fe,"
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+msgid "Opciones de entable"
+msgstr "Opciones de entable"
+
+#. module: sacramentum
+#: sql_constraint:sacra_mestizaje:0
+msgid "El nombre del tipo de mestizaje está en uso"
+msgstr "El nombre del tipo de mestizaje está en uso"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: field:sacra_bautismo,literal_text:0
+#: view:sacra_confirmacion:0
+#: field:sacra_confirmacion,literal_text5:0
+#: view:sacra_defuncion:0
+#: field:sacra_defuncion,literal_text3:0
+#: field:sacra_entable,literal_text4:0
+#: view:sacra_matrimonio:0
+#: field:sacra_matrimonio,literal_text2:0
+msgid "Literal"
+msgstr "Literal"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "de la Parroquia de"
+msgstr "de la Parroquia de"
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+msgid "Configuraciones generales"
+msgstr "Configuraciones generales"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Edad:"
+msgstr "Edad:"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "- Dice:"
+msgstr "- Dice:"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Aprobar enmienda"
+msgstr "Aprobar enmienda"
+
+#. module: sacramentum
+#: help:sacra_bautismo,partida_literal:0
+msgid "Registrar partida de bautismo a partir de la descripción literal."
+msgstr "Registrar partida de bautismo a partir de la descripción literal."
+
+#. module: sacramentum
+#: field:sacra_bautismo,literal1:0
+#: field:sacra_bautismo,sacra_imagen_id1:0
+msgid "Otra imagen del registro"
+msgstr "Otra imagen del registro"
+
+#. module: sacramentum
+#: field:sacra_enmienda,pasaporte_pd:0
+#: report:solicitud_enmienda:0
+msgid "Pasaporte a nombre de"
+msgstr "Pasaporte a nombre de"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "VISTAS"
+msgstr "VISTAS"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+#: report:decreto_enmienda:0
+#: report:solicitud_entable:0
+msgid "en"
+msgstr "en"
+
+#. module: sacramentum
+#: report:declar_solicitante:0
+msgid "titular del Certificado:"
+msgstr "titular del Certificado:"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "Encargado del Archivo de"
+msgstr "Encargado del Archivo de"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.menu_df_groups_list2
+msgid "Grupos"
+msgstr "Grupos"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Líbrese oficio al Sr. Cura Egdo. De la referida Parroquia, con inserción de las partes dispositiva de este Auto, para su cumplimiento. Notifíquese al promovente y archívese este expediente. Así por este Auto, lo proveyó, mandó y firma, el llmo. Sr Vicario de este Arzobispado, por ente mí, de que doy fe."
+msgstr "Líbrese oficio al Sr. Cura Egdo. De la referida Parroquia, con inserción de las partes dispositiva de este Auto, para su cumplimiento. Notifíquese al promovente y archívese este expediente. Así por este Auto, lo proveyó, mandó y firma, el llmo. Sr Vicario de este Arzobispado, por ente mí, de que doy fe."
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.action_sel_vic_actv
+#: model:ir.model,name:sacramentum.model_sel_vic_actv
+#: view:sel_vic_actv:0
+msgid "Seleccionar vicario"
+msgstr "Seleccionar vicario"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Solicito, ya que el titular del certificado"
+msgstr "Solicito, ya que el titular del certificado"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+msgid "NOTIFICACIÓN DE ANULACIÓN DE MATRIMONIO"
+msgstr "NOTIFICACIÓN DE ANULACIÓN DE MATRIMONIO"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid ", el Presbítero"
+msgstr ", el Presbítero"
+
+#. module: sacramentum
+#: field:sacra_enmienda,fecha_exp_pasp:0
+msgid "Fecha de expedido"
+msgstr "Fecha de expedido"
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+msgid "Datos de la sepultura"
+msgstr "Datos de la sepultura"
+
+#. module: sacramentum
+#: field:orden_sacerdotal,codigo:0
+#: field:sacra_datos_parroquia,code:0
+#: field:sacra_est_civil,codigo:0
+#: field:sacra_mestizaje,codigo:0
+msgid "Código"
+msgstr "Código"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid ", profesión"
+msgstr ", profesión"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.admin_item_menu
+msgid "Administración"
+msgstr "Administración"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Notas marginales:"
+msgstr "Notas marginales:"
+
+#. module: sacramentum
+#: view:sacra_persona:0
+msgid "Rango por fecha de nacimiento"
+msgstr "Rango por fecha de nacimiento"
+
+#. module: sacramentum
+#: field:sacra_bautismo,es_parroquia:0
+#: field:sacra_confirmacion,es_parroquia:0
+#: field:sacra_datos_parroquia,es_parroquia:0
+#: field:sacra_defuncion,es_parroquia:0
+#: field:sacra_matrimonio,es_parroquia:0
+msgid "Realiza función de parroquia?"
+msgstr "Realiza función de parroquia?"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "una copia de la partida de"
+msgstr "una copia de la partida de"
+
+#. module: sacramentum
+#: view:sacra_solicit_bautismo:0
+msgid "Padrinos, ministro y solicitante"
+msgstr "Padrinos, ministro y solicitante"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "MANDAMIENTO ORDENADO PRACTICAR ASIENTO DE ENTABLE DE PARTIDA BAUTISMAL"
+msgstr "MANDAMIENTO ORDENADO PRACTICAR ASIENTO DE ENTABLE DE PARTIDA BAUTISMAL"
+
+#. module: sacramentum
+#: model:res.groups,name:sacramentum.group_sacramentum1
+msgid "Sacramentum/Usuario"
+msgstr "Sacramentum/Usuario"
+
+#. module: sacramentum
+#: help:sacra_entable,bautismo_id:0
+msgid "Registro de bautismo creado por el entable"
+msgstr "Registro de bautismo creado por el entable"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "Exp. Número"
+msgstr "Exp. Número"
+
+#. module: sacramentum
+#: view:sacra_solicit_bautismo:0
+msgid "Establecer como registrada"
+msgstr "Establecer como registrada"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: selection:sacra_enmienda,partida:0
+#: selection:sacra_enmienda,partida1:0
+#: selection:sacra_entable,partida:0
+msgid "BAUTISMO"
+msgstr "BAUTISMO"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+#: field:sacra_indice,pagina:0
+msgid "Página"
+msgstr "Página"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,enmendar_reg_act:0
+msgid "Especifica si las enmiendas que se aprueben se registran en este archivo."
+msgstr "Especifica si las enmiendas que se aprueben se registran en este archivo."
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Denegar entable"
+msgstr "Denegar entable"
+
+#. module: sacramentum
+#: help:sacra_enmienda,vinculo:0
+#: help:sacra_entable,vinculo:0
+msgid "Vínculo familiar con el titular del certificado"
+msgstr "Vínculo familiar con el titular del certificado"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Párroco de:"
+msgstr "Párroco de:"
+
+#. module: sacramentum
+#: field:sacra_solicit_bautismo,solicita:0
+msgid "Solicita"
+msgstr "Solicita"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid ", ante usted comparezco y digo:"
+msgstr ", ante usted comparezco y digo:"
+
+#. module: sacramentum
+#: selection:sacra_encabezado,alineacion:0
+msgid "Izquierda"
+msgstr "Izquierda"
+
+#. module: sacramentum
+#: field:sacra_entable,cuidad:0
+msgid "Cuidad de residencia"
+msgstr "Cuidad de residencia"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", en la Parroquia"
+msgstr ", en la Parroquia"
+
+#. module: sacramentum
+#: field:sacra_entable,madrina_nombre_completo:0
+msgid "Nombre de la madrina"
+msgstr "Nombre de la madrina"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "Reg. Of. No."
+msgstr "Reg. Of. No."
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_enmienda_error
+msgid "Error del sacramento"
+msgstr "Error del sacramento"
+
+#. module: sacramentum
+#: help:enmienda_error,confirmacion:0
+msgid "Confirma la corrección de este error"
+msgstr "Confirma la corrección de este error"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "Firma del Presbítero"
+msgstr "Firma del Presbítero"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "El"
+msgstr "El"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "hijo de"
+msgstr "hijo de"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "En"
+msgstr "En"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+#: report:mandamiento_ent:0
+#: report:partida_bautismo:0
+msgid ".."
+msgstr ".."
+
+#. module: sacramentum
+#: field:enmienda_error,dice:0
+msgid "Dice "
+msgstr "Dice "
+
+#. module: sacramentum
+#: field:ir.model.fields,nom_descrip:0
+msgid "Nombre descriptivo"
+msgstr "Nombre descriptivo"
+
+#. module: sacramentum
+#: field:sacra_entable,cuidad_rc:0
+msgid "Registro Civil"
+msgstr "Registro Civil"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid ", según las"
+msgstr ", según las"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid ", con"
+msgstr ", con"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "CERTIFICO:"
+msgstr "CERTIFICO:"
+
+#. module: sacramentum
+#: report:notificacion_matrimonio:0
+msgid "prescripciones canónicas, ruego, asiente en el libro correspondiente de bautismos el Matrimonio de:"
+msgstr "prescripciones canónicas, ruego, asiente en el libro correspondiente de bautismos el Matrimonio de:"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+msgid "Opciones de búsqueda"
+msgstr "Opciones de búsqueda"
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+msgid "Datos de la parroquia"
+msgstr "Datos de la parroquia"
+
+#. module: sacramentum
+#: field:sacra_solicit_bautismo,persona_baut:0
+msgid "En persona"
+msgstr "En persona"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", de"
+msgstr ", de"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "Dice:"
+msgstr "Dice:"
+
+#. module: sacramentum
+#: field:sacra_persona,clerigo:0
+msgid "Es clérigo"
+msgstr "Es clérigo"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "cura encargado del Archivo"
+msgstr "cura encargado del Archivo"
+
+#. module: sacramentum
+#: field:sacra_indice,fecha:0
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: sacramentum
+#: view:importar_bautismo:0
+#: view:importar_confirmacion:0
+#: view:importar_defuncion:0
+#: view:importar_indice:0
+#: view:importar_matrimonio:0
+#: model:ir.actions.act_window,name:sacramentum.importar_bautismo_action
+#: model:ir.actions.act_window,name:sacramentum.importar_confirmacion_action
+#: model:ir.actions.act_window,name:sacramentum.importar_defuncion_action
+#: model:ir.actions.act_window,name:sacramentum.importar_indice_action
+#: model:ir.actions.act_window,name:sacramentum.importar_matrimonio_action
+#: model:ir.model,name:sacramentum.model_importar_indice
+msgid "Importar"
+msgstr "Importar"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,no_b_esposa:0
+msgid "No bautisada"
+msgstr "No bautisada"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Prueba documental"
+msgstr "Prueba documental"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Datos del sacramento"
+msgstr "Datos del sacramento"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid ", natural"
+msgstr ", natural"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "CURA"
+msgstr "CURA"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "Al Rvdo. Sr. Cura de la Parroquia de"
+msgstr "Al Rvdo. Sr. Cura de la Parroquia de"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Naturales de:"
+msgstr "Naturales de:"
+
+#. module: sacramentum
+#: selection:sacra_bautismo,sexo:0
+#: selection:sacra_enmienda,sexo:0
+#: selection:sacra_enmienda,sexo_s:0
+#: selection:sacra_entable,sexo:0
+#: selection:sacra_entable,sexo_s:0
+#: selection:sacra_entable,sexo_testigo1:0
+#: selection:sacra_entable,sexo_testigo2:0
+#: selection:sacra_matrimonio,sexo_esposa:0
+#: selection:sacra_matrimonio,sexo_esposo:0
+#: selection:sacra_persona,sexo:0
+#: selection:sacra_solicit_bautismo,sexo:0
+msgid "Masculino"
+msgstr "Masculino"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Registrar el entable y realizar el registro del bautismo declarado"
+msgstr "Registrar el entable y realizar el registro del bautismo declarado"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_mandamiento_ent
+msgid "Mandamiento de entable"
+msgstr "Mandamiento de entable"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "NÚMERO:"
+msgstr "NÚMERO:"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "Abuelos por la línea paterna"
+msgstr "Abuelos por la línea paterna"
+
+#. module: sacramentum
+#: field:sacra_enmienda,fecha:0
+#: field:sacra_entable,fecha_solicitud:0
+#: field:sacra_solicit_bautismo,fecha:0
+msgid "Fecha de solicitud"
+msgstr "Fecha de solicitud"
+
+#. module: sacramentum
+#: field:sacra_confirmacion,subquery:0
+msgid "unknown"
+msgstr "Desconocido"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Parroquia:"
+msgstr "Parroquia:"
+
+#. module: sacramentum
+#: selection:sacra_encabezado,alineacion:0
+msgid "Centro"
+msgstr "Centro"
+
+#. module: sacramentum
+#: field:sacra_encabezado,tamano:0
+msgid "Tamaño del texto"
+msgstr "Tamaño del texto"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: selection:sacra_enmienda,partida:0
+#: selection:sacra_enmienda,partida1:0
+#: selection:sacra_entable,partida:0
+msgid "MATRIMONIO"
+msgstr "MATRIMONIO"
+
+#. module: sacramentum
+#: view:sacra_confirmacion:0
+msgid "Rango por fecha de confirmación"
+msgstr "Rango por fecha de confirmación"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_certificacion_literal_defun
+msgid "Certificación literal de defunción"
+msgstr "Certificación literal de defunción"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+#: field:sacra_enmienda,state:0
+#: view:sacra_entable:0
+#: field:sacra_entable,state:0
+#: field:sacra_indice,state:0
+#: view:sacra_matrimonio:0
+#: field:sacra_matrimonio,state:0
+#: view:sacra_solicit_bautismo:0
+#: field:sacra_solicit_bautismo,state:0
+msgid "Estado"
+msgstr "Estado"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Solicitando copia de Certificación de:"
+msgstr "Solicitando copia de Certificación de:"
+
+#. module: sacramentum
+#: field:sacra_defuncion,notas:0
+msgid "Notas"
+msgstr "Notas"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "VISTO"
+msgstr "VISTO"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Monseñor"
+msgstr "Monseñor"
+
+#. module: sacramentum
+#: field:importar_bautismo,archivo:0
+#: field:importar_confirmacion,archivo:0
+#: field:importar_defuncion,archivo:0
+#: field:importar_indice,archivo:0
+#: field:importar_matrimonio,archivo:0
+msgid "Archivo a importar"
+msgstr "Archivo a importar"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.action_sel_vic_actv_p
+#: model:ir.actions.report.xml,name:sacramentum.report_aprobacion_ent
+msgid "Aprobación de entable"
+msgstr "Aprobación de entable"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Vengo a solicitar decreto de enmienda. Acompaño prueba documental."
+msgstr "Vengo a solicitar decreto de enmienda. Acompaño prueba documental."
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "y dirección"
+msgstr "y dirección"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "para que al margen de la partida de"
+msgstr "para que al margen de la partida de"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Datos del matrimonio"
+msgstr "Datos del matrimonio"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_parroquia_action
+#: model:ir.ui.menu,name:sacramentum.parroquias_item_menu
+msgid "Parroquias"
+msgstr "Parroquias"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,auto_confir_note:0
+msgid "Notas de confirmación automática"
+msgstr "Notas de confirmación automática"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,auto_entablar:0
+msgid "Entablar automáticamente"
+msgstr "Entablar automáticamente"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+#: report:solicitud_bautismo:0
+msgid "Folio:"
+msgstr "Folio:"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Registrar entable"
+msgstr "Registrar entable"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,cuno:0
+msgid "Mostrar cuño en los reportes"
+msgstr "Mostrar cuño en los reportes"
+
+#. module: sacramentum
+#: field:sacra_enmienda,carnet:0
+#: field:sacra_entable,carnet:0
+#: field:sacra_entable,carnet_testigo1:0
+#: field:sacra_entable,carnet_testigo2:0
+#: field:sacra_matrimonio,carnet_esposa:0
+#: field:sacra_matrimonio,carnet_esposo:0
+msgid "Carné de identidad"
+msgstr "Carné de identidad"
+
+#. module: sacramentum
+#: view:importar_bautismo:0
+#: view:importar_confirmacion:0
+#: view:importar_defuncion:0
+#: view:importar_indice:0
+#: view:importar_matrimonio:0
+#: view:sel_vic_actv:0
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Registrar la enmienda y realizar el registro declarado"
+msgstr "Registrar la enmienda y realizar el registro declarado"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "CONSIDERANDO:"
+msgstr "CONSIDERANDO:"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+msgid "Bautisado en esa parroquia en fecha:"
+msgstr "Bautisado en esa parroquia en fecha:"
+
+#. module: sacramentum
+#: selection:sacra_bautismo,sexo:0
+#: selection:sacra_enmienda,sexo:0
+#: selection:sacra_enmienda,sexo_s:0
+#: selection:sacra_entable,sexo:0
+#: selection:sacra_entable,sexo_s:0
+#: selection:sacra_entable,sexo_testigo1:0
+#: selection:sacra_entable,sexo_testigo2:0
+#: selection:sacra_matrimonio,sexo_esposa:0
+#: selection:sacra_matrimonio,sexo_esposo:0
+#: selection:sacra_persona,sexo:0
+#: selection:sacra_solicit_bautismo,sexo:0
+msgid "Femenino"
+msgstr "Femenino"
+
+#. module: sacramentum
+#: view:sacra_iglesia:0
+#: view:sacra_parroquia:0
+#: field:sacra_parroquia,sacra_iglesia_ids:0
+msgid "Iglesias"
+msgstr "Iglesias"
+
+#. module: sacramentum
+#: model:res.groups,name:sacramentum.group_sacramentum2
+msgid "Sacramentum/Canciller"
+msgstr "Sacramentum/Canciller"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Tomo:"
+msgstr "Tomo:"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:constancia_enmienda:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+#: report:decreto_enmienda:0
+#: report:mandamiento_ent:0
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "ARZOBISPADO DE"
+msgstr "ARZOBISPADO DE"
+
+#. module: sacramentum
+#: field:sacra_bautismo,madrina:0
+#: field:sacra_confirmacion,madr_tes:0
+#: field:sacra_entable,madrina:0
+#: field:sacra_matrimonio,madrina:0
+#: field:sacra_solicit_bautismo,madrina:0
+msgid "Madrina"
+msgstr "Madrina"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,code:0
+msgid "Código asignado"
+msgstr "Código asignado"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+msgid "días del mes de"
+msgstr "días del mes de"
+
+#. module: sacramentum
+#: field:sacra_bautismo,padrino_persona:0
+#: field:sacra_entable,padrino_persona:0
+#: view:sacra_matrimonio:0
+#: field:sacra_solicit_bautismo,padrino_persona:0
+msgid "Datos del padrino"
+msgstr "Datos del padrino"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "hija de"
+msgstr "hija de"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,fecha_b_esposa:0
+#: field:sacra_matrimonio,fecha_b_esposo:0
+msgid "Fecha de bautismo"
+msgstr "Fecha de bautismo"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "para"
+msgstr "para"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_entable:0
+#: view:sacra_solicit_bautismo:0
+msgid "Datos de los abuelos paternos"
+msgstr "Datos de los abuelos paternos"
+
+#. module: sacramentum
+#: field:enmienda_error,enmienda_id:0
+#: view:sacra_enmienda:0
+msgid "Enmienda"
+msgstr "Enmienda"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "el Folio"
+msgstr "el Folio"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "PROVISORATO"
+msgstr "PROVISORATO"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_matri:0
+#: report:partida_bautismo:0
+msgid "-"
+msgstr "-"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "años de edad, ciudadan"
+msgstr "años de edad, ciudadan"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,auto_defun_note:0
+msgid "Generar notas de defunción automáticamente."
+msgstr "Generar notas de defunción automáticamente."
+
+#. module: sacramentum
+#: field:sacra_enmienda,def_id:0
+msgid "Partida de defunción"
+msgstr "Partida de defunción"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_orden_sacerdotal
+msgid "Órden sacerdotal"
+msgstr "Órden sacerdotal"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_entable_action
+msgid "Expedientes de entables"
+msgstr "Expedientes de entables"
+
+#. module: sacramentum
+#: field:enmienda_error,matrimonio_id:0
+#: model:ir.model,name:sacramentum.model_sacra_matrimonio
+#: field:sacra_persona,reg_matrimonio:0
+msgid "Registro de matrimonio"
+msgstr "Registro de matrimonio"
+
+#. module: sacramentum
+#: field:sacra_entable,caracter_testigo1:0
+#: field:sacra_entable,caracter_testigo2:0
+msgid "Le consta"
+msgstr "Le consta"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Abuela:"
+msgstr "Abuela:"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_certificacion_literal
+msgid "Certificación literal de bautismo"
+msgstr "Certificación literal de bautismo"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Datos de la partida"
+msgstr "Datos de la partida"
+
+#. module: sacramentum
+#: field:sacra_entable,nombre_completo:0
+msgid "Nombre posible bautizado"
+msgstr "Nombre posible bautizado"
+
+#. module: sacramentum
+#: field:sacra_bautismo,partida_literal:0
+#: field:sacra_defuncion,partida_literal:0
+#: field:sacra_matrimonio,partida_literal:0
+msgid "Partida literal?"
+msgstr "Partida literal?"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_parrocos_action
+#: model:ir.model,name:sacramentum.model_sacra_parrocos
+#: model:ir.ui.menu,name:sacramentum.parrocos_item_menu
+msgid "Párrocos"
+msgstr "Párrocos"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_matrimonio_action
+msgid "Registro de matrimonios"
+msgstr "Registro de matrimonios"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+#: view:sacra_solicit_bautismo:0
+msgid "Registrar"
+msgstr "Registrar"
+
+#. module: sacramentum
+#: view:sacra_testigo:0
+#: field:sacra_testigo,persona_id:0
+msgid "Testigo"
+msgstr "Testigo"
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+msgid "Otros"
+msgstr "Otros"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Datos básicos del entable"
+msgstr "Datos básicos del entable"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "cuban"
+msgstr "cuban"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_declar_solicit_enm
+#: model:ir.actions.report.xml,name:sacramentum.report_declar_solicitante
+msgid "Declaración jurada del solicitante"
+msgstr "Declaración jurada del solicitante"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", y por la"
+msgstr ", y por la"
+
+#. module: sacramentum
+#: field:sacra_encabezado,ancho:0
+#: field:sacra_iglesia,ancho:0
+msgid "Ancho de la imagen(pixeles)"
+msgstr "Ancho de la imagen(pixeles)"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,esposo:0
+msgid "Esposo"
+msgstr "Esposo"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Por"
+msgstr "Por"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,entablar_reg_act:0
+msgid "Entablar en este registro"
+msgstr "Entablar en este registro"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "Es hij"
+msgstr "Es hij"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid ", y el bautizo el"
+msgstr ", y el bautizo el"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "habiendo sido"
+msgstr "habiendo sido"
+
+#. module: sacramentum
+#: field:sacra_enmienda,nombre_pers:0
+msgid "Nombre de la persona"
+msgstr "Nombre de la persona"
+
+#. module: sacramentum
+#: field:sacra_defuncion,descendencia:0
+msgid "Descendencia declarada"
+msgstr "Descendencia declarada"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_solicitud_bautismo
+#: model:ir.model,name:sacramentum.model_sacra_solicit_bautismo
+#: view:sacra_solicit_bautismo:0
+msgid "Solicitud de bautismo"
+msgstr "Solicitud de bautismo"
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+msgid "Opciones de enmienda"
+msgstr "Opciones de enmienda"
+
+#. module: sacramentum
+#: field:sacra_encabezado,img_iglesia:0
+msgid "Encabezado imagen basado en el logo del la iglesia"
+msgstr "Encabezado imagen basado en el logo del la iglesia"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Cancelar enmienda"
+msgstr "Cancelar enmienda"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+msgid "DECLARACIÓN JURADA"
+msgstr "DECLARACIÓN JURADA"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+msgid "prescripciones canónicas, ruego, asiente en el libro correspondiente de bautismos la anulación del Matrimonio de:"
+msgstr "prescripciones canónicas, ruego, asiente en el libro correspondiente de bautismos la anulación del Matrimonio de:"
+
+#. module: sacramentum
+#: view:orden_sacerdotal:0
+#: view:sacra_parrocos:0
+#: field:sacra_parrocos,orden_id:0
+msgid "Orden sacerdotal"
+msgstr "Orden sacerdotal"
+
+#. module: sacramentum
+#: field:sacra_solicit_bautismo,telf:0
+msgid "Teléfono"
+msgstr "Teléfono"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,auto_matr_anul_note:0
+msgid "Generar notas de anulación de matrimonio automáticamente."
+msgstr "Generar notas de anulación de matrimonio automáticamente."
+
+#. module: sacramentum
+#: field:sacra_indice,sacramento:0
+msgid "Sacramento"
+msgstr "Sacramento"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_testigo
+msgid "Testigo del sacramento"
+msgstr "Testigo del sacramento"
+
+#. module: sacramentum
+#: field:sacra_enmienda,num:0
+msgid "Enmienda #"
+msgstr "Enmienda #"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,direccion_esposa:0
+#: field:sacra_matrimonio,direccion_esposo:0
+#: field:sacra_persona,direccion:0
+msgid "Dirección particular"
+msgstr "Dirección particular"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Aprobar el entable se realiza el registro automáticamente en caso de estar configurada esta opción"
+msgstr "Aprobar el entable se realiza el registro automáticamente en caso de estar configurada esta opción"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "número"
+msgstr "número"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", República de Cuba,"
+msgstr ", República de Cuba,"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_indice
+msgid "Indice de sacramentos"
+msgstr "Indice de sacramentos"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_est_civil
+#: field:sacra_entable,estado_civil_s:0
+#: field:sacra_entable,estado_civil_testigo1:0
+#: field:sacra_entable,estado_civil_testigo2:0
+#: view:sacra_est_civil:0
+#: field:sacra_matrimonio,estado_civil_esposa:0
+#: field:sacra_matrimonio,estado_civil_esposo:0
+#: view:sacra_persona:0
+#: field:sacra_persona,estado_civil:0
+msgid "Estado civil"
+msgstr "Estado civil"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "libro"
+msgstr "libro"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,texto_marca:0
+msgid "Texto de la marca de agua"
+msgstr "Texto de la marca de agua"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "niñ"
+msgstr "niñ"
+
+#. module: sacramentum
+#: selection:sacra_entable,state:0
+#: selection:sacra_indice,state:0
+msgid "Registrado"
+msgstr "Registrado"
+
+#. module: sacramentum
+#: view:sacra_encabezado:0
+msgid "Encabezado"
+msgstr "Encabezado"
+
+#. module: sacramentum
+#: selection:sacra_enmienda,state:0
+#: selection:sacra_solicit_bautismo,state:0
+msgid "Registrada"
+msgstr "Registrada"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: report:certificado_matrimonio:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+#: report:decreto_enmienda:0
+#: report:mandamiento_ent:0
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "de"
+msgstr "de"
+
+#. module: sacramentum
+#: field:sacra_enmienda,vinculo:0
+#: field:sacra_entable,vinculo:0
+msgid "Vínculo familiar"
+msgstr "Vínculo familiar"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "para entablar el Acta de la Partida de"
+msgstr "para entablar el Acta de la Partida de"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "se me ha entregado una negativa, por no aparecer dicho asiento, y siéndome necesaria la expresada certificación, suplico a V.E.R. se sirva, previos los trámites de rigor, decretar sea practicada la inscripción a fin de que la misma me sea expedida."
+msgstr "se me ha entregado una negativa, por no aparecer dicho asiento, y siéndome necesaria la expresada certificación, suplico a V.E.R. se sirva, previos los trámites de rigor, decretar sea practicada la inscripción a fin de que la misma me sea expedida."
+
+#. module: sacramentum
+#: constraint:sacra_bautismo:0
+#: constraint:sacra_defuncion:0
+#: constraint:sacra_matrimonio:0
+msgid "El tomo, folio y número no pueden estar vacíos"
+msgstr "El tomo, folio y número no pueden estar vacíos"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "X"
+msgstr "X"
+
+#. module: sacramentum
+#: field:sacra_defuncion,madre:0
+#: field:sacra_matrimonio,madre_esposa:0
+#: field:sacra_matrimonio,madre_esposo:0
+#: field:sacra_persona,madre:0
+msgid "Madre"
+msgstr "Madre"
+
+#. module: sacramentum
+#: field:sacra_enmienda,registro_civil:0
+msgid "Registro civil de"
+msgstr "Registro civil de"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Ministro del sacramento"
+msgstr "Ministro del sacramento"
+
+#. module: sacramentum
+#: view:sacra_confirmacion:0
+msgid "Datos de la persona"
+msgstr "Datos de la persona"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "a quien se le puso por nombre"
+msgstr "a quien se le puso por nombre"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "Naturales de"
+msgstr "Naturales de"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "b) Certificación del Acta de la Inscripción de nacimiento, obrante el Folio"
+msgstr "b) Certificación del Acta de la Inscripción de nacimiento, obrante el Folio"
+
+#. module: sacramentum
+#: selection:sacra_indice,state:0
+msgid "No registrado"
+msgstr "No registrado"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_entable:0
+#: view:sacra_solicit_bautismo:0
+msgid "Datos de los abuelos maternos"
+msgstr "Datos de los abuelos maternos"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_declar_testigos
+msgid "Declaración jurada de los testigos"
+msgstr "Declaración jurada de los testigos"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "2.-"
+msgstr "2.-"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "que suscribe"
+msgstr "que suscribe"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "A los efectos, hago constar que el nacimiento ocurrió en"
+msgstr "A los efectos, hago constar que el nacimiento ocurrió en"
+
+#. module: sacramentum
+#: field:sacra_parrocos,nombre_completo:0
+msgid "Nombre del párroco"
+msgstr "Nombre del párroco"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Fecha expedido"
+msgstr "Fecha expedido"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_enmienda:0
+#: view:sacra_entable:0
+#: view:sacra_indice:0
+#: view:sacra_matrimonio:0
+#: view:sacra_parrocos:0
+#: view:sacra_persona:0
+#: view:sacra_solicit_bautismo:0
+msgid "Agrupar por"
+msgstr "Agrupar por"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "en la iglesia de"
+msgstr "en la iglesia de"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Cumplimentado, en: ..................................................................., el:......., de:........................, de:........................"
+msgstr "Cumplimentado, en: ..................................................................., el:......., de:........................, de:........................"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,auto_entablar:0
+msgid "Registrar automáticamente los registros de entables cuando son aprobados."
+msgstr "Registrar automáticamente los registros de entables cuando son aprobados."
+
+#. module: sacramentum
+#: selection:sacra_encabezado,alineacion:0
+msgid "Justificado"
+msgstr "Justificado"
+
+#. module: sacramentum
+#: field:sacra_bautismo,persona_baut:0
+msgid "Bautizado(a)"
+msgstr "Bautizado(a)"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+msgid "En la Parroquia"
+msgstr "En la Parroquia"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "de las generales que constan, por escrito del"
+msgstr "de las generales que constan, por escrito del"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:partida_bautismo:0
+msgid "........................."
+msgstr "........................."
+
+#. module: sacramentum
+#: field:sacra_enmienda,partida:0
+#: field:sacra_entable,partida:0
+msgid "Partida de"
+msgstr "Partida de"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,esposa:0
+msgid "Esposa"
+msgstr "Esposa"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Descendencia declarada:"
+msgstr "Descendencia declarada:"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Al Sr Provisor del Arzobispado de"
+msgstr "Al Sr Provisor del Arzobispado de"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Fecha de bautismo:"
+msgstr "Fecha de bautismo:"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_entable
+msgid "Registro de entables"
+msgstr "Registro de entables"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", el"
+msgstr ", el"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "LIBRO:"
+msgstr "LIBRO:"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_enmienda_action
+#: model:ir.ui.menu,name:sacramentum.enmiendas_item_menu
+msgid "Enmiendas"
+msgstr "Enmiendas"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_parroquia
+#: field:sacra_bautismo,parroquia_id:0
+#: field:sacra_confirmacion,parroquia_id:0
+#: field:sacra_defuncion,parroquia_id:0
+#: field:sacra_enmienda,parroquia:0
+#: field:sacra_entable,parroquia:0
+#: view:sacra_indice:0
+#: field:sacra_indice,parroquia_id:0
+#: field:sacra_matrimonio,parroquia_id:0
+#: view:sacra_parroquia:0
+msgid "Parroquia"
+msgstr "Parroquia"
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+#: view:sacra_indice:0
+msgid "Datos del registro"
+msgstr "Datos del registro"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Fraternalmente. Por mandato de S.S.IIma.,"
+msgstr "Fraternalmente. Por mandato de S.S.IIma.,"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Sepultado en:"
+msgstr "Sepultado en:"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Sexo M"
+msgstr "Sexo M"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Anular matrimonio"
+msgstr "Anular matrimonio"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_testigos:0
+msgid "Ante mí,"
+msgstr "Ante mí,"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "expedido en el municipio"
+msgstr "expedido en el municipio"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+msgid "Llenar los datos del sacramento"
+msgstr "Llenar los datos del sacramento"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+msgid "ya que la persona titular del Certificado:"
+msgstr "ya que la persona titular del Certificado:"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "(Cuño)"
+msgstr "(Cuño)"
+
+#. module: sacramentum
+#: view:sacra_datos_parroquia:0
+msgid "Datos del archivo histórico"
+msgstr "Datos del archivo histórico"
+
+#. module: sacramentum
+#: field:sacra_encabezado,orden:0
+msgid "Orden de los encabezados"
+msgstr "Orden de los encabezados"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "FOLIO:"
+msgstr "FOLIO:"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Doc. Elaborado por:"
+msgstr "Doc. Elaborado por:"
+
+#. module: sacramentum
+#: view:sacra_matrimonio:0
+msgid "Rango por fecha de matrimonio"
+msgstr "Rango por fecha de matrimonio"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+#: report:solicitud_bautismo:0
+msgid "Fecha de nacimiento:"
+msgstr "Fecha de nacimiento:"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "de esta parroquia por el ministro celebrante un"
+msgstr "de esta parroquia por el ministro celebrante un"
+
+#. module: sacramentum
+#: view:enmienda_error:0
+#: view:sacra_bautismo:0
+#: view:sacra_defuncion:0
+#: view:sacra_enmienda:0
+#: view:sacra_matrimonio:0
+msgid "Enmienda error"
+msgstr "Enmienda error"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "del Registro Civil de"
+msgstr "del Registro Civil de"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Otras causas (especificar)"
+msgstr "Otras causas (especificar)"
+
+#. module: sacramentum
+#: field:sacra_enmienda,otras_causas:0
+#: field:sacra_entable,otras_causas:0
+msgid "Otras causas"
+msgstr "Otras causas"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,provincia:0
+#: field:sacra_parroquia,provincia:0
+#: field:sacra_solicit_bautismo,provincia:0
+msgid "Provincia"
+msgstr "Provincia"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Datos del primer testigo"
+msgstr "Datos del primer testigo"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_datos_parroquia:0
+#: view:sacra_defuncion:0
+#: view:sacra_matrimonio:0
+#: view:sacra_persona:0
+msgid "Otros datos"
+msgstr "Otros datos"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Gracia y Paz"
+msgstr "Gracia y Paz"
+
+#. module: sacramentum
+#: field:sacra_bautismo,nota:0
+#: field:sacra_confirmacion,nota:0
+#: field:sacra_defuncion,nota:0
+#: field:sacra_matrimonio,nota_esposa:0
+#: field:sacra_matrimonio,nota_esposo:0
+#: field:sacra_persona,nota:0
+msgid "Nota"
+msgstr "Nota"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "quien se le puso por nombre"
+msgstr "quien se le puso por nombre"
+
+#. module: sacramentum
+#: help:sacra_matrimonio,partida_literal:0
+msgid "Registrar partida de matrimonio a partir de la descripción literal."
+msgstr "Registrar partida de matrimonio a partir de la descripción literal."
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_defuncion:0
+#: view:sacra_enmienda:0
+#: view:sacra_matrimonio:0
+msgid "Errores a enmendar"
+msgstr "Errores a enmendar"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "La Señora"
+msgstr "La Señora"
+
+#. module: sacramentum
+#: field:sacra_entable,profesion_testigo1:0
+#: field:sacra_entable,profesion_testigo2:0
+#: field:sacra_matrimonio,profesion_esposa:0
+#: field:sacra_matrimonio,profesion_esposo:0
+#: field:sacra_persona,profesion:0
+msgid "Profesión"
+msgstr "Profesión"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,enmendar_reg_act:0
+msgid "Enmendar en este registro"
+msgstr "Enmendar en este registro"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "Y la testifical compuesta por dos testigos voluntarios que presentaría oportunamente; interesando en la súplica la admisión"
+msgstr "Y la testifical compuesta por dos testigos voluntarios que presentaría oportunamente; interesando en la súplica la admisión"
+
+#. module: sacramentum
+#: field:sacra_bautismo,buscar_exter:0
+msgid "Búsqueda externa?"
+msgstr "Búsqueda externa?"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:aprobacion_ent:0
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:constancia_enmienda:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+#: report:decreto_enmienda:0
+#: report:mandamiento_ent:0
+#: report:notificacion_matrimonio:0
+#: report:partida_bautismo:0
+#: report:solicitud_bautismo:0
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "."
+msgstr "."
+
+#. module: sacramentum
+#: view:sacra_parrocos:0
+#: field:sacra_parrocos,activo:0
+msgid "Activo"
+msgstr "Activo"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "mayor de edad, de estado civil"
+msgstr "mayor de edad, de estado civil"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Aprobar el entable y realizar el registro del bautismo declarado"
+msgstr "Aprobar el entable y realizar el registro del bautismo declarado"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "abuelos por la línea paterna"
+msgstr "abuelos por la línea paterna"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,nombre_arch:0
+msgid "Nombre del archivo"
+msgstr "Nombre del archivo"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Me hago totalmente responsable de lo que solicito, al no poder asistir"
+msgstr "Me hago totalmente responsable de lo que solicito, al no poder asistir"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,auto_matr_note:0
+msgid "Generar notas marginales de matrimonio automáticamente."
+msgstr "Generar notas marginales de matrimonio automáticamente."
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "COMPARECE"
+msgstr "COMPARECE"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "efecto, nació en"
+msgstr "efecto, nació en"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "2- Que los hechos y circunstancias declarados le constan:"
+msgstr "2- Que los hechos y circunstancias declarados le constan:"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_partida_bautismo
+msgid "Certificación no literal de bautismo"
+msgstr "Certificación no literal de bautismo"
+
+#. module: sacramentum
+#: field:sacra_entable,folio_n:0
+msgid "Folio del registro de nacimiento"
+msgstr "Folio del registro de nacimiento"
+
+#. module: sacramentum
+#: field:sacra_notas_marginales,fecha_insercion:0
+msgid "Fecha de inserción"
+msgstr "Fecha de inserción"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:solicitud_enmienda:0
+msgid "C.I."
+msgstr "C.I."
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_anulacion_matrimonio
+msgid "Notificación anulación de matrimonio"
+msgstr "Notificación anulación de matrimonio"
+
+#. module: sacramentum
+#: field:sacra_indice,sacra_reg:0
+msgid "Registro del sacramento"
+msgstr "Registro del sacramento"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+msgid "Vicario General"
+msgstr "Vicario General"
+
+#. module: sacramentum
+#: model:res.groups,name:sacramentum.group_sacramentum
+msgid "Sacramentum/Administrador"
+msgstr "Sacramentum/Administrador"
+
+#. module: sacramentum
+#: field:sacra_defuncion,parroquia:0
+msgid "Parroquia de sepultura"
+msgstr "Parroquia de sepultura"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_certificado_defuncion
+msgid "Certificación no literal de defunción"
+msgstr "Certificación no literal de defunción"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Ciudad"
+msgstr "Ciudad"
+
+#. module: sacramentum
+#: selection:sacra_matrimonio,state:0
+msgid "Anulado"
+msgstr "Anulado"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_datos_parroquia_action
+#: model:ir.model,name:sacramentum.model_sacra_datos_parroquia
+#: model:ir.ui.menu,name:sacramentum.sacra_datos_parroquia_item_menu
+#: view:sacra_datos_parroquia:0
+msgid "Configuración general"
+msgstr "Configuración general"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+#: report:decreto_enmienda:0
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "Exp. No."
+msgstr "Exp. No."
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_iglesia
+#: field:sacra_bautismo,iglesia_id:0
+#: field:sacra_confirmacion,iglesia_id:0
+#: field:sacra_defuncion,iglesia_id:0
+#: field:sacra_enmienda,iglesia_id:0
+#: field:sacra_entable,iglesia_id:0
+#: view:sacra_iglesia:0
+#: field:sacra_matrimonio,iglesia_id:0
+msgid "Iglesia"
+msgstr "Iglesia"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Provincia de"
+msgstr "Provincia de"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "CERTIFICA:"
+msgstr "CERTIFICA:"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid ", Cura Encargado de Archivo de la Parroquia"
+msgstr ", Cura Encargado de Archivo de la Parroquia"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Cuño"
+msgstr "Cuño"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.bautismos_item_menu
+msgid "Bautismos"
+msgstr "Bautismos"
+
+#. module: sacramentum
+#: help:sacra_solicit_bautismo,fecha_baut:0
+msgid "Fecha en que se efectuará el bautismo"
+msgstr "Fecha en que se efectuará el bautismo"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "Para justificar estos hechos, propongo las siguientes pruebas:"
+msgstr "Para justificar estos hechos, propongo las siguientes pruebas:"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "Los datos consignados son copia fiel y exacta de su original en este archivo, expedidos a petición de la parte interesada, a los efectos canónicos y sin perjuicio de terceros. Y para constancia firmo y acuño"
+msgstr "Los datos consignados son copia fiel y exacta de su original en este archivo, expedidos a petición de la parte interesada, a los efectos canónicos y sin perjuicio de terceros. Y para constancia firmo y acuño"
+
+#. module: sacramentum
+#: field:enmienda_error,confirmacion:0
+#: view:sacra_confirmacion:0
+msgid "Confirmación"
+msgstr "Confirmación"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid ", a"
+msgstr ", a"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+msgid ", del año"
+msgstr ", del año"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+#: selection:sacra_enmienda,partida:0
+#: selection:sacra_enmienda,partida1:0
+#: selection:sacra_entable,partida:0
+msgid "DEFUNCIÓN"
+msgstr "DEFUNCIÓN"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "1.-"
+msgstr "1.-"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "Líbrese oficio al Sr. Cura Egdo. De la referida Parroquia, con inserción de las partes dispositiva de este Auto, para su cumplimiento. Notifíquese al promovente y archívese este expediente. Así por este Auto, lo proveyó, mandó y firma, el llmo. Sr Vicario de este Arzobispado, por ante mí, de que doy fe."
+msgstr "Líbrese oficio al Sr. Cura Egdo. De la referida Parroquia, con inserción de las partes dispositiva de este Auto, para su cumplimiento. Notifíquese al promovente y archívese este expediente. Así por este Auto, lo proveyó, mandó y firma, el llmo. Sr Vicario de este Arzobispado, por ante mí, de que doy fe."
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "Que habiendo concurrido a la parroquia"
+msgstr "Que habiendo concurrido a la parroquia"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: field:sacra_bautismo,p_persona:0
+#: view:sacra_defuncion:0
+#: view:sacra_entable:0
+#: field:sacra_entable,p_persona:0
+#: view:sacra_matrimonio:0
+#: view:sacra_solicit_bautismo:0
+#: field:sacra_solicit_bautismo,p_persona:0
+msgid "Datos del padre"
+msgstr "Datos del padre"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "DECLARA CON LUGAR"
+msgstr "DECLARA CON LUGAR"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,diocesis:0
+#: field:sacra_parroquia,diocesis:0
+msgid "Diócesis"
+msgstr "Diócesis"
+
+#. module: sacramentum
+#: field:sacra_entable,edad_testigo1:0
+#: field:sacra_entable,edad_testigo2:0
+msgid "Edad"
+msgstr "Edad"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Al Sr. Cura Encargado del Archivo de"
+msgstr "Al Sr. Cura Encargado del Archivo de"
+
+#. module: sacramentum
+#: view:res.users:0
+msgid "Allowed Companies"
+msgstr "Allowed Companies"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "folio"
+msgstr "folio"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Fecha de fallecimiento:"
+msgstr "Fecha de fallecimiento:"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Yo:"
+msgstr "Yo:"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "dirección en"
+msgstr "dirección en"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "estado civil"
+msgstr "estado civil"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:certificacion_literal_defun:0
+#: report:certificacion_literal_matri:0
+msgid "PBRO."
+msgstr "PBRO."
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "promovido por"
+msgstr "promovido por"
+
+#. module: sacramentum
+#: selection:sacra_enmienda,state:0
+msgid "Aprobada"
+msgstr "Aprobada"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "materna"
+msgstr "materna"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Está fuera del País"
+msgstr "Está fuera del País"
+
+#. module: sacramentum
+#: selection:sacra_entable,state:0
+msgid "Aprobado"
+msgstr "Aprobado"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Ministro del sacramento:"
+msgstr "Ministro del sacramento:"
+
+#. module: sacramentum
+#: field:sacra_entable,m_m_nombre_completo:0
+#: field:sacra_entable,m_p_nombre_completo:0
+msgid "Nombre de la abuela"
+msgstr "Nombre de la abuela"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,auto_enmendar:0
+msgid "Realizar las enmiendas de forma automática cuando son aprobadas."
+msgstr "Realizar las enmiendas de forma automática cuando son aprobadas."
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+msgid "Rango por fecha de fallecimiento"
+msgstr "Rango por fecha de fallecimiento"
+
+#. module: sacramentum
+#: field:sacra_bautismo,padrino:0
+#: field:sacra_confirmacion,padr_tes:0
+#: field:sacra_entable,padrino:0
+#: field:sacra_matrimonio,padrino:0
+#: field:sacra_solicit_bautismo,padrino:0
+msgid "Padrino"
+msgstr "Padrino"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Nombre(s):"
+msgstr "Nombre(s):"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_testigos:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "y"
+msgstr "y"
+
+#. module: sacramentum
+#: field:sacra_bautismo,fecha_ini:0
+#: field:sacra_confirmacion,fecha_ini:0
+#: field:sacra_defuncion,fecha_ini:0
+#: field:sacra_enmienda,fecha_ini:0
+#: field:sacra_entable,fecha_ini:0
+#: field:sacra_matrimonio,fecha_ini:0
+#: field:sacra_persona,fecha_ini:0
+msgid "Fecha de inicio"
+msgstr "Fecha de inicio"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "formado al efecto, nació en"
+msgstr "formado al efecto, nació en"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_encabezado
+msgid "Configuración de los encabezados"
+msgstr "Configuración de los encabezados"
+
+#. module: sacramentum
+#: sql_constraint:sacra_est_civil:0
+msgid "El nombre del estado civil está en uso"
+msgstr "El nombre del estado civil está en uso"
+
+#. module: sacramentum
+#: field:sacra_defuncion,fecha_sepultura:0
+msgid "Fecha de sepultura"
+msgstr "Fecha de sepultura"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_defuncion_action
+#: model:ir.model,name:sacramentum.model_sacra_defuncion
+msgid "Registro de defunciones"
+msgstr "Registro de defunciones"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Acta No."
+msgstr "Acta No."
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.sacra_indice_item_menu
+msgid "Índice de registros"
+msgstr "Índice de registros"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,correo:0
+msgid "Correo electrónico"
+msgstr "Correo electrónico"
+
+#. module: sacramentum
+#: sql_constraint:sacra_parroquia:0
+msgid "Este nombre ya existe"
+msgstr "Este nombre ya existe"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "Líbrese orden al Rvdo. Sr. Cura Encargado del Archivo Parroquial de:"
+msgstr "Líbrese orden al Rvdo. Sr. Cura Encargado del Archivo Parroquial de:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid ", natural de"
+msgstr ", natural de"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "Fueron sus padrinos"
+msgstr "Fueron sus padrinos"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Esperando una justa resolución quedo de Ud. atentamente"
+msgstr "Esperando una justa resolución quedo de Ud. atentamente"
+
+#. module: sacramentum
+#: report:declar_solicitante:0
+msgid "a solicitar el Entable del Certificado de"
+msgstr "a solicitar el Entable del Certificado de"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "DATOS GENERALES DE LA PERSONA A BAUTIZAR:"
+msgstr "DATOS GENERALES DE LA PERSONA A BAUTIZAR:"
+
+#. module: sacramentum
+#: field:sacra_enmienda,cartacui_pd:0
+msgid "Carta de ciudadanía a nombre de"
+msgstr "Carta de ciudadanía a nombre de"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "1- Que es cierto, sabe y consta, que"
+msgstr "1- Que es cierto, sabe y consta, que"
+
+#. module: sacramentum
+#: field:sacra_persona,nombre_completo:0
+msgid "Nombre completo"
+msgstr "Nombre completo"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_bautismo_action
+msgid "Registro de bautismos"
+msgstr "Registro de bautismos"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+#: report:solicitud_enmienda:0
+msgid "Debe decir:"
+msgstr "Debe decir:"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid ", de la ciudad de"
+msgstr ", de la ciudad de"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_solicitud_entable
+msgid "Solicitud de entable"
+msgstr "Solicitud de entable"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.orden_sacerdotal_action
+#: model:ir.ui.menu,name:sacramentum.orden_sacerd_item_menu
+msgid "Órdenes sacerdotales"
+msgstr "Órdenes sacerdotales"
+
+#. module: sacramentum
+#: report:declar_solicitante:0
+msgid "ya que"
+msgstr "ya que"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "Por este medio , ante S.E.R. comparece y dice"
+msgstr "Por este medio , ante S.E.R. comparece y dice"
+
+#. module: sacramentum
+#: report:certificacion_literal:0
+#: report:partida_bautismo:0
+msgid "..."
+msgstr "..."
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid ", a la vez tenga a"
+msgstr ", a la vez tenga a"
+
+#. module: sacramentum
+#: field:sacra_enmienda,domicilio:0
+#: field:sacra_entable,domic_baut:0
+#: field:sacra_entable,domicilio:0
+#: field:sacra_entable,domicilio_testigo1:0
+#: field:sacra_entable,domicilio_testigo2:0
+#: field:sacra_solicit_bautismo,direccion:0
+msgid "Dirección"
+msgstr "Dirección"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: field:sacra_enmienda,menor_edad:0
+#: field:sacra_entable,menor_edad:0
+msgid "Es menor de edad"
+msgstr "Es menor de edad"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid ", mayor de edad y dirección en"
+msgstr ", mayor de edad y dirección en"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Abuelo:"
+msgstr "Abuelo:"
+
+#. module: sacramentum
+#: field:sel_vic_actv,ministro:0
+msgid "Seleccione vicario"
+msgstr "Seleccione vicario"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid ", Número:"
+msgstr ", Número:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "años de edad, de estado"
+msgstr "años de edad, de estado"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Lugar de nacimiento:"
+msgstr "Lugar de nacimiento:"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid ", de ocupación"
+msgstr ", de ocupación"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Datos de la Inscripción de nacimiento"
+msgstr "Datos de la Inscripción de nacimiento"
+
+#. module: sacramentum
+#: field:sacra_encabezado,espaciado:0
+msgid "Espaciado entre líneas"
+msgstr "Espaciado entre líneas"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Vistas las disposiciones del Código Canónico y las instrucciones acordadas para su ejecución,"
+msgstr "Vistas las disposiciones del Código Canónico y las instrucciones acordadas para su ejecución,"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "de terceros\" que donde"
+msgstr "de terceros\" que donde"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,no_b_esposo:0
+msgid "No bautisado"
+msgstr "No bautisado"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "vecino de"
+msgstr "vecino de"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Entable"
+msgstr "Entable"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+#: view:sacra_parrocos:0
+msgid "Párroco"
+msgstr "Párroco"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Libro:"
+msgstr "Libro:"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "sus padrinos"
+msgstr "sus padrinos"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Teléfono:"
+msgstr "Teléfono:"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,auto_matr_anul_note:0
+msgid "Notas de anulación de matrimonio automática"
+msgstr "Notas de anulación de matrimonio automática"
+
+#. module: sacramentum
+#: report:constancia_enmienda:0
+#: report:declar_solicit_enm:0
+#: field:sacra_bautismo,folio:0
+#: field:sacra_defuncion,folio:0
+#: field:sacra_enmienda,folio:0
+#: field:sacra_enmienda,pd_folio:0
+#: field:sacra_entable,folio:0
+#: field:sacra_matrimonio,folio:0
+#: field:sacra_matrimonio,folio_b_esposa:0
+#: field:sacra_matrimonio,folio_b_esposo:0
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "Folio"
+msgstr "Folio"
+
+#. module: sacramentum
+#: field:sacra_bautismo,sacra_parroquia_id:0
+#: field:sacra_confirmacion,sacra_parroquia_id:0
+#: field:sacra_datos_parroquia,sacra_parroquia_id:0
+#: field:sacra_defuncion,sacra_parroquia_id:0
+#: field:sacra_matrimonio,sacra_parroquia_id:0
+msgid "Parroquia predeterminada"
+msgstr "Parroquia predeterminada"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.df_menu_user_control4
+msgid "Control de usuarios"
+msgstr "Control de usuarios"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "a nombre de"
+msgstr "a nombre de"
+
+#. module: sacramentum
+#: field:sacra_enmienda,matri_id:0
+msgid "Partida de matrimonio"
+msgstr "Partida de matrimonio"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "línea paterna"
+msgstr "línea paterna"
+
+#. module: sacramentum
+#: field:sacra_persona,bautisado:0
+msgid "Bautisado(a)"
+msgstr "Bautisado(a)"
+
+#. module: sacramentum
+#: field:sacra_bautismo,enmienda_error_ids:0
+#: field:sacra_defuncion,enmienda_error_ids:0
+#: field:sacra_enmienda,enmienda_error_ids:0
+#: field:sacra_matrimonio,enmienda_error_ids:0
+msgid "Errores cometidos"
+msgstr "Errores cometidos"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+msgid "Hizo el oficio de sepultura a:"
+msgstr "Hizo el oficio de sepultura a:"
+
+#. module: sacramentum
+#: selection:sacra_entable,state:0
+msgid "Denegado"
+msgstr "Denegado"
+
+#. module: sacramentum
+#: field:sacra_enmienda,solicita:0
+#: field:sacra_entable,solicita:0
+#: report:solicitud_enmienda:0
+#: report:solicitud_entable:0
+msgid "Solicitante"
+msgstr "Solicitante"
+
+#. module: sacramentum
+#: sql_constraint:sacra_bautismo:0
+msgid "Existe un registro con el tomo, folio y número especificados."
+msgstr "Existe un registro con el tomo, folio y número especificados."
+
+#. module: sacramentum
+#: field:sacra_persona,carnet:0
+msgid "Carnet de identidad"
+msgstr "Carnet de identidad"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.sacra_persona_item_menu
+#: field:sacra_parrocos,persona_id:0
+msgid "Archivo de personas"
+msgstr "Archivo de personas"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "\"SIN PERJUICIO DE TERCERO, A LOS EFECTOS CANÓNICOS\", extienda en el Libro Corriente de Entables de dicha parroquia el siguiente asiento:"
+msgstr "\"SIN PERJUICIO DE TERCERO, A LOS EFECTOS CANÓNICOS\", extienda en el Libro Corriente de Entables de dicha parroquia el siguiente asiento:"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:aprobacion_ent:0
+#: report:certificado_matrimonio:0
+#: report:mandamiento_ent:0
+#: report:notificacion_matrimonio:0
+msgid "y de"
+msgstr "y de"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Registro de estado civil de"
+msgstr "Registro de estado civil de"
+
+#. module: sacramentum
+#: model:ir.actions.report.xml,name:sacramentum.report_certificacion_literal_matri
+msgid "Certificación literal de matrimonio"
+msgstr "Certificación literal de matrimonio"
+
+#. module: sacramentum
+#: field:sacra_bautismo,fecha_nac:0
+#: field:sacra_confirmacion,fecha_nac:0
+#: field:sacra_defuncion,fecha_nac:0
+#: field:sacra_entable,fecha_nac:0
+#: field:sacra_matrimonio,fecha_nac_esposa:0
+#: field:sacra_matrimonio,fecha_nac_esposo:0
+#: field:sacra_parrocos,fecha_nac:0
+#: field:sacra_persona,fecha_nac:0
+#: field:sacra_solicit_bautismo,fecha_nac:0
+msgid "Fecha de nacimiento"
+msgstr "Fecha de nacimiento"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,fecha_matrimonio:0
+msgid "Fecha de matrimonio"
+msgstr "Fecha de matrimonio"
+
+#. module: sacramentum
+#: help:sacra_defuncion,partida_literal:0
+msgid "Registrar partida de defunción a partir de la descripción literal."
+msgstr "Registrar partida de defunción a partir de la descripción literal."
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "No. Acta:"
+msgstr "No. Acta:"
+
+#. module: sacramentum
+#: report:partida_bautismo:0
+msgid "Abuelos maternos:"
+msgstr "Abuelos maternos:"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:partida_bautismo:0
+#: report:solicitud_bautismo:0
+msgid "Nombre(s) y apellidos:"
+msgstr "Nombre(s) y apellidos:"
+
+#. module: sacramentum
+#: view:sacra_defuncion:0
+#: field:sacra_indice,defuncion_id:0
+#: selection:sacra_indice,sacramento:0
+msgid "Defunción"
+msgstr "Defunción"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "\"solo a los efectos canónicos y sin perjuicio de terceros.\""
+msgstr "\"solo a los efectos canónicos y sin perjuicio de terceros.\""
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "promovió expediente para entablar el asiento de la Partida de"
+msgstr "promovió expediente para entablar el asiento de la Partida de"
+
+#. module: sacramentum
+#: report:notificacion_matrimonio:0
+msgid "NOTIFICACIÓN DE MATRIMONIO"
+msgstr "NOTIFICACIÓN DE MATRIMONIO"
+
+#. module: sacramentum
+#: field:sacra_matrimonio,edad_esposa:0
+msgid "Edad de la esposa"
+msgstr "Edad de la esposa"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_confirmacion:0
+#: view:sacra_defuncion:0
+#: field:sacra_entable,literal:0
+#: view:sacra_imagen:0
+#: field:sacra_imagen,imagen:0
+#: view:sacra_matrimonio:0
+msgid "Imagen"
+msgstr "Imagen"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Padre:"
+msgstr "Padre:"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,iglesia_id:0
+msgid "Iglesia predeterminada"
+msgstr "Iglesia predeterminada"
+
+#. module: sacramentum
+#: sql_constraint:sacra_confirmacion:0
+msgid "El registro de confirmación es único"
+msgstr "El registro de confirmación es único"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Secretaria de Cancillería:"
+msgstr "Secretaria de Cancillería:"
+
+#. module: sacramentum
+#: field:sacra_entable,exp_ano:0
+msgid "Año"
+msgstr "Año"
+
+#. module: sacramentum
+#: view:sacra_indice:0
+#: field:sacra_indice,motivo:0
+msgid "Motivo"
+msgstr "Motivo"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "y me une el vínculo familiar de"
+msgstr "y me une el vínculo familiar de"
+
+#. module: sacramentum
+#: field:sacra_entable,tomo_n:0
+msgid "Tomo del registro de nacimiento"
+msgstr "Tomo del registro de nacimiento"
+
+#. module: sacramentum
+#: field:sacra_entable,fecha_baut:0
+msgid "Fecha del sacramento"
+msgstr "Fecha del sacramento"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "en la Parroquia"
+msgstr "en la Parroquia"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "El Señor"
+msgstr "El Señor"
+
+#. module: sacramentum
+#: sql_constraint:sacra_iglesia:0
+msgid "Esta iglesia ya existe en esta parroquia"
+msgstr "Esta iglesia ya existe en esta parroquia"
+
+#. module: sacramentum
+#: field:sacra_bautismo,fecha_fin:0
+#: field:sacra_confirmacion,fecha_fin:0
+#: field:sacra_defuncion,fecha_fin:0
+#: field:sacra_enmienda,fecha_fin:0
+#: field:sacra_entable,fecha_fin:0
+#: field:sacra_matrimonio,fecha_fin:0
+#: field:sacra_persona,fecha_fin:0
+msgid "Fecha de fin"
+msgstr "Fecha de fin"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Registrar enmienda"
+msgstr "Registrar enmienda"
+
+#. module: sacramentum
+#: field:sacra_encabezado,negrita:0
+msgid "Poner en negrita"
+msgstr "Poner en negrita"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "A.S.E.RDMA, a quien Dios guarde por muchos años, suplico, se sirva admitir esta solicitud con los documentos acompañados, disponiendo: 1.- Su radicación; 2.- Su tramitación; 3.- La práctica de las pruebas propuestas y 4.- En definitiva, previos los trámites de rigor, declarar con lugar esta solicitud, decretando sea practicado en los libros correspondientes el asiento bautismal interesado, con los demás pronunciamientos que hubiera lugar."
+msgstr "A.S.E.RDMA, a quien Dios guarde por muchos años, suplico, se sirva admitir esta solicitud con los documentos acompañados, disponiendo: 1.- Su radicación; 2.- Su tramitación; 3.- La práctica de las pruebas propuestas y 4.- En definitiva, previos los trámites de rigor, declarar con lugar esta solicitud, decretando sea practicado en los libros correspondientes el asiento bautismal interesado, con los demás pronunciamientos que hubiera lugar."
+
+#. module: sacramentum
+#: view:sacra_confirmacion:0
+msgid "Testigo de la confirmación"
+msgstr "Testigo de la confirmación"
+
+#. module: sacramentum
+#: field:importar_bautismo,archivo_fname:0
+#: field:importar_confirmacion,archivo_fname:0
+#: field:importar_defuncion,archivo_fname:0
+#: field:importar_indice,archivo_fname:0
+#: field:importar_matrimonio,archivo_fname:0
+msgid "Nombre de archivo"
+msgstr "Nombre de archivo"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "3.- Exihido Carné de Identidad número"
+msgstr "3.- Exihido Carné de Identidad número"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_mestizaje_action
+#: model:ir.ui.menu,name:sacramentum.menu_df_mestizaje
+msgid "Mestizajes"
+msgstr "Mestizajes"
+
+#. module: sacramentum
+#: field:sacra_solicit_bautismo,p_baut:0
+#: field:sacra_solicit_bautismo,padr_baut:0
+msgid "Está Bautizado"
+msgstr "Está Bautizado"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Fecha expedición"
+msgstr "Fecha expedición"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Notario Eclesiástico"
+msgstr "Notario Eclesiástico"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid ", y por la materna"
+msgstr ", y por la materna"
+
+#. module: sacramentum
+#: field:sacra_enmienda,fecha_expedida:0
+msgid "Fecha de expedida"
+msgstr "Fecha de expedida"
+
+#. module: sacramentum
+#: help:sacra_entable,domic_baut:0
+msgid "Dirección cuando se bautizó"
+msgstr "Dirección cuando se bautizó"
+
+#. module: sacramentum
+#: field:sacra_confirmacion,persona_id:0
+msgid "Persona confirmada"
+msgstr "Persona confirmada"
+
+#. module: sacramentum
+#: field:sacra_bautismo,sexo:0
+#: field:sacra_enmienda,sexo:0
+#: field:sacra_enmienda,sexo_s:0
+#: field:sacra_entable,sexo:0
+#: field:sacra_entable,sexo_s:0
+#: field:sacra_entable,sexo_testigo1:0
+#: field:sacra_entable,sexo_testigo2:0
+#: field:sacra_matrimonio,sexo_esposa:0
+#: field:sacra_matrimonio,sexo_esposo:0
+#: view:sacra_persona:0
+#: field:sacra_persona,sexo:0
+#: field:sacra_solicit_bautismo,sexo:0
+msgid "Sexo"
+msgstr "Sexo"
+
+#. module: sacramentum
+#: field:sacra_solicit_bautismo,m_baut:0
+#: field:sacra_solicit_bautismo,madr_baut:0
+msgid "Está Bautizada"
+msgstr "Está Bautizada"
+
+#. module: sacramentum
+#: field:sacra_bautismo,p_m_nombre:0
+#: field:sacra_bautismo,p_p_nombre:0
+#: field:sacra_entable,p_m_nombre:0
+#: field:sacra_entable,p_p_nombre:0
+#: field:sacra_solicit_bautismo,p_m_nombre:0
+#: field:sacra_solicit_bautismo,p_p_nombre:0
+msgid "Abuelo"
+msgstr "Abuelo"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Bautizada: Si"
+msgstr "Bautizada: Si"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+msgid "Datos de la enmienda"
+msgstr "Datos de la enmienda"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "NO"
+msgstr "No"
+
+#. module: sacramentum
+#: field:sacra_indice,observaciones:0
+msgid "Observaciones"
+msgstr "Observaciones"
+
+#. module: sacramentum
+#: field:sacra_defuncion,cuidad:0
+msgid "Ciudad de sepultura"
+msgstr "Ciudad de sepultura"
+
+#. module: sacramentum
+#: field:sacra_bautismo,m_m_nombre:0
+#: field:sacra_bautismo,m_p_nombre:0
+#: field:sacra_entable,m_m_nombre:0
+#: field:sacra_entable,m_p_nombre:0
+#: field:sacra_solicit_bautismo,m_m_nombre:0
+#: field:sacra_solicit_bautismo,m_p_nombre:0
+msgid "Abuela"
+msgstr "Abuela"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "NOMBRES Y APELLIDOS DE ABUELOS PATERNOS:"
+msgstr "NOMBRES Y APELLIDOS DE ABUELOS PATERNOS:"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "emitido en la Parroquia"
+msgstr "emitido en la Parroquia"
+
+#. module: sacramentum
+#: view:res.users:0
+msgid "User"
+msgstr "Usuario"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid ":"
+msgstr ":"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "Lo firmó S.S. en Santiago de Cuba, fecha ut supra."
+msgstr "Lo firmó S.S. en Santiago de Cuba, fecha ut supra."
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_confirmacion_action
+#: model:ir.model,name:sacramentum.model_sacra_confirmacion
+msgid "Registro de confirmaciones"
+msgstr "Registro de confirmaciones"
+
+#. module: sacramentum
+#: report:notificacion_matrimonio:0
+msgid "Bautisad"
+msgstr "Bautisad"
+
+#. module: sacramentum
+#: help:sacra_bautismo,nota:0
+#: help:sacra_confirmacion,nota:0
+#: help:sacra_defuncion,nota:0
+#: help:sacra_matrimonio,nota_esposa:0
+#: help:sacra_matrimonio,nota_esposo:0
+#: help:sacra_persona,nota:0
+msgid "Nota sobre la persona"
+msgstr "Nota sobre la persona"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Datos correspondientes al bautizo"
+msgstr "Datos correspondientes al bautizo"
+
+#. module: sacramentum
+#: field:sacra_enmienda,fuera_pais:0
+#: field:sacra_entable,fuera_pais:0
+msgid "Está fuera del país"
+msgstr "Está fuera del país"
+
+#. module: sacramentum
+#: field:sacra_bautismo,lugar_nac:0
+#: field:sacra_confirmacion,lugar_nac:0
+#: field:sacra_defuncion,lugar_nac:0
+#: field:sacra_entable,lugar_nac:0
+#: field:sacra_entable,lugar_nac_testigo1:0
+#: field:sacra_entable,lugar_nac_testigo2:0
+#: field:sacra_matrimonio,lugar_nac_esposa:0
+#: field:sacra_matrimonio,lugar_nac_esposo:0
+#: field:sacra_parrocos,lugar_nac:0
+#: field:sacra_persona,lugar_nac:0
+#: field:sacra_solicit_bautismo,lugar_nac:0
+msgid "Lugar de nacimiento"
+msgstr "Lugar de nacimiento"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "de esta arquidiócesis, para que en virtud de este mandato y con la cláusula de \"SIN PERJUICIO DE TERCERO, A LOS EFECTOS CANÓNICO\", se extienda en el Libro Corriente de Entables de dicha parroquia, el siguiente asiento:"
+msgstr "de esta arquidiócesis, para que en virtud de este mandato y con la cláusula de \"SIN PERJUICIO DE TERCERO, A LOS EFECTOS CANÓNICO\", se extienda en el Libro Corriente de Entables de dicha parroquia, el siguiente asiento:"
+
+#. module: sacramentum
+#: report:mandamiento_ent:0
+msgid "Estimado hermano en Cristo:"
+msgstr "Estimado hermano en Cristo:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "matrimonio, que por palabras de presente, y como lo manda la Santa Madre Iglesia, contrajeron:"
+msgstr "matrimonio, que por palabras de presente, y como lo manda la Santa Madre Iglesia, contrajeron:"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.entables_item_menu
+msgid "Entables"
+msgstr "Entables"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_importar_confirmacion
+msgid "Importar confirmaciones"
+msgstr "Importar confirmaciones"
+
+#. module: sacramentum
+#: report:decreto_enmienda:0
+msgid "ha expedido el siguiente:"
+msgstr "ha expedido el siguiente:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "el Presbítero"
+msgstr "el Presbítero"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "Dada cuenta; y,"
+msgstr "Dada cuenta; y,"
+
+#. module: sacramentum
+#: help:sacra_datos_parroquia,auto_confir_note:0
+msgid "Generar notas de confirmación automáticamente."
+msgstr "Generar notas de confirmación automáticamente."
+
+#. module: sacramentum
+#: field:sacra_entable,encar_archi:0
+msgid "Encargado del archivo"
+msgstr "Encargado del archivo"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "que obra en el Libro"
+msgstr "que obra en el Libro"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "un"
+msgstr "un"
+
+#. module: sacramentum
+#: field:sacra_defuncion,lugar_sepultura:0
+msgid "Sepultado en"
+msgstr "Sepultado en"
+
+#. module: sacramentum
+#: field:sacra_solicit_bautismo,numero:0
+msgid "Solicitud de bautismo #"
+msgstr "Solicitud de bautismo #"
+
+#. module: sacramentum
+#: field:enmienda_error,campo_partida:0
+msgid "Campo de la partida"
+msgstr "Campo de la partida"
+
+#. module: sacramentum
+#: field:sacra_iglesia,imagen:0
+msgid "Imagen de la iglesia"
+msgstr "Imagen de la iglesia"
+
+#. module: sacramentum
+#: report:solicitud_bautismo:0
+msgid "Fecha del bautizo:"
+msgstr "Fecha del bautizo:"
+
+#. module: sacramentum
+#: field:sacra_enmienda,num_exp:0
+#: field:sacra_entable,num_exp:0
+msgid "Número de expediente"
+msgstr "Número de expediente"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "Canciller:"
+msgstr "Canciller:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "A presencia de los testigos:"
+msgstr "A presencia de los testigos:"
+
+#. module: sacramentum
+#: selection:sacra_encabezado,alineacion:0
+msgid "Derecha"
+msgstr "Derecha"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+#: view:sacra_entable:0
+msgid "Rango por fecha de solicitud"
+msgstr "Rango por fecha de solicitud"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "Vicario:"
+msgstr "Vicario:"
+
+#. module: sacramentum
+#: help:sacra_entable,exp_ano:0
+msgid "Año en que se creó el expediente"
+msgstr "Año en que se creó el expediente"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_persona_action
+msgid "Personas"
+msgstr "Personas"
+
+#. module: sacramentum
+#: report:solicitud_enmienda:0
+msgid "Ante mi"
+msgstr "Ante mi"
+
+#. module: sacramentum
+#: constraint:sacra_bautismo:0
+msgid "Esta persona ya ha sido bautizada"
+msgstr "Esta persona ya ha sido bautizada"
+
+#. module: sacramentum
+#: sql_constraint:sacra_defuncion:0
+msgid "El registro de defunción es único"
+msgstr "El registro de defunción es único"
+
+#. module: sacramentum
+#: report:anulacion_matrimonio:0
+#: report:notificacion_matrimonio:0
+msgid "Celebrado en esta parroquia, el:"
+msgstr "Celebrado en esta parroquia, el:"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_sacra_persona
+#: field:sacra_enmienda,persona_id:0
+#: view:sacra_persona:0
+#: view:sacra_testigo:0
+msgid "Persona"
+msgstr "Persona"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+#: report:solicitud_entable:0
+msgid "Que es hij"
+msgstr "Que es hij"
+
+#. module: sacramentum
+#: view:sacra_enmienda:0
+#: field:sacra_enmienda,partida1:0
+msgid "Partida"
+msgstr "Partida"
+
+#. module: sacramentum
+#: report:certificado_defuncion:0
+#: report:certificado_matrimonio:0
+#: report:partida_bautismo:0
+msgid "Firmado por:"
+msgstr "Firmado por:"
+
+#. module: sacramentum
+#: field:sacra_confirmacion,fecha_confir:0
+msgid "Fecha de la confirmación"
+msgstr "Fecha de la confirmación"
+
+#. module: sacramentum
+#: view:sacra_parrocos:0
+msgid "Datos del párroco"
+msgstr "Datos del párroco"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "solicitud de una certificación de la Partida Bautismal de"
+msgstr "solicitud de una certificación de la Partida Bautismal de"
+
+#. module: sacramentum
+#: model:ir.model,name:sacramentum.model_ir_model_fields
+msgid "Fields"
+msgstr "Campos"
+
+#. module: sacramentum
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+msgid "Está incapacitad"
+msgstr "Está incapacitad"
+
+#. module: sacramentum
+#: view:sacra_persona:0
+msgid "Datos de los sacramentos"
+msgstr "Datos de los sacramentos"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: view:sacra_solicit_bautismo:0
+msgid "Datos de la persona a bautizar"
+msgstr "Datos de la persona a bautizar"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "del Tomo"
+msgstr "del Tomo"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_est_civil_action
+#: model:ir.ui.menu,name:sacramentum.menu_df_est_civil
+msgid "Estados civiles"
+msgstr "Estados civiles"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:declar_solicit_enm:0
+#: report:declar_solicitante:0
+#: report:declar_testigos:0
+#: report:mandamiento_ent:0
+#: report:solicitud_entable:0
+msgid "Cancillería"
+msgstr "Cancillería"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "y que según consta del expediente formado al"
+msgstr "y que según consta del expediente formado al"
+
+#. module: sacramentum
+#: view:sacra_bautismo:0
+#: field:sacra_bautismo,ministro:0
+#: field:sacra_confirmacion,ministro:0
+#: field:sacra_defuncion,ministro:0
+#: view:sacra_entable:0
+#: field:sacra_entable,ministro:0
+#: view:sacra_matrimonio:0
+#: field:sacra_matrimonio,ministro:0
+#: view:sacra_solicit_bautismo:0
+#: field:sacra_solicit_bautismo,ministro:0
+msgid "Ministro"
+msgstr "Ministro"
+
+#. module: sacramentum
+#: model:ir.ui.menu,name:sacramentum.menu_data_backup2
+msgid "Salvas de datos"
+msgstr "Salvas de datos"
+
+#. module: sacramentum
+#: report:declar_testigos:0
+msgid "arzobispado de"
+msgstr "arzobispado de"
+
+#. module: sacramentum
+#: field:sacra_datos_parroquia,auto_matr_note:0
+msgid "Notas de matrimonio automática"
+msgstr "Notas de matrimonio automática"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "a) Certificación Negativa del asiento bautismal, expedida por el cura Egdo. Del Archivo de dicha Parroquia;"
+msgstr "a) Certificación Negativa del asiento bautismal, expedida por el cura Egdo. Del Archivo de dicha Parroquia;"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+#: report:mandamiento_ent:0
+msgid "y que según consta del expediente"
+msgstr "y que según consta del expediente"
+
+#. module: sacramentum
+#: field:sacra_bautismo,apellido2:0
+#: field:sacra_bautismo,m_apellido2:0
+#: field:sacra_bautismo,p_apellido2:0
+#: field:sacra_confirmacion,apellido2:0
+#: field:sacra_defuncion,apellido2:0
+#: field:sacra_defuncion,m_apellido2:0
+#: field:sacra_defuncion,p_apellido2:0
+#: field:sacra_enmienda,apellido2:0
+#: field:sacra_entable,apellido2:0
+#: field:sacra_entable,apellido2_testigo1:0
+#: field:sacra_entable,apellido2_testigo2:0
+#: field:sacra_entable,m_apellido2:0
+#: field:sacra_entable,p_apellido2:0
+#: field:sacra_indice,apellido2:0
+#: field:sacra_matrimonio,apellido2_esposa:0
+#: field:sacra_matrimonio,apellido2_esposo:0
+#: field:sacra_matrimonio,apellido2_madrina:0
+#: field:sacra_matrimonio,apellido2_padrino:0
+#: field:sacra_matrimonio,apellido2_testigo1:0
+#: field:sacra_matrimonio,apellido2_testigo2:0
+#: field:sacra_matrimonio,m_apellido2_esposa:0
+#: field:sacra_matrimonio,m_apellido2_esposo:0
+#: field:sacra_matrimonio,p_apellido2_esposa:0
+#: field:sacra_matrimonio,p_apellido2_esposo:0
+#: field:sacra_parrocos,apellido2:0
+#: field:sacra_persona,apellido2:0
+#: field:sacra_solicit_bautismo,apellido2:0
+#: field:sacra_solicit_bautismo,m_apellido2:0
+#: field:sacra_solicit_bautismo,p_apellido2:0
+msgid "2do apellido"
+msgstr "2do apellido"
+
+#. module: sacramentum
+#: model:ir.actions.act_window,name:sacramentum.sacra_solicit_bautismo_action
+#: model:ir.ui.menu,name:sacramentum.sacra_solicit_bautismo_item_menu
+#: view:sacra_solicit_bautismo:0
+msgid "Solicitudes de bautismo"
+msgstr "Solicitudes de bautismo"
+
+#. module: sacramentum
+#: report:aprobacion_ent:0
+msgid "de esta archidiócesis, proponiendo como pruebas: Las consistentes en:"
+msgstr "de esta archidiócesis, proponiendo como pruebas: Las consistentes en:"
+
+#. module: sacramentum
+#: report:certificado_matrimonio:0
+msgid "previos los requisitos canónicos y civiles, asistió al"
+msgstr "previos los requisitos canónicos y civiles, asistió al"
+
+#. module: sacramentum
+#: view:sacra_entable:0
+msgid "Denegar el presente entable"
+msgstr "Denegar el presente entable"
+
+#. module: sacramentum
+#: report:solicitud_entable:0
+msgid "4.- Testifical, compuesta por dos testigos voluntarios que presento en este acto, a fin de que sean examinados a tenor de los hechos y circunstancias relatados."
+msgstr "4.- Testifical, compuesta por dos testigos voluntarios que presento en este acto, a fin de que sean examinados a tenor de los hechos y circunstancias relatados."
+

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_entable_search">
+            <field name="name">sacra_entable_search</field>
+            <field name="model">sacra_entable</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Entable">
+                        <field name="fecha_solicitud"/>
+                        <field name="state"/>
+                    <newline/>
+                    <group expand="0" string="Datos del solicitante" >
+                        <field name="solicita"/>
+                        <field name="carnet"/>
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Datos del sacramento" >
+                        <field name="nombre"/>
+                        <field name="apellido1"/>
+                        <field name="apellido2"/>
+                        <field name="fecha_nac"/>
+                        <field name="fecha_baut"/>
+                        <field name="parroquia"/>
+                        <field name="ministro"/>
+                    </group> 
+                    <newline/>
+                    <group expand="0" string="Rango por fecha de solicitud" >
+                        <field name="fecha_ini"/>
+                        <field name="fecha_fin"/>
+                    </group>
+                        
+                    <newline/>
+                    <group expand="0" string="Agrupar por" >
+                    <filter name="min" string="Ministro" icon="stock_person" domain="[]" context="{'group_by':'ministro'}"/>
+                    <filter name="est" string="Estado" icon="terp-camera_test" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_entable_tree">
+            <field name="name">sacra_entable_tree</field>
+            <field name="model">sacra_entable</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Entable">
+                    <field name="fecha_solicitud"/>
+                    <field name="solicita"/>
+                    <field name="nombre_completo"/>
+                    <field name="nombre_completo_testigo1"/>
+                    <field name="nombre_completo_testigo2"/>
+                    <field name="ministro"/>
+                    <field name="state" />
+                    <button name="action_denegado" colspan="1" states="Solicitado" string="Denegar entable" type="object" icon="terp-mail_delete" help="Denegar el presente entable"/>
+                    <button name="action_aprobado" colspan="1" states="Solicitado" string="Aprobar entable" type="object" icon="gtk-apply" help="Aprobar el entable se realiza el registro automáticamente en caso de estar configurada esta opción"/>
+                    <button name="action_registrado" colspan="1" states="Aprobado" string="Registrar entable" type="object" icon="gtk-copy" help="Registrar el entable y realizar el registro del bautismo declarado"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_entable_form">
+            <field name="name">sacra_entable_form</field>
+            <field name="model">sacra_entable</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Entable">
+                <header>
+                    <button name="action_denegado" colspan="1" states="Solicitado" string="Denegar entable" type="object" icon="terp-mail_delete" help="Denegar el presente entable"/>
+                    <button name="action_aprobado" colspan="1" states="Solicitado" string="Aprobar entable" type="object" icon="gtk-apply" help="Aprobar el entable y realizar el registro del bautismo declarado"/>
+                    <button name="action_registrado" colspan="1" states="Aprobado" string="Registrar entable" type="object" icon="gtk-copy" help="Registrar el entable y realizar el registro del bautismo declarado"/>
+                    <field name="state" widget="statusbar" statusbar_visible="Solicitado,Aprobado" statusbar_colors='{"Solicitado":"blue","Aprobado":"green"}'/>
+                </header>
+                <sheet>
+                <notebook colspan="4" >
+                <page string="Datos básicos del entable" >
+                    <group colspan="4" col='4' >
+                        <field name="fecha_solicitud" colspan="2" />
+                        <field name="fecha_aprobacion" colspan="2" />
+                        <field name="num_exp" colspan="2" />
+                        <field name="exp_ano" colspan="2" />
+                        <field name="num_rego" colspan="2" />
+                    </group>
+                <group colspan="4" col='8' >
+                    <group colspan="8" col='8' string="Datos del solicitante">
+                            <field name="solicita" colspan="8" />
+                            <field name="domicilio" colspan="8" />
+                            <field name="cuidad" colspan="4" />
+                            <field name="carnet" colspan="4" />
+                            <field name="sexo_s" colspan="4" />
+                            <field name="estado_civil_s" colspan="4" />
+                            <field name="vinculo" colspan="4" />
+                        <group colspan="8" col='8' string="Solicito, ya que el titular del certificado" >
+                            <field name="menor_edad" colspan="4" />
+                            <field name="ha_fallecido" colspan="4" />
+                            <field name="fuera_pais" colspan="4" />
+                            <field name="incapacitado" colspan="4" />
+                            <field name="otras_causas" colspan="8" />
+                        </group>
+                    </group>
+                <group colspan="8" col='8' string="Solicitando copia de Certificación de:"> 
+                        <group colspan="4" >
+                            <field name="nombre" />
+                            <field name="apellido1" />
+                            <field name="apellido2" />
+                        </group>
+                        <group colspan="4" >
+                            <field name="fecha_nac"/>
+                            <field name="lugar_nac"/>
+                            <field name="sexo"/>
+                        </group>
+
+                    <group colspan="8" col='8' string="Datos de la Inscripción de nacimiento">
+                        <field name="tomo_n" colspan="4" />
+                        <field name="folio_n" colspan="4" />
+                        <field name="cuidad_rc" colspan="8" />
+                    </group>
+
+                        <group colspan="4" string="Datos del padre">
+                        <field name="p_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                        <newline/>
+                        <field name="p_nombre" options='{"save_readonly":True}' />
+                        <field name="p_apellido1" options='{"save_readonly":True}'/>
+                        <field name="p_apellido2" options='{"save_readonly":True}'/>
+                        <field name="p_lugar_nac" options='{"save_readonly":True}'/>
+                        </group>
+                        <group colspan="4" string="Datos de la madre">
+                        <field name="m_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" ></field>
+                        <newline/>
+                        <field name="m_nombre" options='{"save_readonly":True}' />
+                        <field name="m_apellido1" options='{"save_readonly":True}'/>
+                        <field name="m_apellido2" options='{"save_readonly":True}'/>
+                        <field name="m_lugar_nac" options='{"save_readonly":True}'/>
+                        </group>
+                        
+                        <newline/><label string="" colspan="8" />
+                        <group colspan="4" string="Datos de los abuelos paternos">
+                        <field name="p_p_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                        <newline/>
+                        <field name="p_p_nombre" attrs="{'readonly': [('p_p_persona','!=', False)]}" options='{"save_readonly":True}'/>
+                        <field name="m_p_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                        <newline/>
+                        <field name="m_p_nombre" attrs="{'readonly': [('m_p_persona','!=', False)]}" options='{"save_readonly":True}'/>
+                        </group>
+                        <group colspan="4" string="Datos de los abuelos maternos">
+                        <field name="p_m_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" ></field>
+                        <newline/>
+                        <field name="p_m_nombre" attrs="{'readonly': [('p_m_persona','!=', False)]}" options='{"save_readonly":True}'/>
+                        <field name="m_m_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" ></field>
+                        <newline/>
+                        <field name="m_m_nombre" attrs="{'readonly': [('m_m_persona','!=', False)]}" options='{"save_readonly":True}'/>
+                        </group>
+                    </group>
+                    </group>
+                    
+                    <group colspan="4" col='8' string="Datos del sacramento">
+                            <field name="partida" colspan="4" />
+                            <field name="fecha_baut" colspan="4" /> 
+                            <field name="ministro" colspan="4" />
+                            <field name="parroquia" colspan="4" /> 
+                            <field name="iglesia_id" colspan="4" /> 
+                            <field name="encar_archi" colspan="4" /> 
+                    </group> 
+                    
+                    <group colspan="4" col="8" string="Datos de los padrinos">
+                        <group colspan="4">
+                            <field name="padrino_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="padrino" attrs="{'readonly': [('padrino_persona','!=', False)]}" options='{"save_readonly":True}'/>
+                        </group>
+                        <group colspan="4">
+                            <field name="madrina_persona" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="madrina" attrs="{'readonly': [('madrina_persona','!=', False)]}" options='{"save_readonly":True}'/>
+                        </group>
+                    </group> 
+                </page> 
+                <page string="Declaración de testigos">
+                <group colspan="4" col='8' string="Datos del primer testigo">
+                        <field colspan="8" name="testigo1" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" ></field>
+                        <group colspan="4" >
+                            <field name="nombre_testigo1" options='{"save_readonly":True}'/>
+                            <field name="apellido1_testigo1"  options='{"save_readonly":True}'/>
+                            <field name="apellido2_testigo1"  options='{"save_readonly":True}'/>
+                            <field name="lugar_nac_testigo1"  options='{"save_readonly":True}'/>
+                            <field name="domicilio_testigo1"  options='{"save_readonly":True}'/>
+                        </group>
+                        <group colspan="4" >
+                            <field name="sexo_testigo1" options='{"save_readonly":True}'/>
+                            <field name="estado_civil_testigo1"  options='{"save_readonly":True}'/>
+                            <field name="edad_testigo1" options='{"save_readonly":True}'/>
+                            <field name="carnet_testigo1" options='{"save_readonly":True}'/>
+                            <field name="profesion_testigo1" options='{"save_readonly":True}'/>
+                        </group>
+                        <field name="caracter_testigo1" colspan="8" />
+                </group>
+
+                <group colspan="4" col='8' string="Datos del segundo testigo">
+                        <field colspan="8" name="testigo2" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" ></field>
+                        <group colspan="4" >
+                            <field name="nombre_testigo2" options='{"save_readonly":True}'/>
+                            <field name="apellido1_testigo2" options='{"save_readonly":True}'/>
+                            <field name="apellido2_testigo2" options='{"save_readonly":True}'/>
+                            <field name="lugar_nac_testigo2" options='{"save_readonly":True}'/>
+                            <field name="domicilio_testigo2" options='{"save_readonly":True}'/>
+                        </group>
+                        <group colspan="4" >
+                            <field name="sexo_testigo2" options='{"save_readonly":True}'/>
+                            <field name="estado_civil_testigo2" options='{"save_readonly":True}'/>
+                            <field name="edad_testigo2" options='{"save_readonly":True}'/>
+                            <field name="carnet_testigo2" options='{"save_readonly":True}'/>
+                            <field name="profesion_testigo2" options='{"save_readonly":True}'/>
+                        </group>
+                        <field name="caracter_testigo2" colspan="8" />
+                </group>
+                </page> 
+                <!--page string="Literal"> 
+                    <group colspan="4" >    
+                        <field name="literal_text4" nolabel= "1" colspan="4" widget="FieldText3">   </field> 
+                    </group>                
+                </page>   
+                <page string="Imagen">
+                    <group colspan="4" >    
+                        <field colspan="4" mode="form" name="literal" widget="one2many_list" nolabel="1">
+                            <form string="Imagen" options='{"deletable": false, "addable": false}'>
+                                <field name="imagen" nolabel= "1" colspan="4" widget="image" options='{"fileType": "Imagen/jpg,Imagen/png,Imagen/bmp,Imagen/gif"}'/>
+                            </form>
+                        </field>  
+                    </group>                
+                </page-->
+                </notebook>
+                <separator colspan="4" string=""/>
+                <field name="bautismo_id" colspan="2" states="Registrado"/>
+                </sheet>
+            </form>
+            </field>
+        </record>
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_entable_action">
+            <field name="name">Expedientes de entables</field>
+            <field name="res_model">sacra_entable</field>
+            <field name="limit">20</field>
+        </record>
+    </data>
+</openerp>
+

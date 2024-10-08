@@ -1,0 +1,35 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<openerp>
+    <data>
+    <!--menuitem name='Bautismo' id='bautismos_top_menu' sequence='1'/-->
+    <menuitem name='Índice' id='sacra_indice_item_menu' action='sacra_indice_action' sequence='1' groups="sacramentum.group_sacramentum,sacramentum.group_sacramentum1"/>
+        <menuitem name='Cargar Registros' id='sacra_cargar_item_menu' parent='sacra_indice_item_menu' action='importar_indice_action' sequence='1'/>
+        <menuitem name='Sincronizar índice' id='sacra_sincro_item_menu' parent='sacra_indice_item_menu' action='sincronizar_indice' sequence='2'/>
+    <menuitem name='Bautismos' id='bautismos_item_menu' action='sacra_bautismo_action' sequence='2' groups="sacramentum.group_sacramentum,sacramentum.group_sacramentum1"/>
+    <menuitem name='Solicitudes de bautismo' id='sacra_solicit_bautismo_item_menu' parent='bautismos_item_menu' action='sacra_solicit_bautismo_action' sequence='6'/>
+
+    <menuitem name='Confirmaciones' id='confirmaciones_item_menu' action='sacra_confirmacion_action' sequence='3' groups="sacramentum.group_sacramentum,sacramentum.group_sacramentum1"/>
+
+    <menuitem name='Matrimonios' id='matrimonios_item_menu' action='sacra_matrimonio_action' sequence='5' groups="sacramentum.group_sacramentum,sacramentum.group_sacramentum1"/>
+
+    <menuitem name='Defunciones' id='defunciones_item_menu' action='sacra_defuncion_action' sequence='7' groups="sacramentum.group_sacramentum,sacramentum.group_sacramentum1"/>
+
+    <menuitem name='Entables' id='entables_item_menu' action='sacra_entable_action' sequence='8' groups="sacramentum.group_sacramentum2"/>
+    
+    <menuitem name='Enmiendas' id='enmiendas_item_menu' action='sacra_enmienda_action' sequence='9' groups="sacramentum.group_sacramentum2"/>
+    
+	<menuitem name='Legalizaciones' id='legalizacion_item_menu' action='sacra_legalizacion_action' sequence='19' groups="sacramentum.group_sacramentum2"/>
+
+    <menuitem name='Administración' id='admin_item_menu' sequence='10' groups="sacramentum.group_sacramentum,sacramentum.group_sacramentum1"/>
+        <menuitem name='Configuración general' id='sacra_datos_parroquia_item_menu' parent='admin_item_menu' action='sacra_datos_parroquia_action' sequence='1' />
+        <menuitem name='Parroquias' id='parroquias_item_menu' parent='admin_item_menu' action='sacra_parroquia_action' sequence='5'/>
+        <menuitem name='Párrocos' id='parrocos_item_menu' parent='admin_item_menu' action='sacra_parrocos_action' sequence='6'/>
+        <menuitem name='Órdenes sacerdotales' id='orden_sacerd_item_menu' parent='admin_item_menu' action='orden_sacerdotal_action' sequence='3'/>
+        <menuitem name="Mestizajes" id="menu_df_mestizaje" sequence="5" parent="admin_item_menu" action="sacra_mestizaje_action"/>
+        <menuitem name='Lugares de nacimiento' id='lugar_nacimiento_item_menu' parent='admin_item_menu' action='lugar_nacimiento_action' sequence='6'/>
+        <menuitem name='Tomos' id='tomo_item_menu' parent='admin_item_menu' action='sacra_tomo_action' sequence='7'/>
+        <menuitem name="Estados civiles" id="menu_df_est_civil" sequence="8" parent="admin_item_menu" action="sacra_est_civil_action"/>
+        <menuitem name='Archivo de personas' id='sacra_persona_item_menu' parent='admin_item_menu' action='sacra_persona_action' sequence='10'/>
+
+    </data>
+</openerp>

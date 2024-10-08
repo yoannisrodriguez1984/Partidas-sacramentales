@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+    <openerp>
+        <data noupdate="1">
+        
+           <record model="ir.cron" id="cron_id">
+                <field name="name">Programacion demo</field>
+                <field name="interval_type">minutes</field>
+                <field name="numbercall">-1</field>
+            </record>
+
+            <record model="start_demo" id="demo1">
+                <field name="fecha_ini">2017-05-14</field>
+                <field name="cant_min">43200</field>
+                <field name="conta">11</field>
+                <field name="codigo_entrada"></field>
+                <field name="cron_id" ref="cron_id"/>
+            </record>
+        </data>
+    </openerp>

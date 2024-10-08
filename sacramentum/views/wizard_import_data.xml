@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="wizard_reparar_reg_view" model="ir.ui.view">
+            <field name="name">wizard_reparar_reg_form</field>
+            <field name="model">wizard_reparar_reg</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Importar datos">
+                    <header>
+                    </header>
+                        <sheet>
+                            <group>
+                                <field name="opcion" class="oe_inline"/>
+                            </group>
+                        </sheet>
+                    <footer>
+                        <button name='cargar_datos' string='Aceptar' class='btn-primary' type='object'/>
+                        <button string='Cancelar' class='btn-default' special='cancel'/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!-- Action to open To-do Task list -->
+        <act_window id="action_wizard_reparar_reg" name="Reparar registros" res_model="wizard_reparar_reg" view_mode="form" target="new"/>
+
+        <!-- <menuitem id="menu_reparar_reg" name="Reparar registros" action="action_wizard_reparar_reg" groups="sacramentum.group_sacramentum3"/> -->
+
+        
+    </data>
+</openerp>

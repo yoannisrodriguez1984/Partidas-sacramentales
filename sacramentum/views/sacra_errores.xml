@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="enmienda_error_tree">
+            <field name="name">enmienda_error_tree</field>
+            <field name="model">enmienda_error</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Enmienda error">
+                    <field name="campo_partida" domain="[('modificable','=',True)]"/>
+					<field name="dice" />
+                    <field name="deber_decir"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</openerp>
+

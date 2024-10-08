@@ -1,0 +1,20 @@
+{
+'name': 'sacra_correo',
+'description': u'Módulo para la búsqueda en otros archivos por medio del correo',
+'author': 'sacra',
+'depends': ['base','sacramentum'],
+'application': True,
+'data': [
+        'view/sacra_correo_config.xml',
+        'view/busqu_bautismo.xml',
+        'view/busqu_confirmacion.xml',
+        'view/busqu_defuncion.xml',
+        'view/busqu_matrimonio.xml',
+        'view/resp_bautismo.xml',
+        'view/resp_confirmacion.xml',
+        'view/resp_defuncion.xml',
+        'view/resp_matrimonio.xml',
+        'view/opciones_conf.xml',
+        'view/system_main_menu.xml',
+    ],
+}

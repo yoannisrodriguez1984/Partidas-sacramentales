@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_legalizacion_search">
+            <field name="name">sacra_legalizacion_search</field>
+            <field name="model">sacra_legalizacion</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Legalización">
+                        <field name="fecha_leg"/>
+                        <field name="canciler"/>
+                        <field name="ministro"/>
+                        <field name="parroquia"/>
+                        <field name="partida"/>
+                        <field name="tomo"/>
+                        <field name="folio"/>
+                        <field name="numero"/>
+                        <group expand="0" string="Agrupar por" >
+                            <filter name="cam" string="Canciler" icon="stock_person" domain="[]" context="{'group_by':'canciler'}"/>
+                            <filter name="min" string="Ministro" icon="stock_person" domain="[]" context="{'group_by':'ministro'}"/>
+                            <filter name="par" string="Partida" icon="terp-camera_test" domain="[]" context="{'group_by':'partida'}"/>
+                        </group>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_legalizacion_tree">
+            <field name="name">sacra_legalizacion_tree</field>
+            <field name="model">sacra_legalizacion</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Legalización">
+                    <field name="fecha_leg"/>
+                    <field name="canciler"/>
+                    <field name="ministro"/>
+                    <field name="parroquia"/>
+                    <field name="partida"/>
+                    <field name="tomo"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_legalizacion_form">
+            <field name="name">sacra_legalizacion_form</field>
+            <field name="model">sacra_legalizacion</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Legalización">
+                <sheet>
+                <notebook colspan="4" >
+                    <page string="Datos de la Legalización" >
+                        <group colspan="4" col='4' >
+                            <field name="canciler" colspan="2" />
+                            <field name="ministro" colspan="2" />
+                            <field name="parroquia" colspan="2" />
+                            <field name="cuidad" colspan="2" />
+                            <field name="fecha_leg" colspan="4" class="oe_inline"/>
+                            <field name="partida" colspan="2" />
+                            <field name="tomo" colspan="2" />
+                            <field name="folio" colspan="2" />
+                            <field name="numero" colspan="2" />
+                        </group>
+                    </page>
+                </notebook>
+                </sheet>
+            </form>
+            </field>
+        </record>
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_legalizacion_action">
+            <field name="name">Expedientes de Legalizaciones</field>
+            <field name="res_model">sacra_legalizacion</field>
+            <field name="limit">20</field>
+        </record>
+    </data>
+</openerp>
+

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_enmienda_search">
+            <field name="name">sacra_enmienda_search</field>
+            <field name="model">sacra_enmienda</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Enmienda">
+                    <field name="fecha"/>
+                    <field name="solicita"/>
+                    <field name="partida"/>
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                    <field name="state"/>
+                    <newline/>
+                    <group expand="0" string="Rango por fecha de solicitud" >
+                        <field name="fecha_ini"/>
+                        <field name="fecha_fin"/>
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Agrupar por" >
+                        <filter name="part" string="Partida" icon="terp-gtk-select-all" domain="[]" context="{'group_by':'partida'}"/>
+                        <filter name="est" string="Estado" icon="terp-camera_test" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_enmienda_tree">
+            <field name="name">sacra_enmienda_tree</field>
+            <field name="model">sacra_enmienda</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Enmienda">
+                    <field name="num_rego"/>
+                    <field name="num_exp"/>
+                    <field name="fecha"/>
+                    <field name="solicita"/>
+                    <field name="partida"/>
+                    <field name="nombre_completo"/>
+                    <field name="state" />
+                    <button name="action_cancelar" colspan="1" states="Solicitada" string="Cancelar enmienda" type="object" icon="terp-mail_delete" help="Cancelar enmienda"/>
+                    <button name="action_aprobada" colspan="1" states="Solicitada" string="Aprobar enmienda" type="object" icon="gtk-apply" help="Aprobar enmienda"/>
+                    <button name="action_registrado" colspan="1" states="Aprobada" string="Registrar enmienda" type="object" icon="gtk-copy" help="Registrar la enmienda y realizar el registro declarado"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_enmienda_form">
+            <field name="name">sacra_enmienda_form</field>
+            <field name="model">sacra_enmienda</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Enmienda">
+                <header>
+                    <button name="action_cancelar" colspan="1" states="Solicitada" string="Cancelar enmienda" type="object" icon="terp-mail_delete" help="Cancelar enmienda"/>
+                    <button name="action_aprobada" colspan="1" states="Solicitada" string="Aprobar enmienda" type="object" icon="gtk-apply" help="Aprobar enmienda"/>
+                    <button name="action_registrado" colspan="1" states="Aprobada" string="Registrar enmienda" type="object" icon="gtk-copy" help="Registrar la enmienda y realizar el registro declarado"/>
+                    <field name="state" widget="statusbar" statusbar_visible="Solicitada,Aprobada,Cancelada,Registrada" statusbar_colors='{"Solicitada":"white","Cancelada":"red","Registrada":"blue","Aprobada":"green"}'/>
+                </header>
+                <sheet>
+                <notebook colspan="4" >
+                <page string="Datos de la enmienda" >
+                    <group colspan="4" col='4' >
+                        <field name="fecha" colspan="2" />
+                        <field name="fecha_aprobacion" colspan="2" />
+                        <field name="num_rego" colspan="2" />
+                        <field name="num_exp" colspan="2" />
+                    </group>
+
+                    <group colspan="4" col='8' string="Datos del solicitante">
+                        <field name="solicita" colspan="8" />
+                        <field name="domicilio" colspan="8" />
+                        <field name="cuidad" colspan="4" />
+                        <field name="carnet" colspan="4" />
+                        <field name="sexo_s" colspan="4" />
+                        <field name="vinculo" colspan="4" />
+                        <group colspan="8" col='8' string="Solicito, ya que la persona titular del certificado" >
+                            <field name="menor_edad" colspan="4" />
+                            <field name="ha_fallecido" colspan="4" />
+                            <field name="fuera_pais" colspan="4" />
+                            <field name="incapacitado" colspan="4" />
+                            <field name="otras_causas" colspan="8" />
+                        </group>
+                    </group>
+                    
+                    <group colspan="4" col='8' string="Datos de la partida">
+                        <field name="partida" colspan="8" class="oe_inline"/>
+                        <field name="persona_id" colspan="8" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" ></field>
+                        
+                        <group colspan="8" col='2'>
+                        <field name="baut_id" colspan="2" attrs="{'invisible': [('partida','!=','sacra_bautismo')]}" options='{"save_readonly":True}'/>
+                        <field name="matri_id" colspan="2" attrs="{'invisible': [('partida','!=','sacra_matrimonio')]}" options='{"save_readonly":True}'/>
+                        <field name="def_id" colspan="2" attrs="{'invisible': [('partida','!=','sacra_defuncion')]}" options='{"save_readonly":True}'/>
+                        </group>
+                        
+                        <group colspan="4" >
+                            <field name="nombre" options='{"save_readonly":True}' />
+                            <field name="apellido1" options='{"save_readonly":True}' />
+                            <field name="apellido2" options='{"save_readonly":True}'/>
+                            <field name="sexo" />
+                        </group>
+                        
+                        <group colspan="4" >
+                            <field name="tomo" options='{"save_readonly":True}'/>
+                            <field name="folio" options='{"save_readonly":True}'/>
+                            <field name="numero" options='{"save_readonly":True}'/>
+                            <field name="parroquia" />
+                            <field name="iglesia_id" />
+                        </group>
+                    </group>
+
+                    <!-- <group colspan="4" string="Registro afectado"> -->
+                       
+                    <!-- </group> -->
+                </page> 
+                <page string="Errores a enmendar">
+                    <field name="enmienda_error_ids" nolabel ="1" colspan="4" >
+                        <tree editable="bottom" string="Enmienda error">
+                        <field name="campo_partida" domain="[('model', '=', parent.partida),('modificable','=',True)]">
+                            <tree>
+                                <field name="nom_descrip"/>
+                                <field name="model"/>
+                            </tree>
+                        </field>
+                        <field name="dice" options='{"save_readonly":True}'/>
+                        <field name="deber_decir"/>
+                        </tree>
+                    </field>
+                </page>
+                <page string="Prueba documental">
+                    <group colspan="4" col='6' >
+                        <field name="certificacion" colspan="3" />
+                        <field name="nombre_pers" colspan="3" />
+                        <field name="registro_civil" colspan="3" />
+                        <field name="fecha_expedida" colspan="3" />
+                        <field name="pd_tomo" colspan="3" />
+                        <field name="pd_folio" colspan="3" />
+                        <field name="notas_marginales" colspan="3" />
+                        <field name="pasaporte_pd" colspan="3" />
+                        <field name="pasaporte_num" colspan="3" />
+                        <field name="fecha_exp_pasp" colspan="3" />
+                        <field name="carnet_pd" colspan="3" />
+                        <field name="carnet_num" colspan="3" />
+                    </group>
+                </page>    
+            </notebook>
+            </sheet>
+            </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="enmienda_error_tree">
+            <field name="name">enmienda_error_tree</field>
+            <field name="model">enmienda_error</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Enmienda error">
+                    <field name="campo_partida" domain="[('modificable','=',True)]"/>
+                    <field name="dice" options='{"save_readonly":True}'/>
+                    <field name="deber_decir"/>                  
+                </tree>
+            </field>
+        </record>    
+        
+                    
+    <record model="ir.ui.view" id="view_model_fields_form_custom">
+            <field name="name">model.fields.form.inherit1</field>
+            <field name="model">ir.model.fields</field>
+            <field name="inherit_id" ref="base.view_model_fields_form" />
+            <field name="arch" type="xml">                 
+                <page name="base" position="replace">
+                    <page string="Base Properties" >
+                        <group>
+                            <field name="translate"
+                                attrs="{'readonly': [('ttype','not in',['char','text','html'])],
+                                        'invisible': [('ttype','not in',['char','text','html'])]}"/>
+                            <field name="selection"
+                                attrs="{'required': [('ttype','in',['selection','reference'])],
+                                        'readonly': [('ttype','not in',['selection','reference'])],
+                                        'invisible': [('ttype','not in',['selection','reference'])]}"/>
+                            <field name="size"
+                                attrs="{'readonly': [('ttype','not in',['char','reference'])],
+                                        'invisible': [('ttype','not in',['char','reference'])]}"/>
+                            <field name="relation"
+                                attrs="{'required': [('ttype','in',['many2one','one2many','many2many'])],
+                                        'readonly': [('ttype','not in',['many2one','one2many','many2many'])],
+                                        'invisible': [('ttype','not in',['many2one','one2many','many2many'])]}"/>
+                            <field name="on_delete"
+                                attrs="{'readonly': [('ttype','!=','many2one')],
+                                        'invisible': [('ttype','!=','many2one')]}"/>
+                            <field name="relation_field"
+                                attrs="{'required': [('ttype','=','one2many')],
+                                        'readonly': [('ttype','!=','one2many')],
+                                        'invisible': [('ttype','!=','one2many')]}"/>
+                            <field name="relation_table"
+                                attrs="{'readonly': ['|', ('ttype','!=','many2many'), ('state','!=','manual')],
+                                        'invisible': ['|', ('ttype','!=','many2many'), ('state','!=','manual')]}"/>
+                            <field name="column1"
+                                attrs="{'readonly': ['|', ('ttype','!=','many2many'), ('state','!=','manual')],
+                                        'invisible': ['|', ('ttype','!=','many2many'), ('state','!=','manual')]}"/>
+                            <field name="column2"
+                                attrs="{'readonly': ['|', ('ttype','!=','many2many'), ('state','!=','manual')],
+                                        'invisible': ['|', ('ttype','!=','many2many'), ('state','!=','manual')]}"/>
+                            <field name="domain"
+                                attrs="{'readonly': [('ttype','not in',['many2one','one2many','many2many'])],
+                                        'invisible': [('ttype','not in',['many2one','one2many','many2many'])]}"/>
+                            <field name="required"/>
+                            <field name="readonly"/>
+                            <field name="index"/>
+                            <field name="copy"/>
+                            <field name="nom_descrip"/>
+                            <field name="modificable"/>
+                        </group>
+                    </page>
+                </page>             
+
+            </field>
+        </record>
+        
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_enmienda_action">
+            <field name="name">Enmiendas</field>
+            <field name="res_model">sacra_enmienda</field>
+            <field name="limit">20</field>
+        </record>
+    </data>
+</openerp>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vim:fdl=1:
+-->
+<templates id="template" xml:space="preserve">
+    <t t-name="FieldText3">
+            <textarea rows="20" value=""
+                t-att-name="widget.name"
+                t-att-id="widget.element_id"
+                t-attf-class="field_#{widget.type}"
+                style="width: 100%" t-attf-contextmenu="menu_#{widget.name}">
+            </textarea>
+            <menu type="context" t-attf-id="menu_#{widget.name}">
+                <t t-foreach="widget.context_menu" t-as="option1">
+                    <menu >
+                    <t t-foreach="option1" t-as="option">
+                        <menuitem t-att-id="option[0]"  type="checkbox" t-att-label="option[1]" t-att-class="menu_item_class"></menuitem>
+                    </t>
+                    </menu>
+                </t>
+            </menu>    
+    </t>
+    
+</templates>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,792.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="14.0" y1="5.0" width="567" height="782"/>
+        <!--pageGraphics>
+            <fill color="whitesmoke"/>
+            <setFont name="Helvetica" size="60"/>
+            <rotate degrees="55"/> 
+            <drawCentredString x="0" y="0">                                                                 Archivo Arquidiocesano</drawCentredString>
+        </pageGraphics-->
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockBottomPadding length="0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table2">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="0,0" stop="0,0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table3">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+    </blockTableStyle>   
+	
+    <blockTableStyle id="Table333">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table33">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="2,0" stop="2,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="4,0" stop="4,0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table4">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table5">
+        <blockValign value="TOP"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="7,0" stop="7,0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table6">
+        <blockValign value="TOP"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,1" stop="1,1"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table7">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="7,0" stop="7,0"/>
+    </blockTableStyle>    
+    
+    <blockTableStyle id="Table8">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+    </blockTableStyle>   
+	
+    <blockTableStyle id="Table888">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table9">
+      <blockAlignment value="CENTER"/>
+      <blockValign value="TOP"/>
+      <blockBottomPadding length="10"/>
+      <lineStyle kind="BOX" colorName="#000000" thickness ="0"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Encabezado">
+      <blockLeftPadding length="0" />  
+      <blockRightPadding length="0" />  
+      <blockBottomPadding length="0" />  
+      <blockTopPadding length="0" />  
+      <blockLeading length="0" />  
+    </blockTableStyle>
+    
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="12.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="12.0" leading="11" alignment="JUSTIFY"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="12.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="12.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="12.0" leading="11" alignment="JUSTIFY"/>
+    <paraStyle name="P7" fontName="Helvetica-Bold" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="11.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="11.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P10" fontName="Helvetica-Oblique" fontSize="11.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P11" fontName="Helvetica-Bold" fontSize="12.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P12" fontName="Helvetica-Oblique" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P13" fontName="Helvetica" fontSize="12.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="P14" fontName="Helvetica" fontSize="12.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P15" fontName="Helvetica-Bold" fontSize="12.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P16" fontName="Helvetica-Oblique" fontSize="12.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="5.0" leading="5" alignment="CENTER"/>
+    <paraStyle name="P18" fontName="Helvetica" fontSize="12.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P19" fontName="Helvetica" fontSize="12.0" leading="11" alignment="RIGHT"/>
+    <paraStyle name="P20" fontName="Helvetica" fontSize="12.0" leading="11" alignment="JUSTIFY"/>
+    <paraStyle name="P21" fontName="Helvetica" fontSize="12.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P22" fontName="Helvetica" fontSize="11.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P23" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P24" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P222" fontName="Helvetica" fontSize="6.0" leading="4" alignment="JUSTIFY"/>
+    <paraStyle name="P223" fontName="Helvetica" fontSize="6.0" leading="2" alignment="JUSTIFY"/>
+    <paraStyle name="P200" fontName="Helvetica" fontSize="2.0" leading="2" alignment="JUSTIFY"/>
+    
+
+    <images/>
+  </stylesheet>
+  <story>
+    <section>
+    <para >[[ repeatIn( _datos_parroquia['encb'],'enc') ]]</para>
+    <blockTable colWidths="570.0" style="Encabezado">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':_get_iglesia(o.iglesia_id,enc['img_iglesia'])[0],'alignment':enc['alineacion'],'height':_get_iglesia(o.iglesia_id,enc['img_iglesia'])[1],'leading':enc['espaciado']}) if enc['img_iglesia']==True else removeParentNode('blockTable')]][[ _get_iglesia(o.iglesia_id,enc['img_iglesia'])[2] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+    <blockTable colWidths="560.0" style="Encabezado">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':enc['ancho'],'alignment':enc['alineacion'],'height':enc['largo'],'leading':enc['espaciado']}) if enc['img']==True else removeParentNode('blockTable')]][[ enc['imagen'] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+    <para >[[ enc['img']== False and setTag('para','para',{'alignment':enc['alineacion'],'fontName':'Helvetica-Bold' if enc['negrita'] else 'Helvetica','leading':enc['espaciado'],'fontSize':enc['tamano']}) or removeParentNode('para')]][[ enc['texto_encab'] ]]</para>
+    </section>
+    <!-- <para style="P1">[[ repeatIn( objects,'o') ]]ARZOBISPADO DE [[ _datos_parroquia['d'] and _datos_parroquia['d'].upper() or "-"]]</para> -->
+
+   <para style="P223"> [[ repeatIn( objects,'o') ]]</para>
+    <blockTable colWidths="251.0,126.0,65.0,60.0,65.0" style="Table33">
+      <tr>
+        <td>
+          <para style="P18">
+            <font color="white">.</font>
+          </para>
+        </td>
+        <td>
+          <para style="P19">Rgtro. Of. Libro No.</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.num_rego or "-"]]</para>
+        </td>
+        <td>
+          <para style="P19">Exp. No.</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.num_exp or "-"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P200">  <font color="white">.</font></para>   
+    <para style="P11">SOLICITUD DE ENMIENDA EN PARTIDAS SACRAMENTALES</para>
+    
+
+    <para style="P13">Al Sr Provisor del Arzobispado de [[ _datos_parroquia['d'] or "-"]]:</para>
+
+    <blockTable colWidths="98.0,469.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P3">[[ _texto_segun_sexo(o.sexo_s)[0] ]] que suscribe</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.solicita or "-"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="67.0,320.0,180.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P20">natural de</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.cuidad.nombre or "-"]]</para>
+        </td>
+        <td>
+          <para style="P2">, mayor de edad y dirección en</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="5.0,379.0,183.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P20"></para>
+        </td>
+        <td>
+          <para style="P2">[[ o.domicilio or "-"]]</para>
+        </td>
+        <td>
+          <para style="P20">, ante usted comparezco y digo:</para>
+        </td>
+      </tr>
+    </blockTable>    
+    
+    <blockTable colWidths="361.0,206.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P3">Que, habiendo solicitado al Encargado del Archivo Parroquial de:</para>
+        </td>
+        <td>
+          <para style="P2">[[ _picar_parroquia(o.parroquia.nombre)[0] or "-"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="5.0,285.0,152.0,130.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P20"></para>
+        </td>
+        <td>
+          <para style="P2">[[ _picar_parroquia(o.parroquia.nombre)[1] ]]</para>
+        </td>
+        <td>
+          <para style="P6">una copia de la partida de</para>
+        </td>
+        <td>
+          <para style="P2">[[ _format_partida(o.partida) or "-"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="25.0,423.0,119.0" style="Table333">
+      <tr>
+        <td>
+          <para style="P6">de</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.nombre_completo and o.nombre_completo or "-"]]</para>
+        </td>
+		<td>
+          <para style="P6">que obra en el Libro</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="5.0,160.0,51.0,47.0,59.0,47.0,199.0" style="Table888">
+      <tr>
+        <td>
+          <para style="P2"></para>
+        </td>
+        <td>
+          <para style="P2">[[ o.tomo or "-"]]</para>
+        </td>
+        <td>
+          <para style="P6">el Folio</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.folio or "-"]]</para>
+        </td>
+        <td>
+          <para style="P6">Acta No.</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.numero or "-"]]</para>
+        </td>
+        <td>
+          <para style="P6">se advierten los errores siguientes:</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <para style="P17"><font color="white">.</font></para> 
+    <para style="P21">[[ o.enmienda_error_ids and removeParentNode('para') or "No existen errores a enmendar" ]]</para>
+    
+    <blockTable colWidths="535.0" rowHeights="240.0" style="Standard_Outline"><tr><td>
+    <section>        
+      <para style="P15">[[ repeatIn( _format_errores(o.enmienda_error_ids),'e') ]]</para>
+	 <para style="P21"><b>[[ e[0] ]] - [[ e[3] ]]</b></para> 
+      <blockTable colWidths="74.0,461.0" style="Table6">       
+		<tr>
+          <td>
+            <para style="P21">Dice:</para>
+          </td>
+          <td>
+            <para style="P4">[[ e[1] or "-"]]</para>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <para style="P21">Debe decir:</para>
+          </td>
+          <td>
+            <para style="P4">[[ e[2] or "-"]]</para>
+          </td>
+        </tr>
+      </blockTable>
+      <para style="P17"><font color="white">.</font></para>
+      <para style="P17"><font color="white">.</font></para>
+    </section>
+    </td></tr></blockTable>
+        
+    <para style="P6">    <font color="white">.</font>   </para>
+    <para style="P6">    <font color="white">.</font>   </para>
+    <para style="P6">    <font color="white">.</font>   </para>
+    <blockTable colWidths="401.0,166.0">
+      <tr>
+        <td>
+          <para style="P6">Vengo a solicitar decreto de enmienda. Acompaño prueba documental.</para>
+        </td>
+        <td>
+          <para style="P21">
+            <font color="white">.</font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+
+    <blockTable colWidths="77.0,200.0,290.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P6">Solicitado el</para>
+        </td>
+        <td>
+          <para style="P2">[[ _format_fecha(o.fecha) or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21">.<font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P200">  <font color="white">.</font></para>   
+    <para style="P200">  <font color="white">.</font></para>   
+    <para style="P200">  <font color="white">.</font></para>   
+
+    <blockTable colWidths="552.0" style="Table9"><tr><td>
+    
+    <blockTable colWidths="78.0,137.0,25.0,305.0,5.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P20">Certificación</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.certificacion or "-"]]</para>
+        </td>
+        <td>
+          <para style="P20">de</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.nombre_pers or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="155.0,212.0,41.0,50.0,37.0,50.0,5.0" style="Table8">
+      <tr>
+        <td>
+          <para style="P20">Registro de estado civil de</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.registro_civil or "-"]]</para>
+        </td> 
+        <td>
+          <para style="P20">Tomo</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.pd_tomo or "-"]]</para>
+        </td>
+        <td>
+          <para style="P20">Folio</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.pd_folio or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>        
+      </tr>
+    </blockTable>
+    <blockTable colWidths="107.0,150.0,108.0,180.0,5.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P20">Fecha expedición</para>
+        </td>
+        <td>
+          <para style="P2">[[ _format_fecha(o.fecha_expedida) ]]</para>
+        </td>
+        <td>
+          <para style="P20">Notas marginales</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.notas_marginales or "-" ]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="139.0,406.0,5.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P20">Pasaporte a nombre de</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.pasaporte_pd or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="98.0,196.0,55.0,196.0,5.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P20">Fecha expedido</para>
+        </td>
+        <td>
+          <para style="P2">[[ _format_fecha(o.fecha_exp_pasp) or "-" ]]</para>
+        </td>
+        <td>
+          <para style="P20">Número</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.pasaporte_num or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="185.0,360.0,5.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P20">Carné de Identidad a nombre de</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.carnet_pd or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="55.0,195.0,300.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P20">Número</para>
+        </td>
+        <td>
+          <para style="P2">[[ o.carnet_num or "-"]]</para>
+        </td>
+        <td>
+          <para style="P21"><font color="white">.</font></para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    </td></tr></blockTable>
+    <para style="P21"><font color="white">.</font></para>
+    <para style="P3">Esperando una justa resolución quedo de Ud. atentamente</para>
+    <para style="P21"><font color="white">.</font></para>
+    <blockTable colWidths="50.0,150.0,100.0,150,50.0" style="Table3">
+      <tr>
+        <td> <para style="P22">Ante mi</para> </td>
+        <td> <para style="P22"> <font color="white">.</font> </para> </td>
+        <td> <para style="P22"> <font color="white">.</font> </para> </td>
+        <td> <para style="P22"> <font color="white">.</font> </para> </td>
+        <td> <para style="P22"> <font color="white">.</font> </para> </td>
+      </tr>
+      <tr>
+        <td> <para style="P22"><font color="white">.</font></para> </td>
+        <td> <para style="P18">Notario Eclesiástico</para></td>
+        <td> <para style="P22"> <font color="white">.</font> </para> </td>  
+        <td> <para style="P18">Solicitante</para>
+             <para style="P18">C.I. [[ o.carnet or "-"]]</para>
+        </td>
+        <td> <para style="P22"> <font color="white">.</font> </para> </td>        
+      </tr>
+    </blockTable>
+  </story>
+</document>

@@ -1,0 +1,50 @@
+Menu Bautismo
+sacra_bautismo
+sacra_notas_marginales
+sacra_solicit_bautismo
+
+Menu Confirmacion
+sacra_confirmacion
+
+Menu Matrimonio
+sacra_matrimonio
+
+Menu Defuncion
+sacra_defuncion
+
+Modelo comunes
+enmienda_error
+sacra_persona
+sacra_datos_parroquia
+sacra_parroquia
+sacra_encabezado
+sacra_parrocos
+orden_sacerdotal
+sacra_mestizaje
+sacra_est_civil
+
+Menu Entable
+sacra_entable
+
+Menu Enmienda
+ir.model.fields
+sacra_enmienda
+enmienda_error
+
+Modelo comunes
+sacra_persona
+sacra_bautismo
+sacra_notas_marginales
+sacra_matrimonio
+sacra_mestizaje
+sacra_est_civil
+sacra_parrocos
+orden_sacerdotal
+sacra_datos_parroquia
+
+Otros 
+sacra_indice
+importar_indice
+
+access_usuario_report_xml,access_report_xml1,base.ir.report_xml,group_sacramentum1,1,1,1,1
+access_usuario_report_xml_processl,access_report_xml_process1,df_base_web.df_report_xml_process,group_sacramentum1,1,1,1,1

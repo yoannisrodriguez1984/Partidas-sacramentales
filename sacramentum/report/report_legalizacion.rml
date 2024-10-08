@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document filename="legalizacion.pdf">
+  <template pageSize="(595.0,842.0)" title="Legalizacion" author="" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="70.0" y1="30.0" width="455" height="782"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <blockBottomPadding length="0"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table3">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+		<blockBottomPadding length="0"/>
+    </blockTableStyle>
+    
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER"/>	
+    <paraStyle name="P11" fontName="Helvetica" fontSize="1.0" leading="1" alignment="CENTER"/>	
+    <paraStyle name="P2" fontName="Helvetica" fontSize="12.0" leading="18" alignment="JUSTIFY"/>
+    <paraStyle name="P3" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P33" fontName="Helvetica-Oblique" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+	
+
+  </stylesheet>
+  <story>
+     
+    <para style="P3">[[ repeatIn( objects,'o') ]]</para>
+    
+
+    <blockTable colWidths="5.0,445.0,5.0" style="Table3">
+      <tr>
+        <td><para style="P1"><font color="white">.</font></para></td>
+        <td><para style="P33">[[ o.canciler.persona_id.nombre_completo ]], [[ o.canciler.orden_id.nombre ]]</para></td>
+        <td><para style="P1"><font color="white">.</font></para></td>
+      </tr>
+    </blockTable>	
+    <para style="P11"><font color="white">.</font></para>
+    <para style="P11"><font color="white">.</font></para>
+    <para style="P11"><font color="white">.</font></para>
+    <para style="P1">del Arzobispado de Santiago de Cuba, DOY FE, que la firma que antecede del </para>
+    
+    <blockTable colWidths="39.0,210.0,196.0" style="Table3">
+      <tr>
+        <td><para style="P1">R. P.</para></td>
+        <td><para style="P3">[[ o.ministro.persona_id.nombre_completo ]]</para></td>
+        <td><para style="P1">, Cura Encargado de Archivo de la</para></td>
+      </tr>
+    </blockTable>
+	<para style="P11"><font color="white">.</font></para>
+    <blockTable colWidths="60.0,390.0,5.0" style="Table3">
+      <tr>
+        <td><para style="P1">Parroquia</para></td>
+        <td><para style="P3">[[ o.parroquia.nombre or "-"]]</para></td>
+        <td><para style="P1"><font color="white">.</font></para></td>
+      </tr>
+    </blockTable>
+   <para style="P11"><font color="white">.</font></para>
+    <blockTable colWidths="20.0,256.0,179.0" style="Table3">
+      <tr>
+        <td><para style="P1">de</para></td>
+        <td><para style="P3">[[ o.cuidad.nombre or "-"]]</para></td>
+        <td><para style="P1">, a quien conozco, que autoriza</para></td>
+      </tr>
+    </blockTable>
+   <para style="P11"><font color="white">.</font></para>
+    <blockTable colWidths="102.0,248.0,105.0" style="Table3">
+      <tr>
+        <td><para style="P1">esta certificación</para></td>
+        <td><para style="P3">[[ o.partida or "-"]]</para></td>
+        <td><para style="P1">, es auténtica por</para></td>
+      </tr>
+    </blockTable>
+	<para style="P11"><font color="white">.</font></para>
+    <para style="P11"><font color="white">.</font></para>
+    <para style="P11"><font color="white">.</font></para>
+   <para style="P2">la relación que guarda con la que acostumbra a usar en todos sus actos; así como que el cuño impuesto es el correspondiente a dicha Parroquia.</para>
+
+   <para style="P11"><font color="white">.</font></para>
+   <para style="P11"><font color="white">.</font></para>
+   <para style="P11"><font color="white">.</font></para>
+    <para style="P1"><u>[[ _datos_parroquia['ar_c']== True and (_datos_parroquia['d'] and _datos_parroquia['d'] or "-") or (_datos_parroquia['m'] and _datos_parroquia['m'] or "-") ]]</u>, a: <u>[[ _fecha_split(o.fecha_leg)[0] and _fecha_split(o.fecha_leg)[0] or "-"]]</u>, de: <u>[[ _fecha_split(o.fecha_leg)[1] and _fecha_split(o.fecha_leg)[1] or "-"]]</u>, de: <u>[[ _fecha_split(o.fecha_leg)[2] and _fecha_split(o.fecha_leg)[2] or "-"]]</u>.</para>
+    
+   
+    
+
+
+  </story>
+</document>

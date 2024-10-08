@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="opciones_conf_search">
+            <field name="name">opciones_conf_search</field>
+            <field name="model">opciones_conf</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Solicitud de búsqueda">
+                </search>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="opciones_conf_tree">
+            <field name="name">opciones_conf_tree</field>
+            <field name="model">opciones_conf</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Opciones de configuración" >
+					<field name="correo_remit"/>
+                </tree>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="opciones_conf_form">
+            <field name="name">opciones_conf_form</field>
+            <field name="model">opciones_conf</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Opciones de configuración">
+				<group colspan="4" >
+					<field name="correo_remit"/>
+                </group>
+            </form>
+            </field>
+        </record>
+	   
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="opciones_conf_action">
+            <field name="name">Opciones de configuración</field>
+            <field name="res_model">opciones_conf</field>
+            <field name="limit">20</field>
+        </record> 		
+		
+    </data>
+</openerp>
+

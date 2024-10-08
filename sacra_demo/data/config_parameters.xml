@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+    <openerp>
+        <data noupdate="1">
+        <record id="sacra_segu_config" model="ir.config_parameter">
+            <field name="key">database.access.key</field>
+            <field name="value">566489957</field>
+        </record>
+        <record id="sacra_segu_config2" model="ir.config_parameter">
+            <field name="key">database.access.demo</field>
+            <field name="value">620496650</field>
+        </record>
+        </data>
+    </openerp>

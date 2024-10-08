@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document filename="declaracion_solicit_enm.pdf">
+  <template pageSize="(595.0,792.0)" title="Declaración del solicitante" author="" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="30.0" y1="15.0" width="535" height="762"/>
+		<!--pageGraphics>
+			<fill color="whitesmoke"/>
+			<setFont name="Helvetica" size="60"/>
+			<rotate degrees="55"/> 
+			<drawCentredString x="0" y="0">                                                                 Archivo Arquidiocesano</drawCentredString>
+		</pageGraphics-->
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="BOTTOM"/>
+	  <blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table3">
+	<blockBottomPadding length="4"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,1"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table4">
+	<blockBottomPadding length="4"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table5">
+	<blockBottomPadding length="4"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+    </blockTableStyle>
+	
+	<blockTableStyle id="Table44">
+	<blockBottomPadding length="4"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="2,0" stop="2,0"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Encabezado">
+      <blockLeftPadding length="0" />  
+      <blockRightPadding length="0" />  
+      <blockBottomPadding length="0" />  
+      <blockTopPadding length="0" />  
+      <blockLeading length="0" />  
+    </blockTableStyle>
+    
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="Helvetica-Oblique" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P33" fontName="Helvetica-Bold" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="12.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="12.0" leading="10" alignment="JUSTIFY"/>
+    <paraStyle name="P261" fontName="Helvetica" fontSize="10.0" leading="10" alignment="LEFT"/>
+	<paraStyle name="P7" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="10.0" leading="10" alignment="JUSTIFY"/>
+    <paraStyle name="P9" fontName="Helvetica-Bold" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P10" fontName="Helvetica-Bold" fontSize="13.0" leading="16" alignment="JUSTIFY"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P122" fontName="Helvetica" fontSize="11.0" leading="16" alignment="JUSTIFY"/>
+    <paraStyle name="P13" fontName="Helvetica-Oblique" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P14" fontName="Helvetica-Oblique" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P15" fontName="Helvetica-Oblique" fontSize="10.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="10.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P18" fontName="Helvetica" alignment="JUSTIFY"/>
+    <paraStyle name="P19" fontName="Helvetica" fontSize="12.0" leading="10" alignment="JUSTIFY"/>
+    <paraStyle name="P199" fontName="Helvetica" fontSize="12.0" leading="12" alignment="JUSTIFY"/>
+    <paraStyle name="P190" fontName="Helvetica" fontSize="12.0" leading="18" alignment="JUSTIFY"/>
+    <paraStyle name="P20" fontName="Helvetica-Oblique" fontSize="12.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P200" fontName="Helvetica" fontSize="12.0" leading="5" alignment="CENTER"/>
+	<paraStyle name="P26" fontName="Helvetica" fontSize="11.0" leading="10" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+      <section>
+    <para >[[ repeatIn( _datos_parroquia['encb'],'enc') ]]</para>
+    <blockTable colWidths="570.0" style="Encabezado">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':_get_iglesia(o.iglesia_id,enc['img_iglesia'])[0],'alignment':enc['alineacion'],'height':_get_iglesia(o.iglesia_id,enc['img_iglesia'])[1],'leading':enc['espaciado']}) if enc['img_iglesia']==True else removeParentNode('blockTable')]][[ _get_iglesia(o.iglesia_id,enc['img_iglesia'])[2] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+    <blockTable colWidths="560.0" style="Encabezado">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':enc['ancho'],'alignment':enc['alineacion'],'height':enc['largo'],'leading':enc['espaciado']}) if enc['img']==True else removeParentNode('blockTable')]][[ enc['imagen'] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+    <para >[[ enc['img']== False and setTag('para','para',{'alignment':enc['alineacion'],'fontName':'Helvetica-Bold' if enc['negrita'] else 'Helvetica','leading':enc['espaciado'],'fontSize':enc['tamano']}) or removeParentNode('para')]][[ enc['texto_encab'] ]]</para>
+    </section>
+  
+  
+    <!-- <para style="P1">[[ repeatIn( objects,'o') ]]ARZOBISPADO DE [[ _datos_parroquia['d'] and _datos_parroquia['d'].upper() or "-"]]</para> -->
+    <!-- <para style="P3">Cancillería</para> -->
+	<!-- <para style="P6"><font color="white">.</font></para> -->
+	<!-- <para style="P6"><font color="white">.</font></para> -->
+    <para style="P33">[[ repeatIn( objects,'o') ]]DECLARACIÓN JURADA</para>
+    <para style="P6"><font color="white">.</font></para>
+    <para style="P6"><font color="white">.</font></para>
+	
+
+    <blockTable colWidths="95.0,247.0,28.0,165.0" style="Table4">
+      <tr>
+        <td><para style="P19">En la ciudad de</para></td>
+        <td><para style="P20">[[ _datos_parroquia['d'] or "-"]]</para></td>
+		<td><para style="P19">, a</para></td>
+        <td><para style="P20">[[ _format_fecha(o.fecha) ]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P6"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+    <blockTable colWidths="27.0,451.0,57.0" style="Table3">
+      <tr>
+        <td><para style="P6">Yo:</para></td>
+        <td><para style="P20">[[ o.solicita or "-"]]</para></td>
+        <td><para style="P6">, natural</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="21.0,255.0,120.0,137.0" style="Table4">
+      <tr>
+        <td><para style="P6">de</para></td>
+        <td><para style="P20">[[ o.cuidad.nombre or "-"]]</para></td>
+        <td><para style="P6">con C. identidad no.</para></td>
+		<td><para style="P20">[[ o.carnet or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="70.0,419.0,46.0" style="Table3">
+      <tr>
+        <td> <para style="P6">y dirección</para></td>
+        <td><para style="P20">[[ o.domicilio or "-"]]</para></td>
+		<td><para style="P6">vengo</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="231.0,166.0,138.0" style="Table3">
+      <tr>
+        <td> <para style="P6">a solicitar la Enmienda del Certificado de</para></td>
+        <td><para style="P20">[[ _format_partida(o.partida) or "-"]]</para></td>
+		<td><para style="P6">emitido en la Parroquia</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="5.0,315.0,25.0,190.0" style="Table4">
+      <tr>
+        <td><para style="P6"></para></td>
+        <td><para style="P20">[[ o.parroquia.nombre or "-"]]</para></td>
+        <td><para style="P6">de</para></td>
+		<td><para style="P20">[[ o.parroquia.municipio or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="80.0,455.0" style="Table3">
+      <tr>
+        <td> <para style="P6">a nombre de</para></td>
+        <td><para style="P20">[[ o.nombre_completo or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="40.0,358.0,37.0,100.0" style="Table4">
+      <tr>
+        <td><para style="P6">Tomo</para></td>
+        <td><para style="P20">[[ o.tomo or "-"]]</para></td>
+        <td><para style="P6">Folio</para></td>
+		<td><para style="P20">[[ o.folio or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="52.0,100.0,383.0" style="Table3">
+      <tr>
+		<td> <para style="P6">Número</para></td>
+		<td><para style="P20">[[ o.numero or "-"]]</para></td>
+		<td> <para style="P6">ya que la persona titular del Certificado:</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+
+	<para style="P6"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+	
+    <blockTable colWidths="62.0,113.0,30.0,80.0,75.0,30.0,95.0" style="Table44">
+      <tr>
+        <td><para style="P6"><font color="white">.</font></para></td>
+        <td><para style="P6">Es menor de edad</para></td>
+        <td><para style="P20">[[ o.menor_edad and "X" or ""]]</para></td>
+        <td><para style="P6"><font color="white">.</font></para></td>
+		<td><para style="P6">Ha fallecido</para></td>
+        <td><para style="P20">[[ o.ha_fallecido and "X" or ""]]</para></td>
+        <td><para style="P6"><font color="white">.</font></para></td>
+      </tr>
+    </blockTable>
+	<para style="P6"><font color="white">.</font></para>
+    <blockTable colWidths="59.0,116.0,30.0,48.0,107.0,30.0,95.0" style="Table44">
+      <tr>
+        <td><para style="P6"><font color="white">.</font></para></td>
+        <td><para style="P6">Está fuera del País </para></td>
+        <td><para style="P20">[[ o.fuera_pais and "X" or ""]]</para></td>
+        <td><para style="P6"><font color="white">.</font></para></td>
+		<td><para style="P6">Está incapacitad[[ _texto_segun_sexo(o.sexo)[2] ]]</para></td>
+        <td><para style="P20">[[ o.incapacitado and "X" or ""]]</para></td>
+        <td><para style="P6"><font color="white">.</font></para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+	<para style="P6"><font color="white">.</font></para>
+    <blockTable colWidths="153.0,377.0,5.0" style="Table3">
+      <tr>
+        <td> <para style="P6">Otras causas (especificar)</para></td>
+        <td><para style="P20">[[ o.otras_causas or "-"]]</para></td>
+		<td> <para style="P6">,</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="175.0,360.0" style="Table3">
+      <tr>
+        <td> <para style="P6">y me une el vínculo familiar de </para></td>
+        <td><para style="P20">[[ o.vinculo or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	
+	
+    <para style="P2"><font color="white">.</font></para>
+    <para style="P2"><font color="white">.</font></para>
+    <para style="P2"><font color="white">.</font></para>
+    <para style="P2"><font color="white">.</font></para>
+    <para style="P2"><font color="white">.</font></para>
+    <para style="P2"><font color="white">.</font></para>
+    
+    <para style="P190">Me hago totalmente responsable de lo que solicito, al no poder asistir [[ _texto_segun_sexo(o.sexo)[0].lower() ]] interesad[[ _texto_segun_sexo(o.sexo)[2] ]], y facilito todas las pruebas necesarias para el trámite. Así mismo se que todo lo pedido es <u>"solo a los efectos canónicos y sin perjuicio de terceros."</u></para>
+    <para style="P200"> <font color="white">.</font> </para>
+    <para style="P200"> <font color="white">.</font> </para>
+    <para style="P200"> <font color="white">.</font> </para>
+    <para style="P200"> <font color="white">.</font> </para>
+
+    <blockTable colWidths="20.0,210.0,89.0,210.0,20.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P26">
+            <font color="white">...................</font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white">.....</font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white">................... </font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white">.....</font>
+          </para>
+        </td>
+        <td>
+          <para style="P26">
+            <font color="white">................... </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td><para style="P26"><font color="white">................... </font></para></td>
+        <td>
+		<para style="P261">[[ o.solicita or "-"]]</para> 
+		<para style="P261">C.I. [[ o.carnet or "-"]]</para>
+		</td>
+        <td><para style="P26"><font color="white">................... </font></para></td>
+        <td>
+		<para style="P261">Secretari[[ _texto_segun_sexo(o.secretaria.sexo)[2] ]] de Cancillería:</para>
+		<para style="P261">[[ o.secretaria.nombre_completo or "-"]]</para></td>
+        <td><para style="P26"><font color="white">................... </font></para></td>
+      </tr>
+    </blockTable>
+	<para style="P26"><font color="white">................... </font></para>
+	<para style="P26"><font color="white">................... </font></para>
+	<para style="P26"><font color="white">................... </font></para>
+	<para style="P4">Cuño</para>
+  </story>
+</document>

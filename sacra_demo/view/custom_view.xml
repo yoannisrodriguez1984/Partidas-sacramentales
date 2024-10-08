@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="custom_menu_login2" name="custom_menu_login2" inherit_id="web.login">
+            <xpath expr="//div[@class='clearfix oe_login_buttons']" position="after">
+                <div class="text-right">
+                    <a href="/web/licencia" >Estado de la licencia</a>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</openerp>

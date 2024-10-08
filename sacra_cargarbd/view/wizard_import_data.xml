@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="wizard_import_data_view" model="ir.ui.view">
+            <field name="name">wizard_import_data_form</field>
+            <field name="model">wizard_import_data</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Importar datos">
+                    <header>
+                    </header>
+                        <sheet>
+                            <group>
+                                <field name="servidor_id" class="oe_inline"/>
+                                <field name="opcion" class="oe_inline"/>
+                            </group>
+                        </sheet>
+                    <footer>
+                        <button name='test_con' string='Probar conexión' class='btn-primary' type='object'/>
+                        <button name='cargar_datos' string='Aceptar' class='btn-primary' type='object'/>
+                        <button name='eliminar_datos' confirm="Confirmar" string='Borrar datos' class='btn-primary' type='object'/>
+                        <button name='cargar_tomos' confirm="Cargar tomos?" string='Cargar tomos' class='btn-primary' type='object'/>
+                        <button string='Cancelar' class='btn-default' special='cancel'/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <!-- Action to open To-do Task list -->
+        <act_window id="action_wizard_import_data" name="Cargar datos" res_model="wizard_import_data" view_mode="form" target="new"/>
+
+        
+    </data>
+</openerp>

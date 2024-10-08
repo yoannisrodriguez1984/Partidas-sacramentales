@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document filename="solicitud_bautismo.pdf">
+  <template pageSize="(610.0,792.0)" title="Solicitud de bautismo" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="20.0" y1="21.0" width="570" height="750"/>
+        <pageGraphics>
+            <fill color="whitesmoke"/>
+            <setFont name="Helvetica" size="60"/>
+            <rotate degrees="55"/> 
+            <drawCentredString x="0" y="0">[[ "" if _datos_parroquia['ma_agua']== False else "                                                                 "+_datos_parroquia['texto_marca'] ]]</drawCentredString>
+            
+        </pageGraphics>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Encabezado0">
+      <blockLeftPadding length="0" />  
+      <blockRightPadding length="0" />  
+      <blockBottomPadding length="0" />  
+      <blockTopPadding length="0" />  
+      <blockLeading length="0" />  
+    </blockTableStyle>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Encabezado">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#FFFFFF" start="0,0" stop="-1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#FFFFFF" start="0,0" stop="-1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#FFFFFF" start="0,0" stop="-1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#FFFFFF" start="0,0" stop="-1,-1"/>
+    </blockTableStyle>
+   <blockTableStyle id="Table1">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <blockBottomPadding length="2"/>
+    </blockTableStyle>
+    
+   <blockTableStyle id="Table2">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="7,0" stop="7,0"/>
+        <blockBottomPadding length="2"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table3">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <blockBottomPadding length="2"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table4">
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+        <lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="5,0" stop="5,0"/>
+        <blockBottomPadding length="2"/>
+    </blockTableStyle>
+    
+    <blockTableStyle id="Table5">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="BOX" colorName="#000000" thickness ="0"/>
+    </blockTableStyle>
+    
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica-Bold" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="Helvetica-Oblique" fontSize="13.0" leading="16"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="11.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="P33" fontName="Helvetica" fontSize="10.0" leading="12" alignment="CENTER"/>
+    <paraStyle name="P331" fontName="Helvetica" fontSize="8.0" leading="6" alignment="CENTER"/>
+    <paraStyle name="P4" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="P44" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="11.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="P6" fontName="Helvetica-Oblique" fontSize="13.0" leading="16"/>
+    <paraStyle name="P7" fontName="Helvetica" fontSize="13.0" leading="16" alignment="LEFT"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="11.0" leading="14"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="11.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="P10" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER"/>
+    <paraStyle name="P11" fontName="Helvetica-Oblique" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P13" fontName="Helvetica" alignment="LEFT"/>
+    <paraStyle name="P14" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="11.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="P15" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica-Bold" fontSize="11.0" leading="14" alignment="LEFT"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text_20_body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Header" fontName="Helvetica"/>
+    <paraStyle name="Table_20_Contents" fontName="Helvetica"/>
+    <paraStyle name="Table_20_Heading" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="terp_tblheader_General_Centre" fontName="Helvetica-Bold" fontSize="8.0" leading="10" alignment="CENTER" spaceBefore="6.0" spaceAfter="6.0"/>
+    <images>
+    </images>
+  </stylesheet>
+  <story>
+    <para style="P10">[[ repeatIn( objects,'o') ]]</para>
+    <blockTable colWidths="560.0" style="Encabezado0">
+      <tr>
+        <td>
+          <para > 
+          [[ setTag('para','image',{'width':'570.0','height':'101.0'}) if _datos_parroquia['logo']==True else removeParentNode('blockTable')]][[ _datos_parroquia['imagen'] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+       
+    <section>
+    <para >[[ repeatIn( _datos_parroquia['encb'],'enc') ]]</para>
+    <blockTable colWidths="560.0" style="Encabezado0">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':enc['ancho'],'alignment':enc['alineacion'],'height':enc['largo'],'leading':enc['espaciado']}) if enc['img']==True else removeParentNode('blockTable')]][[ enc['imagen'] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>    
+    <para >[[ enc['img']== False and setTag('para','para',{'alignment':enc['alineacion'],'fontName':'Helvetica-Bold' if enc['negrita'] else 'Helvetica','leading':enc['espaciado'],'fontSize':enc['tamano']}) or removeParentNode('para')]][[ enc['texto_encab'] ]]</para>
+    </section>
+    
+    
+    <!--para style="P10">Parroquia: [[ _datos_parroquia['ar_c']== False and (_datos_parroquia['n'] and _datos_parroquia['n'] or "-") or removeParentNode('para')]]</para>
+    <para style="P12">Municipio: [[ _datos_parroquia['ar_c']==False and (_datos_parroquia['m'] and _datos_parroquia['d'] or "-") or removeParentNode('para') ]], diócesis de: [[ _datos_parroquia['d'] and _datos_parroquia['d'] or "-"]]</para>
+    
+    <para style="P10">[[ _datos_parroquia['ar_c']== True and (_datos_parroquia['na'] and _datos_parroquia['na'] or "-") or removeParentNode('para')]]</para>
+    <para style="P33">[[ _datos_parroquia['ar_c']== True and (_datos_parroquia['u'] and _datos_parroquia['u'] or "-") or removeParentNode('para')]]</para>
+    <para style="P33">[[ _datos_parroquia['ar_c']== True and (_datos_parroquia['c'] and _datos_parroquia['c'] or "-") or removeParentNode('para')]]</para-->
+    
+    
+    <para style="P1">SOLICITUD DE BAUTISMO</para>
+     <para style="P1">     <font color="white">.</font>    </para>
+    <para style="P8">DATOS GENERALES DE LA PERSONA A BAUTIZAR:</para>
+    <para style="P331">     <font color="white">.</font>    </para>
+    <blockTable colWidths="135.0,435.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Nombre(s) y apellidos:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.nombre and o.nombre or "-"]] [[o.apellido1 ]] [[o.apellido2  ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="126.0,148.0,51.0,23.0,18.0,23.0,65.0,118.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P4">Fecha de nacimiento:</para>
+        </td>
+        <td>
+          <para style="P5">[[ _format_fecha(o.fecha_nac)]]</para>
+        </td>
+        <td>
+          <para style="P4">Sexo M</para>
+        </td>
+        <td>
+          <para style="P5">[[ '  X ' if o.sexo == 'Masculino' else '' ]] </para>
+        </td>
+        <td>
+          <para style="P4">F</para>
+        </td>
+        <td>
+          <para style="P5">[[ '  X ' if o.sexo == 'Femenino' else '']] </para>
+        </td>
+        <td>
+          <para style="P4">Provincia:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.provincia or " - " ]] </para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="67.0,328.0,63.0,112.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P4">Dirección:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.direccion or " - "]]</para>
+        </td>
+        <td>
+          <para style="P4">Teléfono:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.telf or " - "]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    
+    
+    <para style="P1">     <font color="white">.</font>    </para>
+    <para style="P8">NOMBRES Y APELLIDOS DE:</para>
+    <para style="P331">     <font color="white">.</font>    </para>
+    <blockTable colWidths="48.0,522.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Madre:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.m_nombre and o.m_nombre or "-"]] [[o.m_apellido1 ]] [[o.m_apellido2 ]] </para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="70.0,340.0,82.0,25.0,28.0,25.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P4">Natural de:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.m_lugar_nac.nombre and o.m_lugar_nac.nombre or "-"]] </para>
+        </td>
+        <td>
+          <para style="P4">Bautizada: Si</para>
+        </td>
+        <td>
+          <para style="P5">[[ "  X" if o.m_baut else ""]] </para>
+        </td>
+        <td>
+          <para style="P4">NO</para>
+        </td>
+        <td>
+          <para style="P5">[[ "" if o.m_baut else "  X"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="48.0,522.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Padre:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.p_nombre and o.p_nombre or "-"]] [[o.p_apellido1 ]] [[o.p_apellido2 ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="70.0,340.0,82.0,25.0,28.0,25.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P4">Natural de:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.p_lugar_nac.nombre and o.p_lugar_nac.nombre or "-"]] </para>
+        </td>
+        <td>
+          <para style="P4">Bautizado: Si</para>
+        </td>
+        <td>
+          <para style="P5">[[ "  X" if o.p_baut else ""]]</para>
+        </td>
+        <td>
+          <para style="P4">NO</para>
+        </td>
+        <td>
+          <para style="P5">[[ "" if o.p_baut else "  X"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    
+    
+    <para style="P1">     <font color="white">.</font>    </para>
+    <para style="P8">NOMBRES Y APELLIDOS DE ABUELOS PATERNOS:</para>
+    <para style="P331">     <font color="white">.</font>    </para>
+    <blockTable colWidths="52.0,518.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Abuelo:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.p_p_persona.nombre_completo if o.p_p_persona else (o.p_p_nombre +" "+o.p_p_apellido1+" "+o.p_p_apellido2)]] </para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="52.0,518.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Abuela:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.m_p_persona.nombre_completo if o.m_p_persona else (o.m_p_nombre +" "+o.m_p_apellido1+" "+o.m_p_apellido2)]] </para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    
+    <para style="P1">     <font color="white">.</font>    </para>
+    <para style="P8">NOMBRES Y APELLIDOS DE ABUELOS MATERNOS:</para>
+    <para style="P331">     <font color="white">.</font>    </para>
+    <blockTable colWidths="52.0,518.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Abuelo:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.p_m_persona.nombre_completo if o.p_m_persona else (o.p_m_nombre +" "+o.p_m_apellido1+" "+o.p_m_apellido2) ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    <blockTable colWidths="52.0,518.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Abuela:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.m_m_persona.nombre_completo if o.m_m_persona else (o.m_m_nombre +" "+o.m_m_apellido1+" "+o.m_m_apellido2) ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    
+    
+    <para style="P1">     <font color="white">.</font>    </para>
+    <para style="P8">NOMBRES Y APELLIDOS DE LOS PADRINOS:</para>
+    <para style="P331">     <font color="white">.</font>    </para>
+    <blockTable colWidths="60.0,350.0,82.0,25.0,28.0,25.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P4">Padrino:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.padrino_persona and o.padrino_persona.nombre_completo or "-"]] </para>
+        </td>
+        <td>
+          <para style="P4">Bautizado: Si</para>
+        </td>
+        <td>
+          <para style="P5">[[ "  X" if o.padr_baut else ""]] </para>
+        </td>
+        <td>
+          <para style="P4">NO</para>
+        </td>
+        <td>
+          <para style="P5">[[ "" if o.padr_baut else "  X"]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="60.0,350.0,82.0,25.0,28.0,25.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P4">Madrina:</para>
+        </td>
+        <td>
+          <para style="P5">[[ o.madrina_persona and o.madrina_persona.nombre_completo or "-"]] </para>
+        </td>
+        <td>
+          <para style="P4">Bautizada: Si</para>
+        </td>
+        <td>
+          <para style="P5">[[ "  X" if o.madr_baut else ""]]</para>
+        </td>
+        <td>
+          <para style="P4">NO</para>
+        </td>
+        <td>
+          <para style="P5">[[ "" if o.madr_baut else "  X"]]</para>
+        </td>
+      </tr>
+    </blockTable>    
+    
+    <para style="P331">     <font color="white">.</font>    </para>
+    <para style="P331">     <font color="white">.</font>    </para>
+    <blockTable colWidths="560.0" style="Table5">
+    <tr> <td>
+        <para style="P44">Datos correspondientes al bautizo</para>
+        <blockTable colWidths="108.0,140.0,44.0,50.0,44.0,50.0,61.0,50.0,20.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P4">Fecha del bautizo:</para>
+        </td>
+        <td>
+          <para style="P5">[[ ]]</para>
+        </td>
+        <td>
+          <para style="P4">Libro:</para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+        <td>
+          <para style="P4">Folio:</para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+        <td>
+          <para style="P4">No. Acta:</para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+      </tr>
+    </blockTable>
+    
+     <blockTable colWidths="65.0,374.0,131.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Parroquia:</para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+      </tr>
+    </blockTable>
+    
+     <blockTable colWidths="55.0,384.0,131.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Celebró:</para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+        <td>
+          <para style="P5"></para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P331">     <font color="white">.</font>    </para>
+    </td></tr> 
+    </blockTable>    
+  </story>
+</document>

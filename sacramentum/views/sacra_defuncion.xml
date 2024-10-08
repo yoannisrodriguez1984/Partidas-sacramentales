@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="sacra_defuncion_search">
+            <field name="name">sacra_defuncion_search</field>
+            <field name="model">sacra_defuncion</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Defunción">
+                    <filter string="Partidas literales" domain="[('partida_literal', '=',True)]"/>
+                    <filter string="Partidas no literales" domain="[('partida_literal', '=',False)]"/>
+
+                    <field name="persona_id" filter_domain="[('persona_id', 'ilike', self)]" string="Persona fallecida"/>
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                    <field name="lugar_nac1"/>
+                    <field name="fecha_fallecimiento" filter_domain="[('fecha_fallecimiento', '=', self)]" string="Fecha de fallecimiento"/>
+                    <field name="tomo1" filter_domain="[('tomo', 'ilike', self)]" string="Tomo"/>
+                    <field name="folio" filter_domain="[('folio', 'ilike', self)]" string="Folio"/>
+                    <field name="numero" filter_domain="[('numero', 'ilike', self)]" string="Número"/>
+                    <field name="ministro"/>
+                    <field name="parroquia_id"/>
+                    <field name="iglesia_id"/>
+                    <field name="fecha_ini"/>
+                    <field name="fecha_fin"/>
+
+                    <filter name="min" string="Ministro" icon="stock_person" domain="[]" context="{'group_by':'ministro'}"/>
+                    <filter name="parr" string="Parroquia" icon="stock_person" domain="[]" context="{'group_by':'parroquia_id'}"/>
+                    <filter name="igle" string="Iglesia" icon="stock_person" domain="[]" context="{'group_by':'iglesia_id'}"/>
+                    <filter name="to" string="Tomo" icon="stock_person" domain="[]" context="{'group_by':'tomo1'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_defuncion_tree">
+            <field name="name">sacra_defuncion_tree</field>
+            <field name="model">sacra_defuncion</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Defunción">
+                <!--tree string="Defunción" options='{"custom_actions": [{"model": "importar_defuncion", "method": "mostrar_ventana", "args": [], "label": "Importar registros"}]}'-->
+                    <field name="tomo1"/>
+                    <field name="folio"/>
+                    <field name="numero"/>
+                    <field name="persona_id" />
+                    <field name="fecha_fallecimiento" />
+                    <field name="ministro" />
+                    <field name="partida_literal"/>
+                    <field name="literal" string="Foto1"/>
+                    <field name="literal1" string="Foto2"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_defuncion_form">
+            <field name="name">sacra_defuncion_form</field>
+            <field name="model">sacra_defuncion</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Defunción">
+            <field name="arch_centr"  invisible = '1'/> 
+            <field name="es_parroquia"  invisible = '1'/> 
+            <group>
+            <field name="partida_literal" class="oe_inline"/>
+            </group>
+            <notebook colspan="4" >
+                <page string="Datos de la defunción" >
+                    <group colspan="4" col='4' string="Datos del fallecido">
+                        <field colspan="4" name="persona_id" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" attrs="{'readonly':[('nombre','!=',False)]}">
+                        </field>
+                        <group colspan="2" >    
+                        <field name="nombre" attrs="{'readonly': [('persona_id','!=', False)]}" options='{"rosend":"1"}'/>
+                        <field name="apellido1" attrs="{'readonly': [('persona_id','!=', False)]}" options='{"rosend":"1"}'/>
+                        <field name="apellido2" attrs="{'readonly': [('persona_id','!=', False)]}" options='{"rosend":"1"}'/>
+                        <field name="nota" attrs="{'readonly': [('persona_id','!=', False)]}" options='{"rosend":"1"}'/>
+                        </group>
+                        <group colspan="2" attrs="{'invisible': [('partida_literal','==', True)]}">    
+                        <field name="fecha_nac" attrs="{'readonly': [('persona_id','!=', False)]}" options='{"rosend":"1"}'/>
+                        <field name="lugar_nac1" attrs="{'readonly': [('persona_id','!=', False)]}" options='{"rosend":"1"}'/>
+                        <field name="edad" options='{"rosend":"1"}'/>
+                        </group>
+                    </group>
+
+                    <group colspan="4" col='4' attrs="{'invisible': [('partida_literal','==', True)]}">    
+                        <group colspan="2" string="Datos del padre">
+                            <field name="padre" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="p_nombre" attrs="{'readonly': [('padre','!=', False)]}" options='{"rosend":"1"}'/>
+                            <field name="p_apellido1" attrs="{'readonly': [('padre','!=', False)]}" options='{"rosend":"1"}'/>
+                            <field name="p_apellido2" attrs="{'readonly': [('padre','!=', False)]}" options='{"rosend":"1"}'/>
+                        </group>
+                        <group colspan="2" string="Datos de la madre">
+                            <field name="madre" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only"></field>
+                            <field name="m_nombre" attrs="{'readonly': [('madre','!=', False)]}" options='{"rosend":"1"}' />
+                            <field name="m_apellido1" attrs="{'readonly': [('madre','!=', False)]}" options='{"rosend":"1"}'/>
+                            <field name="m_apellido2" attrs="{'readonly': [('madre','!=', False)]}" options='{"rosend":"1"}'/>
+                        </group>    
+                    </group>
+                </page> 
+                <page string="Otros datos">
+                    <group colspan="4" col='4'  string="Datos de la sepultura" >
+                        <group colspan="2" >
+                            <field name="fecha_sepultura" />
+                            <field name="lugar_sepultura" attrs="{'invisible': [('partida_literal','==', True)]}"/>
+                            <field name="encarga_arch" />
+                            <field name="ministro" />
+                            <field name="ministro_suple" attrs="{'invisible': [('ministro','=', False)]}"/>
+                        </group>
+                        <group colspan="2" attrs="{'invisible': [('partida_literal','==', True)]}">    
+                            <field name="parroquia" />
+                            <field name="cuidad" />
+                        </group>    
+                    </group>                    
+
+                    <group colspan="4" col='4' string="Datos del registro">
+                        <group colspan="2" >
+                            <field name="tomo1"/>
+                            <field name="folio"/>
+                            <field name="numero" />
+                        </group>
+                        <group colspan="2" >
+                            <field name="fecha_fallecimiento"/>
+                            <field name="parroquia_id"/> 
+                            <field name="iglesia_id" attrs="{'readonly': [('parroquia_id','=', False)]}"/>
+                        </group>
+                    </group>
+                    
+                    <group colspan="4" string="Otros" attrs="{'invisible': [('partida_literal','==', True)]}">    
+                        <field name="causa_muerte"/>
+                        <field name="descendencia"/>
+                        <field name="notas"/>
+                    </group>
+                </page>
+                <page string="Errores a enmendar">
+                    <field name="enmienda_error_ids" nolabel ="1" colspan="4" >
+                        <tree editable="top" string="Enmienda error">                   
+                            <field name="campo_partida" domain="[('model','=','sacra_defuncion'),('modificable','=',True)]"/>
+                            <field name="deber_decir"/>
+                        </tree>
+                    </field>
+                </page>
+                <page string="Literal" attrs="{'invisible': [('partida_literal','==', False)]}"> 
+                    <group colspan="4" >    
+                        <field name="literal_text3" nolabel= "1" colspan="4" widget="FieldText3">   </field> 
+                    </group>                
+                </page>   
+                <page string="Imagen" >
+                    <group colspan="4" >    
+                        <!--field colspan="4" mode="form" name="literal" widget="one2many_list" nolabel="1">
+                            <form string="Imagen" options='{"deletable": false, "addable": false}'>
+                                <field name="imagen" nolabel= "1" colspan="4" widget="image" options='{"fileType": "Imagen/jpg,Imagen/png,Imagen/bmp,Imagen/gif"}'/>
+                            </form>
+                        </field-->
+                        <field name="literal" nolabel= "1" colspan="4" widget="image_show"/>
+                        <field name="literal1" nolabel= "1" colspan="4" widget="image_show"/>
+                    </group>                
+                </page>
+            </notebook>
+            </form>
+            </field>
+        </record>
+
+    <record id="view_sacra_defuncion_graph_bar" model="ir.ui.view">
+    <field name="model">sacra_defuncion</field>
+    <field name="arch" type="xml">
+        <graph type="bar" stacked="False" >
+            <field name="parroquia_id" />
+        </graph>
+    </field>
+    </record> 
+        
+        <record id="importar_defuncion_view" model="ir.ui.view">
+            <field name="name">Importar</field>
+            <field name="model">importar_defuncion</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Importar">                    
+                    <group colspan="4" col="4">
+                        <field name="archivo" filename="archivo_fname" colspan="4"/>
+                        <field name="archivo_fname" invisible="1" />
+                    </group>
+                    <separator colspan="6"/>
+                    <group colspan="4" col="4">
+                        <button special="cancel" string="Cancel" icon="gtk-cancel" colspan="2"/>
+                        <button name="make_import_file" string="Importar" type="object" icon="gtk-print" colspan="2" attrs="{'readonly':[('archivo','=','')]}"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_defuncion_action">
+            <field name="name">Registro de defunciones</field>
+            <field name="res_model">sacra_defuncion</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
+            <field name="limit">20</field>
+        </record>
+
+        <record id="importar_defuncion_action" model="ir.actions.act_window">
+            <field name="name">Importar</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">importar_defuncion</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="importar_defuncion_view"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</openerp>
+

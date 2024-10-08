@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <record model="ir.ui.view" id="view_usu_inherit_form">
+            <field name="name">res.users.form.inherit4</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="model">res.users</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="config_id"/>
+                </field>
+            </field>
+        </record>    
+        
+    
+        <record model="ir.ui.view" id="sacra_datos_parroquia_tree">
+            <field name="name">sacra_datos_parroquia_tree</field>
+            <field name="model">sacra_datos_parroquia</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Configuraciones generales">
+                    <field name="archivo_central" />
+                    <field name="nombre" attrs="{'invisible': [('archivo_central','=', True)]}"/>
+                    <field name="provincia" attrs="{'invisible': [('archivo_central','=', True)]}"/>
+                    <field name="municipio" attrs="{'invisible': [('archivo_central','=', True)]}"/>
+                    <field name="diocesis" />
+                    
+                    <field name="nombre_arch" attrs="{'invisible': [('archivo_central','=', False)]}"/>
+                    <field name="ubicacion" attrs="{'invisible': [('archivo_central','=', False)]}"/>
+                    <field name="contacto" attrs="{'invisible': [('archivo_central','=', False)]}"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sacra_datos_parroquia_form">
+            <field name="name">sacra_datos_parroquia_form</field>
+            <field name="model">sacra_datos_parroquia</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Configuración general">
+                    <group>
+                    <field name="archivo_central" colspan="2"/>
+                    <newline/>
+                    <field name="diocesis" colspan="2"/>
+                    <field name="correo" colspan="2"/>
+                    <field name="code" colspan="2"/>
+                    <field name="es_parroquia" colspan="2"/>
+                    <field name="sacra_parroquia_id" colspan="2" attrs="{'invisible': [('es_parroquia','=', False)]}"/>
+                    <field name="iglesia_id" colspan="2" attrs="{'invisible': [('es_parroquia','=', False)]}"/>
+                    <notebook colspan="4" >
+                    <page string="Datos de la parroquia" attrs="{'invisible': [('archivo_central','=', True)]}">
+                    <group>
+                        <field name="nombre"/>
+                        <field name="provincia"/>
+                        <field name="municipio"/>
+                    </group>
+                    </page>
+                    <page string="Datos del archivo histórico" attrs="{'invisible': [('archivo_central','=', False)]}">
+                    <group >
+                        <field name="nombre_arch" />
+                        <field name="ubicacion" />
+                        <field name="contacto" />
+                        <field name="secretaria"/>
+                    </group>
+                    </page>
+                    <page string="Opciones de los reporte">
+                    <group >
+                            <field name="cuno" />
+                            <field name="elaborado_por" />
+                            <field name="texto_cuno" attrs="{'invisible': [('cuno','=', False)]}"/>
+                            <field name="texto1_cuno" attrs="{'invisible': [('cuno','=', False)]}"/>
+                            <field name="text_pliter" />
+                            <field name="marca_agua" />
+                            <field name="texto_marca"  attrs="{'invisible': [('marca_agua','=', False)]}"/>
+                            <field name="logo" />
+                            <field name="imagen" attrs="{'invisible': [('logo','=', False)]}"/>
+                    </group>
+                    <group colspan="4" col="4" string="Encabezados">
+                          <field name="sacra_encabezado_ids" nolabel="1"/>
+                    </group>
+                    </page>
+                    <page string="Otros datos">
+                    <group colspan="4">
+                        <field name="registros_contiuos"/>
+                        <field name="auto_matr_note"/>
+                        <field name="auto_matr_anul_note"/>
+                        <field name="auto_confir_note"/>
+                        <field name="auto_defun_note"/>
+                        <group colspan="2" col="2" string="Opciones de entable">
+                            <field name="entablar_reg_act" colspan="2"/>
+                            <field name="auto_entablar" colspan="2"/>
+                        </group>
+                        <group colspan="2" col="2" string="Opciones de enmienda">
+                            <field name="enmendar_reg_act" colspan="2"/>
+                            <field name="auto_enmendar" colspan="2"/>
+                        </group>
+                    </group>
+                    </page>
+                    </notebook>
+                    </group>
+                </form>
+            </field>
+        </record>        
+        
+        <record model="ir.ui.view" id="sacra_encabezado_search">
+            <field name="name">sacra_encabezado_search</field>
+            <field name="model">sacra_encabezado</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Encabezado">
+                    <field name="img"/>
+                    <field name="texto_encab"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_encabezado_tree">
+            <field name="name">sacra_encabezado_tree</field>
+            <field name="model">sacra_encabezado</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Encabezado">
+                    <field name="img"/>
+                    <field name="texto_encab"/>
+                    <field name="orden"/>
+                    <field name="espaciado"/>
+                    <field name="alineacion"/>
+                    <field name="tamano"/>
+                    <field name="negrita"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_encabezado_form">
+            <field name="name">sacra_encabezado_form</field>
+            <field name="model">sacra_encabezado</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Encabezado">
+                    <group>
+                    <field name="img"  /><newline/>
+                    <field name="img_iglesia" attrs="{'invisible':[('img','=', False)]}"/><newline/>
+                    <field name="imagen" attrs="{'invisible':['|',('img','=',False),('img_iglesia','=', True)],'required': [('img','=', True),('img_iglesia','=', False)]}"/>
+                    
+                    <field name="ancho" attrs="{'invisible': ['|',('img','=',False),('img_iglesia','=', True)],'required': [('img','=', True),('img_iglesia','=', False)]}"/>
+                    
+                    <field name="largo" attrs="{'invisible': ['|',('img','=',False),('img_iglesia','=', True)],'required': [('img','=', True),('img_iglesia','=', False)]}"/>
+                    
+                    <field name="texto_encab" attrs="{'invisible': ['|',('img','=', True),('img_iglesia','=', True)]}"/>
+                    <field name="espaciado"/>
+                    <field name="alineacion"/>
+                    <field name="tamano" attrs="{'invisible': ['|',('img','=', True),('img_iglesia','=', True)]}"/>
+                    <field name="negrita" attrs="{'invisible': ['|',('img','=', True),('img_iglesia','=', True)]}"/>
+                    <field name="orden"/>
+                </group>
+            </form>
+            </field>
+        </record>    
+        
+        <record model="ir.ui.view" id="orden_sacerdotal_search">
+            <field name="name">orden_sacerdotal_search</field>
+            <field name="model">orden_sacerdotal</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Orden sacerdotal">
+                    <field name="nombre"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="orden_sacerdotal_tree">
+            <field name="name">orden_sacerdotal_tree</field>
+            <field name="model">orden_sacerdotal</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Orden sacerdotal" editable="top">
+                    <field name="nombre"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="orden_sacerdotal_form">
+            <field name="name">orden_sacerdotal_form</field>
+            <field name="model">orden_sacerdotal</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Orden sacerdotal">
+                    <group>
+                    <field name="nombre"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+         <record model="ir.ui.view" id="sacra_parrocos_search">
+            <field name="name">sacra_parrocos_search</field>
+            <field name="model">sacra_parrocos</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Párroco">
+                    <field name="nombre"/>
+                    <field name="apellido1"/>
+                    <field name="apellido2"/>
+                    <field name="activo"/>
+                    <field name="orden_id"/>
+                    <newline/>
+                    <group expand="1" string="Agrupar por" >
+                    <filter name="act" string="Activo" icon="gtk-apply" domain="[]" context="{'group_by':'activo'}"/>
+                    <filter name="orde" string="Orden sacerdotal" icon="STOCK_INDENT" domain="[]" context="{'group_by':'orden_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sacra_parrocos_tree">
+            <field name="name">sacra_parrocos_tree</field>
+            <field name="model">sacra_parrocos</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Párroco">
+                    <field name="nombre_completo"/>
+                    <field name="orden_id"/>
+                    <field name="fecha_nac"/>
+                    <field name="lugar_nac"/>
+                    <field name="activo"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sacra_parrocos_form">
+            <field name="name">sacra_parrocos_form</field>
+            <field name="model">sacra_parrocos</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Párroco">
+                    <group colspan="4" >
+                        <field name="persona_id" options="{'create': 'false', 'create_edit': 'false', 'm2o_dialog': 'false', 'search_more': 'true'}" placeholder='BUSCAR EN EL ARCHIVO DE PERSONAS...' required="0" class="oe_edit_only" attrs="{'readonly':[('nombre','!=',False)]}">
+                        </field>
+                    </group>
+                    <group colspan="4" col='8' string="Datos del párroco">
+                        <group colspan="4" >
+                        <field name="nombre" options='{"rosend":"1"}'/>
+                        <field name="apellido1" options='{"rosend":"1"}'/>
+                        <field name="apellido2" options='{"rosend":"1"}'/>
+                        <field name="orden_id"/>
+                        </group>
+                        <group colspan="4" >    
+                        <field name="fecha_nac" options='{"rosend":"1"}'/>
+                        <field name="clerigo" invisible='1'/>
+                        <field name="lugar_nac" options='{"rosend":"1"}'/>
+                        <field name="activo" options='{"rosend":"1"}'/>
+                        </group>
+                        <!--label string="" colspan="6"/>
+                        <field name="persona_id" colspan="2" nolabel ="1" required="0"/-->
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_mestizaje_search">
+            <field name="name">sacra_mestizaje_search</field>
+            <field name="model">sacra_mestizaje</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Mestizaje">
+                    <field name="nombre"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_mestizaje_tree">
+            <field name="name">sacra_mestizaje_tree</field>
+            <field name="model">sacra_mestizaje</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Mestizaje" editable="top">
+                    <field name="nombre"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_mestizaje_form">
+            <field name="name">sacra_mestizaje_form</field>
+            <field name="model">sacra_mestizaje</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Mestizaje">
+                    <group>
+                    <field name="nombre"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_est_civil_search">
+            <field name="name">sacra_est_civil_search</field>
+            <field name="model">sacra_est_civil</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Estado civil">
+                    <field name="nombre"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_est_civil_tree">
+            <field name="name">sacra_est_civil_tree</field>
+            <field name="model">sacra_est_civil</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Estado civil" editable="top">
+                    <field name="nombre"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_est_civil_form">
+            <field name="name">sacra_est_civil_form</field>
+            <field name="model">sacra_est_civil</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Estado civil">
+                    <field name="nombre"/>    
+                </form>
+            </field>
+        </record>        
+        
+        <record model="ir.ui.view" id="sacra_parroquia_search">
+            <field name="name">sacra_parroquia_search</field>
+            <field name="model">sacra_parroquia</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search>                    
+                    <field name="nombre"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_parroquia_tree">
+            <field name="name">sacra_parroquia_tree</field>
+            <field name="model">sacra_parroquia</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Parroquia">
+                    <field name="nombre"/>
+                    <field name="provincia"/>
+                    <field name="municipio"/>
+                    <field name="diocesis"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_parroquia_form">
+            <field name="name">sacra_parroquia_form</field>
+            <field name="model">sacra_parroquia</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Parroquia">
+                    <group>
+                    <field name="nombre"/>
+                    <field name="provincia"/>
+                    <field name="municipio"/>
+                    <field name="diocesis"/>
+                    <group colspan="4" string="Iglesias">
+                        <field name="sacra_iglesia_ids" nolabel="1"/>
+                    </group>
+                </group>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_iglesia_search">
+            <field name="name">sacra_iglesia_search</field>
+            <field name="model">sacra_iglesia</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search>                    
+                    <field name="nombre"/>
+                    <field name="sacra_parroquia_id"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_iglesia_tree">
+            <field name="name">sacra_iglesia_tree</field>
+            <field name="model">sacra_iglesia</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Iglesias">
+                    <field name="nombre"/>
+                    <field name="sacra_parroquia_id"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="sacra_iglesia_form">
+            <field name="name">sacra_iglesia_form</field>
+            <field name="model">sacra_iglesia</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Iglesia">
+                    <group>
+                    <field name="nombre"/>
+                    <field name="sacra_parroquia_id"/>
+                    <field name="imagen" />
+                    <field name="ancho" />
+                    <field name="largo" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="lugar_nacimiento_search">
+            <field name="name">lugar_nacimiento_search</field>
+            <field name="model">lugar_nacimiento</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Lugar de nacimiento">
+                    <field name="nombre"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="lugar_nacimiento_tree">
+            <field name="name">lugar_nacimiento_tree</field>
+            <field name="model">lugar_nacimiento</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Lugar de nacimiento" editable="top">
+                    <field name="nombre"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="lugar_nacimiento_form">
+            <field name="name">lugar_nacimiento_form</field>
+            <field name="model">lugar_nacimiento</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Lugar de nacimiento">
+                    <group>
+                    <field name="nombre"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+      <record model="ir.ui.view" id="sacra_tomo_search">
+            <field name="name">sacra_tomo_search</field>
+            <field name="model">sacra_tomo</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Tomo">
+                    <field name="nombre"/>
+                    <field name="tipo"/>
+                    <filter name="tip" string="Tipo" icon="fa-book" domain="[]" context="{'group_by':'tipo'}"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_tomo_tree">
+            <field name="name">sacra_tomo_tree</field>
+            <field name="model">sacra_tomo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Tomo" editable="top">
+                    <field name="nombre"/>
+                    <field name="tipo"/>
+                    <field name="url_image"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sacra_tomo_form">
+            <field name="name">sacra_tomo_form</field>
+            <field name="model">sacra_tomo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Tomo">
+                    <group>
+                        <field name="nombre"/>
+                        <field name="tipo"/>
+                        <field name="url_image"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="sacra_datos_parroquia_action">
+            <field name="name">Configuración general</field>
+            <field name="res_model">sacra_datos_parroquia</field>
+            <field name="limit">20</field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="orden_sacerdotal_action">
+            <field name="name">Órdenes sacerdotales</field>
+            <field name="res_model">orden_sacerdotal</field>
+            <field name="limit">20</field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="lugar_nacimiento_action">
+            <field name="name">Lugares de nacimiento</field>
+            <field name="res_model">lugar_nacimiento</field>
+            <field name="limit">20</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="sacra_tomo_action">
+            <field name="name">Tomos</field>
+            <field name="res_model">sacra_tomo</field>
+            <field name="limit">20</field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="sacra_parrocos_action">
+            <field name="name">Párrocos</field>
+            <field name="res_model">sacra_parrocos</field>
+            <field name="limit">20</field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="sacra_mestizaje_action">
+            <field name="name">Mestizajes</field>
+            <field name="res_model">sacra_mestizaje</field>
+            <field name="limit">20</field>
+        </record>    
+
+        <record model="ir.actions.act_window" id="sacra_est_civil_action">
+            <field name="name">Estados civiles</field>
+            <field name="res_model">sacra_est_civil</field>
+            <field name="limit">20</field>
+        </record>    
+
+        <record model="ir.actions.act_window" id="sacra_parroquia_action">
+            <field name="name">Parroquias</field>
+            <field name="res_model">sacra_parroquia</field>
+            <field name="limit">20</field>
+        </record>    
+    </data>
+</openerp>

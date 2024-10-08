@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<document filename="aprobacion_entable.pdf">
+  <template pageSize="(590.0,970.0)" title="Aprobación de entable" author="" allowSplitting="20">
+    <pageTemplate id="first">
+	  <frame id="first" x1="15.0" y1="10.0" width="560" height="950"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="BOTTOM"/>
+	  <blockBottomPadding length="4"/>
+    </blockTableStyle>
+   <blockTableStyle id="Table1">
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="0,0" stop="0,0"/>
+		<blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table3">
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+		<blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table4">
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="1,0" stop="1,0"/>
+		<lineStyle kind="LINEBELOW" colorName="#826860" thickness ="0" start="3,0" stop="3,0"/>
+		<blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table5">
+		<lineStyle kind="LINEBELOW" colorName="#000000" thickness ="0" start="3,0" stop="3,0"/>
+		<blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table6">
+		<lineStyle kind="LINEBELOW" colorName="#000000" thickness ="0" start="2,0" stop="2,0"/>
+		<blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Table7">
+		<lineStyle kind="LINEBELOW" colorName="#000000" thickness ="0" start="2,0" stop="2,0"/>
+		<lineStyle kind="LINEBELOW" colorName="#000000" thickness ="0" start="4,0" stop="4,0"/>
+		<blockBottomPadding length="4"/>
+    </blockTableStyle>
+	
+    <blockTableStyle id="Encabezado">
+      <blockLeftPadding length="0" />  
+      <blockRightPadding length="0" />  
+      <blockBottomPadding length="0" />  
+      <blockTopPadding length="0" />  
+      <blockLeading length="0" />  
+    </blockTableStyle>
+
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica-Bold" fontSize="14.0" leading="17" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="Helvetica-Oblique" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P33" fontName="Helvetica-Bold" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="13.0" leading="16" alignment="CENTER"/>
+    <paraStyle name="P5" fontName="Helvetica" fontSize="11.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="P55" fontName="Helvetica" fontSize="12.0" leading="14" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="11.0" leading="10" alignment="JUSTIFY"/>
+    <paraStyle name="P7" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="11.0" leading="10" alignment="JUSTIFY"/>
+    <paraStyle name="P9" fontName="Helvetica-Bold" fontSize="11.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P10" fontName="Helvetica-Bold" fontSize="13.0" leading="16" alignment="JUSTIFY"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P122" fontName="Helvetica" fontSize="12.0" leading="16" alignment="JUSTIFY"/>
+    <paraStyle name="P13" fontName="Helvetica-Oblique" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P14" fontName="Helvetica-Oblique" fontSize="11.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P15" fontName="Helvetica-Oblique" fontSize="11.0" leading="13" alignment="RIGHT"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="11.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="11.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="P18" fontName="Helvetica" alignment="JUSTIFY"/>
+    <paraStyle name="P19" fontName="Helvetica" fontSize="12.0" leading="10" alignment="JUSTIFY"/>
+    <paraStyle name="P199" fontName="Helvetica" fontSize="12.0" leading="12" alignment="JUSTIFY"/>
+    <paraStyle name="P190" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P20" fontName="Helvetica-Oblique" fontSize="11.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P200" fontName="Helvetica" fontSize="12.0" leading="5" alignment="CENTER"/>
+    <paraStyle name="P21" fontName="Helvetica" fontSize="12.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P22" fontName="Helvetica" fontSize="6.0" leading="8" alignment="JUSTIFY"/>
+    <paraStyle name="P23" fontName="Helvetica-Bold" fontSize="13.0" leading="16" alignment="JUSTIFY"/>
+    <paraStyle name="P24" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="P25" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="P26" fontName="Helvetica" fontSize="11.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P261" fontName="Helvetica" fontSize="11.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P27" fontName="Helvetica" fontSize="11.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P28" fontName="Helvetica" fontSize="11.0" leading="13" alignment="JUSTIFY"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text_20_body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Header" fontName="Helvetica"/>
+    <paraStyle name="Table_20_Contents" fontName="Helvetica"/>
+    <paraStyle name="Table_20_Heading" fontName="Helvetica" alignment="CENTER"/>
+    <images/>
+  </stylesheet>
+  <story>
+	<section>
+    <para >[[ repeatIn( _datos_parroquia['encb'],'enc') ]]</para>
+    <blockTable colWidths="570.0" style="Encabezado">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':_get_iglesia(o.iglesia_id,enc['img_iglesia'])[0],'alignment':enc['alineacion'],'height':_get_iglesia(o.iglesia_id,enc['img_iglesia'])[1],'leading':enc['espaciado']}) if enc['img_iglesia']==True else removeParentNode('blockTable')]][[ _get_iglesia(o.iglesia_id,enc['img_iglesia'])[2] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+    <blockTable colWidths="560.0" style="Encabezado">
+      <tr>
+        <td>
+          <para> 
+          [[ setTag('para','image',{'width':enc['ancho'],'alignment':enc['alineacion'],'height':enc['largo'],'leading':enc['espaciado']}) if enc['img']==True else removeParentNode('blockTable')]][[ enc['imagen'] ]]
+          </para>
+        </td>
+      </tr>    
+    </blockTable>
+    <para >[[ enc['img']== False and setTag('para','para',{'alignment':enc['alineacion'],'fontName':'Helvetica-Bold' if enc['negrita'] else 'Helvetica','leading':enc['espaciado'],'fontSize':enc['tamano']}) or removeParentNode('para')]][[ enc['texto_encab'] ]]</para>
+    </section>
+	<para style="P1">[[ repeatIn( objects,'o') ]]</para>
+    <!-- <para style="P1">[[ repeatIn( objects,'o') ]]ARZOBISPADO DE [[ _datos_parroquia['d'] and _datos_parroquia['d'].upper() or "-"]]</para> -->
+	<!-- <para style="P3">Cancillería</para> -->
+    <!-- <para style="P6"><font color="white">.</font></para> -->
+	
+    <blockTable colWidths="403.0,77.0,80.0" style="Table6">
+      <tr>
+		<td><para style="P6"><font color="white">.</font></para></td>
+        <td> <para style="P6">Exp. Número</para></td>
+        <td><para style="P20">[[ o.num_exp or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P6"><font color="white">.</font></para>
+	
+    <blockTable colWidths="102.0,340.0,118.0" style="Table3">
+      <tr>
+        <td><para style="P6">AUTO del Rvdmo.</para></td>
+        <td><para style="P20">[[ data['form'][0]['ministro'][1] or " - "]]</para></td>
+		<td><para style="P6">, y Rvdmo. Monseñor</para></td>
+      </tr>
+    </blockTable>
+
+    <blockTable colWidths="5.0,280.0,83.0,180.0,12.0" style="Table4">
+      <tr>
+        <td> <para style="P6"></para></td>
+        <td><para style="P20">[[ _get_monsenor_activo ]]</para></td>
+		<td> <para style="P6">, Arzobispo de</para></td>
+		<td><para style="P20">[[ _datos_parroquia['d'] or "-"]]</para></td>
+		<td><para style="P6">,</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+	<para style="P6">Dada cuenta; y,</para>
+	
+		
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="115.0,213.0,232.0" style="Table3">
+      <tr>
+        <td> <para style="P6"><u>RESULTANDO:</u> Que</para></td>
+        <td><para style="P20">[[ o.solicita or "-"]]</para></td>
+        <td> <para style="P6">de las generales que constan, por escrito del</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="5.0,142.0,314.0,99.0" style="Table4">
+      <tr>
+        <td> <para style="P6"></para></td>
+        <td><para style="P20">[[ _format_fecha(o.fecha_solicitud) or "-"]]</para></td>
+        <td> <para style="P6">promovió expediente para entablar el asiento de la Partida de</para></td>
+		<td><para style="P20">[[ o.partida or "-"]]</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="25.0,220.0,90.0,225.0" style="Table4">
+      <tr>
+        <td><para style="P6">de</para></td>
+        <td><para style="P20">[[ o.nombre_completo or "-"]]</para></td>
+        <td><para style="P6">en la Parroquia</para></td>
+		<td><para style="P20">[[ o.parroquia.nombre or "-"]]</para></td>
+      </tr>
+    </blockTable>
+
+    <blockTable colWidths="23.0,175.0,362.0" style="Table3">
+      <tr>
+        <td><para style="P6">de</para></td>
+		<td><para style="P20">[[ o.parroquia.municipio or "-"]]</para></td>
+        <td><para style="P6">de esta archidiócesis, proponiendo como pruebas: Las consistentes en:</para></td>
+      </tr>
+    </blockTable><para style="P200"><font color="white">.</font></para>
+    <para style="P5">a) Certificación Negativa del asiento bautismal, expedida por el cura Egdo. Del Archivo de dicha Parroquia;</para>
+	
+    <blockTable colWidths="365.0,170.0,25.0" style="Table3">
+      <tr>
+        <td><para style="P6">b) Certificación del Acta de la Inscripción de nacimiento, obrante el Folio</para></td>
+        <td><para style="P20">[[ o.folio_n or "-"]]</para></td>
+		<td><para style="P6">del</para></td>
+      </tr>
+    </blockTable>
+	<blockTable colWidths="40.0,210.0,110.0,200.0" style="Table4">
+      <tr>
+        <td><para style="P6">Tomo</para></td>
+		<td><para style="P20">[[ o.tomo_n or "-"]]</para></td>
+		<td> <para style="P6">del Registro Civil de</para></td>
+		<td><para style="P20">[[ o.cuidad_rc or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P6"><font color="white">.</font></para>
+    <para style="P5">Y la testifical compuesta por dos testigos voluntarios que presentaría oportunamente; interesando en la súplica la admisión <font color="white">.</font>y tramitación del expediente y <font color="white">.</font>que en definitiva,<font color="white">.</font> se dicte <font color="white">.</font>Resolución <font color="white">.</font>ordenando el<font color="white">.</font> entable <font color="white">.</font>de<font color="white">.</font> la</para>
+    <blockTable colWidths="118.0,125.0,317.0" style="Table3">
+      <tr>
+        <td> <para style="P6">supradicha partida de</para></td>
+        <td><para style="P20">[[ o.partida or "-"]]</para></td>
+        <td> <para style="P6">.</para></td>
+      </tr>
+    </blockTable>
+	<para style="P6"><font color="white">.</font></para>
+    <para style="P5"><u>RESULTANDO:</u> <font color="white">.</font>Que admito el expediente, que mandó radicar, ratificar por su producente y sustancias, admitiéndoselos medios de pruebas propuestos, ordenándose se recibieran por el Canciller- Notario Ecco., las declaraciones juradas de los testigos, así como confeccionar Testimonio por la Exhibición de las Actas de Nacimiento por tratarse de documentos de no fácil adquisición; todo lo cuál se llevó a efecto en debida forma. Se hace constar que la sustanciación de este expediente se han observado las prescripciones de la legislación canónica.</para>
+	<para style="P6"><font color="white">.</font></para>
+	
+    <para style="P5"><u>CONSIDERANDO:</u> <font color="white">.</font>Que con la prueba documental aportada, que se aprecia conforme a derecho, y la testifical conforme a las reglas de santa crítica, vista su forma probatoria conforme a los cánones teniendo en cuenta la calidad de los testigos y la razón de ciencia que aducen, se ha demostrado plenamente la existencia del bautismo que se quiere reconstruir, por lo que procede declarar con lugar esta solicitud.</para>
+	<para style="P6"><font color="white">.</font></para>
+	
+    <para style="P5"><u>VISTAS</u> <font color="white">.</font>las disposiciones del código canónico y las instrucciones acordadas para su ejecución, se <u>DECLARA CON LUGAR</u> <font color="white">.</font>dicha solicitud y <font color="white">.</font>en consecuencia se ordena al<font color="white">.</font> Sr. Cura Encargado del Archivo<font color="white">.</font> de la <font color="white">.</font>Parroquia</para>
+    <blockTable colWidths="5.0,277.0,278.0" style="Table3">
+      <tr>
+        <td> <para style="P6"></para></td>
+        <td><para style="P20">[[ o.parroquia.nombre or "-"]]</para></td>
+        <td> <para style="P6">, para que en virtud de este mandato y con la cláusula</para></td>
+      </tr>
+    </blockTable>
+	<para style="P200"><font color="white">.</font></para>
+	<para style="P5">"SIN PERJUICIO DE TERCERO, A LOS EFECTOS CANÓNICOS", extienda en el Libro Corriente de Entables de dicha parroquia el siguiente asiento:</para>
+	<para style="P200"><font color="white">.</font></para>
+    <blockTable colWidths="36.0,292.0,232.0" style="Table3">
+      <tr>
+        <td> <para style="P6">Pbro.</para></td>
+        <td><para style="P20">[[ o.encar_archi.nombre_completo or "-"]]</para></td>
+        <td> <para style="P6">, Cura Encargado de Archivo de la Parroquia</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="5.0,265.0,93.0,187.0,10.0" style="Table4">
+      <tr>
+        <td><para style="P6"></para></td>
+        <td><para style="P20">[[ o.parroquia.nombre or "-"]]</para></td>
+        <td><para style="P6">Archidiócesis de</para></td>
+		<td><para style="P20">[[ o.parroquia.diocesis or "-"]]</para></td>
+		<td><para style="P6">,</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="111.0,287.0,162.0" style="Table3">
+      <tr>
+        <td><para style="P6"><u>CERTIFICO:</u> <font color="white">.</font>que el</para></td>
+        <td><para style="P20">[[ _format_fecha(o.fecha_baut)]]</para></td>
+        <td><para style="P6">, fue bautizad[[ _texto_segun_sexo(o.sexo) ]] en la iglesia de</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="5.0,437.0,118.0" style="Table3">
+      <tr>
+		<td><para style="P20">[[ "" if o.ministro.nombre_completo else removeParentNode('blockTable')]]</para></td>
+        <td><para style="P20">[[ o.iglesia_id.nombre or "-"]]</para></td>
+        <td><para style="P6">de esta Parroquia por</para></td>
+	  </tr>
+    </blockTable>
+		<blockTable colWidths="5.0,276.0,279.0" style="Table3">
+		  <tr>
+			<td><para style="P20">[[ "" if not o.ministro.nombre_completo else removeParentNode('blockTable')]]</para></td>
+			<td><para style="P20">[[ o.iglesia_id.nombre or "-"]]</para></td>
+			<td><para style="P6">de esta parroquia por el ministro celebrante un[[ _texto_segun_sexo1(o.sexo) ]] niñ[[ _texto_segun_sexo(o.sexo) ]] a</para></td>
+		  </tr>
+		</blockTable>
+	
+    <blockTable colWidths="5.0,349.0,206.0" style="Table3">
+      <tr>
+		<td><para style="P20"></para></td>
+		<td><para style="P20">[[ o.ministro.nombre_completo if o.ministro.nombre_completo else removeParentNode('blockTable')]]</para></td>
+		<td><para style="P6">un[[ _texto_segun_sexo1(o.sexo) ]] niñ[[ _texto_segun_sexo(o.sexo) ]] a quien se le puso por nombre</para></td>
+	  </tr>
+    </blockTable>
+	
+    <blockTable colWidths="5.0,317.0,238.0" style="Table3">
+      <tr>
+        <td><para style="P6">[[ '' if o.ministro.nombre_completo else removeParentNode('blockTable')]]</para></td>
+		<td><para style="P20">[[ o.nombre_completo or "-"]]</para></td>
+		<td><para style="P6">y que según consta del expediente formado al</para></td>
+      </tr>
+    </blockTable>
+		<blockTable colWidths="152.0,226.0,182.0" style="Table3">
+		  <tr>
+			<td><para style="P6">quien se le puso por nombre[[ "" if not o.ministro.nombre_completo else removeParentNode('blockTable')]]</para></td>
+			<td><para style="P20">[[ o.nombre_completo or "-"]]</para></td>
+			<td><para style="P6">y que según consta del expediente</para></td>
+		  </tr>
+		</blockTable>
+	
+    <blockTable colWidths="90.0,270.0,20.0,180.0" style="Table4">
+      <tr>
+        <td><para style="P6">efecto, nació en</para></td>
+        <td><para style="P20">[[ o.lugar_nac.nombre or "-"]]</para></td>
+		<td><para style="P6">[[ "" if o.ministro.nombre_completo else removeParentNode('blockTable')]]el</para></td>
+		<td><para style="P20">[[ _format_fecha(o.fecha_nac) or "-"]]</para></td>
+      </tr>
+    </blockTable>
+		<blockTable colWidths="145.0,245.0,20.0,150.0" style="Table4">
+		  <tr>
+			<td><para style="P6">formado al efecto, nació en</para></td>
+			<td><para style="P20">[[ o.lugar_nac.nombre or "-"]]</para></td>
+			<td><para style="P6">[[ "" if not o.ministro.nombre_completo else removeParentNode('blockTable')]]el</para></td>
+			<td><para style="P20">[[ _format_fecha(o.fecha_nac) or "-"]]</para></td>
+		  </tr>
+		</blockTable>
+		
+    <blockTable colWidths="62.0,232.0,34.0,232.0" style="Table4">
+      <tr>
+        <td><para style="P6">Es hij[[ _texto_segun_sexo(o.sexo) ]] de</para></td>
+		<td><para style="P20">[[ o.p_nombre_completo or "-"]]</para></td>
+		<td><para style="P6">y de</para></td>
+        <td><para style="P20">[[ o.m_nombre_completo or "-"]]</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="75.0,226.0,33.0,226.0" style="Table4">
+      <tr>
+        <td><para style="P6">naturales de</para></td>
+		<td><para style="P20">[[ o.p_lugar_nac.nombre or "-"]]</para></td>
+		<td><para style="P6">y de</para></td>
+        <td><para style="P20">[[ o.m_lugar_nac.nombre or "-"]]</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="151.0,197.0,15.0,197.0" style="Table4">
+      <tr>
+        <td><para style="P6">Abuelos por la línea paterna</para></td>
+		<td><para style="P20">[[ o.p_p_nombre_completo or "-"]]</para></td>
+        <td><para style="P6">y</para></td>
+		<td><para style="P20">[[ o.m_p_nombre_completo or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<blockTable colWidths="99.0,223.0,15.0,223.0" style="Table4">
+      <tr>
+		<td><para style="P6">, y por la materna</para></td>
+		<td><para style="P20">[[ o.p_m_nombre_completo or "-"]]</para></td>
+        <td><para style="P6">y</para></td>
+		<td><para style="P20">[[ o.m_m_nombre_completo or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<blockTable colWidths="113.0,216.0,15.0,216.0" style="Table4">
+      <tr>
+        <td><para style="P6">Fueron sus padrinos</para></td>
+        <td><para style="P20">[[ o.padrino_nombre_completo or "-"]]</para></td>
+        <td><para style="P6">y</para></td>
+		<td><para style="P20">[[ o.madrina_nombre_completo or "-"]]</para></td>
+      </tr>
+    </blockTable>
+	<para style="P6"><font color="white">...................</font></para>
+
+	<para style="P5">Líbrese oficio al Sr. Cura Egdo. De la referida Parroquia, con inserción de las partes dispositiva de este Auto, para su cumplimiento. Notifíquese al promovente y archívese este expediente. Así por este Auto, lo proveyó, mandó y firma, el llmo. Sr Vicario de este Arzobispado, por ante mí, de que doy fe.</para>
+	<para style="P200"><font color="white">...................</font></para>
+	<para style="P55"><b>Ante mí,</b></para>
+	<para style="P200"><font color="white">...................</font></para>
+	
+	<blockTable colWidths="20.0,210.0,89.0,210.0,20.0" style="Table4">
+      <tr>
+        <td>
+          <para style="P26"><font color="white">...................</font></para>
+        </td>
+        <td>
+          <para style="P26"><font color="white">...................</font></para>
+        </td>
+        <td>
+          <para style="P26"><font color="white">...................</font></para>
+        </td>
+        <td>
+          <para style="P26"><font color="white">...................</font></para>
+        </td>
+        <td>
+          <para style="P26"><font color="white">...................</font></para>
+        </td>
+      </tr>
+      <tr>
+        <td><para style="P26"><font color="white">...................</font></para></td>
+        <td>
+          <para style="P261">Vicario:</para>
+          <para style="P261">[[ data['form'][0]['ministro'][1] or " - " ]]</para>
+        </td>
+        <td>
+			<para style="P26"><font color="white">...................</font></para>
+        </td>
+        <td>
+          <para style="P261">Canciller:</para>
+          <para style="P261">[[ _get_canciller_activo ]]</para>
+        </td>
+        <td>
+          <para style="P26"><font color="white">...................</font></para>
+        </td>
+      </tr>
+    </blockTable>
+  </story>
+</document>

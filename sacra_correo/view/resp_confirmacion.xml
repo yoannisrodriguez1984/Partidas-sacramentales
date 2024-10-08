@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="resp_confirmacion_search">
+            <field name="name">resp_confirmacion_search</field>
+            <field name="model">resp_confirmacion</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Solicitud de búsqueda">
+					<field name="nombre"/>
+					<field name="apellido1"/>
+					<field name="apellido2"/>
+					<field name="fecha_nac"/>
+					<field name="lugar_nac"/>
+					<field name="state"/>
+					<field name="fecha_recib"/>
+					<field name="fecha_confir"/>
+					<newline/>
+                    <group expand="0" string="Agrupar por" >
+                    <filter name="est2" string="Estado" icon="" domain="[]" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="resp_confirmacion_tree">
+            <field name="name">resp_confirmacion_tree</field>
+            <field name="model">resp_confirmacion</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Solicitud de búsqueda recibida" >
+					<field name="fecha_recib"/>	
+                    <field name="fecha_confir"/>
+                    <field name="nombre"/>
+					<field name="apellido1"/>
+                    <field name="apellido2"/>
+                </tree>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="resp_confirmacion_form">
+            <field name="name">resp_confirmacion_form</field>
+            <field name="model">resp_confirmacion</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Solicitud de búsqueda recibida">
+				<group colspan="4" >
+                    <field name="fecha_recib" colspan="4" />
+                    <field name="correo_config_id" colspan="4" />
+                    <field name="nombre" colspan="4" />
+                    <field name="apellido1" colspan="4" />
+                    <field name="apellido2" colspan="4" />
+                    <field name="fecha_nac" colspan="4" />
+                    <field name="lugar_nac" colspan="4" />
+                    <field name="fecha_confir" colspan="4" />
+                    <newline/>
+					<field name="state" colspan="4" widget="statusbar" statusbar_colors='{"Recibida":"yellow","Respondida":"green"}'/>
+					<separator string="Acciones" colspan="4"/>
+					<group colspan="4" col="3">
+						<button name="responder_solicitud" icon="gtk-yes" string="Responder solicitud" states="Recibida" colspan="1" type="object"/>
+					</group>
+                </group>
+            </form>
+            </field>
+        </record>		
+	   
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="resp_confirmacion_action">
+            <field name="name">Solicitud de búsqueda recibida</field>
+            <field name="res_model">resp_confirmacion</field>
+            <field name="limit">20</field>
+        </record> 	
+		
+	
+	<!--*****************************************************************-->
+        <record model="ir.ui.view" id="reg_resp1_confir_search">
+            <field name="name">reg_resp1_confir_search</field>
+            <field name="model">reg_resp1_confir</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Registros de confirmación">
+						<field name="partida_literal"/>
+                        <field name="nombre"/>
+                        <field name="apellido1"/>
+                        <field name="apellido2"/>						
+						<field name="fecha_confir"/>
+						<newline/>
+					<group expand="0" string="Rango por fecha de confirmación" >
+						<field name="fecha_ini"/>
+                        <field name="fecha_fin"/>
+                    </group>
+					<newline/>
+                </search>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="reg_resp1_confir_tree">
+            <field name="name">reg_resp1_confir_tree</field>
+            <field name="model">reg_resp1_confir</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Registro de confirmación" >
+						<field name="partida_literal"/>
+                        <field name="fecha_confir" />
+                        <field name="nombre"/>
+						<field name="apellido1" />
+                        <field name="apellido2" />
+                </tree>
+            </field>
+        </record>
+		
+        <record model="ir.ui.view" id="reg_resp1_confir_form">
+            <field name="name">reg_resp1_confir_form</field>
+            <field name="model">reg_resp1_confir</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+            <form string="Registro de confirmación">
+			<field name="partida_literal"/>
+            <notebook colspan="4" >
+                <page string="Datos de la confirmación" > 
+						<group colspan="8" col='8' string="Datos de la persona">
+                        <group colspan="4" >
+                        <field name="nombre" colspan="4" options='{"rosend":"1"}'/>
+                        <field name="apellido1" colspan="4"  options='{"rosend":"1"}'/>
+                        <field name="apellido2" colspan="4" options='{"rosend":"1"}'/>
+                        </group>
+                        <group colspan="4" >
+                        <field name="fecha_nac" colspan="4"  options='{"rosend":"1"}'/>
+                        <field name="lugar_nac" colspan="4"  options='{"rosend":"1"}'/>
+                        <field name="nota" colspan="4"  options='{"rosend":"1"}'/>
+                        </group>
+						<label string="" colspan="6"/>
+                        </group>
+						<label string="" colspan="8"/>
+						
+						<group colspan="8" col='8' string="Testigo de la confirmación" attrs="{'invisible': [('partida_literal','==', True)]}">
+                        <field name="madr_tes" colspan="4"  options='{"rosend":"1"}'/>
+                        <field name="padr_tes" colspan="4"  options='{"rosend":"1"}'/>                        
+                        
+						<label string="" colspan="6"/>
+						<field name="testigo" colspan="8" />
+                        </group>
+						
+						<label string="" colspan="8"/>
+						<field name="fecha_confir" colspan="4" /> 
+						<field name="ministro" colspan="4" />
+						<field name="ministro_suple" attrs="{'invisible': [('ministro','=', '')]}" colspan="4" />
+						<field name="parroquia_id" colspan="4" attrs="{'invisible': [('es_parroquia','==', False)]}" />
+						<field name="iglesia_id" colspan="4" attrs="{'invisible': [('es_parroquia','==', False)]}" />
+					</page>
+                    <page string="Literal" attrs="{'invisible': [('partida_literal','==', False)]}"> 
+                    <group colspan="4" >    
+                        <field name="literal_text5" nolabel= "1" colspan="4" widget="FieldText3">   </field> 
+                    </group>                
+                </page>   
+                </notebook> 
+                </form>
+            </field>
+        </record>		
+	   
+
+        <!--Actions-->
+        <record model="ir.actions.act_window" id="reg_resp1_confir_action">
+            <field name="name">Registro de confirmación</field>
+            <field name="res_model">reg_resp1_confir</field>
+            <field name="limit">20</field>
+        </record> 
+    </data>
+</openerp>
+
